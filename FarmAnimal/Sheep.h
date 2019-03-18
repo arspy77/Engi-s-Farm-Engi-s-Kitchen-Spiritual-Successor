@@ -5,12 +5,13 @@
 
 class Sheep: public MeatProducer {
     private:
-        static constexpr maxTimeToGetHungrySheep{5};
+        static constexpr int maxTimeToGetHungrySheep{5};
     public:
-        Sheep();
-        FarmProduct* KillProduct();
+        /** Constructor */
+		Sheep(Point position, Cell***& worldMap);
+        FarmProduct* produceProduct();
         /* Mengembalikan FarmProduk yang akan dihasilkan Sheep bila Sheep di sembelih */
-        void makeNoise();
+        std::string makeNoise();
 };
 
 #endif

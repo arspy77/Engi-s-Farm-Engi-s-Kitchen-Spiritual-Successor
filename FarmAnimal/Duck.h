@@ -1,19 +1,19 @@
 #ifndef DUCK_H
 #define DUCK_H
 
-#include "EggProducer.h"
 #include "MeatProducer.h"
-#include "FarmProduct.h"
+
 class Duck: public MeatProducer {
     private:
-        static constexpr maxTimeToGetHungryDuck{16};
+        static constexpr int maxTimeToGetHungryDuck{16};
     public:
-        Duck();
-        // Mengembalikan FarmProduk yang akan dihasilkan Chicken bila Chicken di kill
+        /** Constructor */
+		Duck(Point position, Cell***& worldMap);
+        /** Mengembalikan FarmProduk yang akan dihasilkan Chicken bila Chicken di kill*/
         FarmProduct* killProduct();
-        // Mengembalikan FarmProduk yang akan dihasilkan Chicken bila Chicken di interact */ 
+        /** Mengembalikan FarmProduk yang akan dihasilkan Chicken bila Chicken di interact */ 
 
-        void makeNoise();   
+        std::string makeNoise();   
 };
 
 #endif

@@ -1,27 +1,31 @@
 #ifndef CHICKEN_H
 #define CHICKEN_H
 
+
 #include "EggProducer.h"
 #include "MeatProducer.h"
+#include "../Product/ChickenEgg.h"
+#include "../Product/ChickenMeat.h"
+
 
 class Chicken: public EggProducer, public MeatProducer { 
     private:
-        static constexpr maxTimeToGetHungryChicken{15};
+        /** 
+        static constexpr int maxTimeToGetHungryChicken {15};
+
 
         void moveRandomly();
 
     public:
-        Chicken();
-        // Mengembalikan FarmProduk yang akan dihasilkan Chicken bila Chicken di kill
-        FarmProduct* killProduct();
-        // Mengembalikan FarmProduk yang akan dihasilkan Chicken bila Chicken di interact */    
-        FarmProduct* interactProduct();
-        // Set time to get hungry dengen 5 dan timeToDeath dengan nilai konstan yg diasign untuk chicken (belum diimplementasikan)        
-        void eat();
+        /** Constructor */
+		Chicken(Point position, Cell***& worldMap);
 
-        void makeNoise();
 
-        bool isKillable();
-        bool isInteractable();
+        /** Mengembalikan FarmProduk yang akan dihasilkan Chicken bila Chicken di kill*/
+        FarmProduct* ProduceProduct(Action) const;
+        
+
+
+        std::string makeNoise() const;
 };
 #endif

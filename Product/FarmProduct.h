@@ -3,7 +3,8 @@
 
 #include "Product.h"
 
+/** Product yang didapat dari hasil interact / kill*/
 class FarmProduct : public Product {
-/*Product yang didapat dari hasil interact || kill*/
+
 };
 #endif

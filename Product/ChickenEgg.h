@@ -5,9 +5,15 @@
 class ChickenEgg : public FarmProduct {
     private:
         static const int price{2000};
+        static constexpr Category category{CHICKENEGG};
+
     public:
+        /** getPrice mengembalikan harga yang didefinisikan */  
         int getPrice() const;
-        /* return harga dari ChickenEgg, overload dari getHarga() class dasar */
+
+
+        /** Mengembalikan category dari produk */
+        Category getCategory() const;
 };
 
 #endif

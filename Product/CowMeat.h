@@ -5,9 +5,15 @@
 class CowMeat : public FarmProduct {
     private:
         static const int price{200000};
+        static constexpr Category category{COWMEAT};
+
     public:
+        /** getPrice mengembalikan harga yang didefinisikan */  
         int getPrice() const;
-        /* return harga dari CowMeat, overload dari getHarga() class dasar */
+
+
+        /** Mengembalikan category dari produk */
+        Category getCategory() const;
 };
 
 #endif

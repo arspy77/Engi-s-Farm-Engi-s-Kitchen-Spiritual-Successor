@@ -2,16 +2,16 @@
 #define OSTRITCH_H
 
 #include "EggProducer.h"
-#include "MeatProducer.h"
 
 class Ostrich: public EggProducer {
     private:
-        static constexpr maxTimeToGetHungryOstrich{20};
+        static constexpr int maxTimeToGetHungryOstrich {20};
     public:
-        Ostrich();
-        FarmProduct* interactProduct();
+        /** Constructor */
+		Ostrich(Point position, Cell***& worldMap);
+        FarmProduct* produceProduct();
         /* Mengembalikan FarmProduk yang akan dihasilkan Ostrich bila Ostrich di interact */
-        void makeNoise();
+        std::string makeNoise();
 };
 
 #endif

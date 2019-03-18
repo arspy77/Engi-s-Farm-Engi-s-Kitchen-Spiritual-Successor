@@ -3,6 +3,6 @@
 using namespace std;
 
 int main () {
-    Point i(1,2);
+    Point i;
     cout<<i.x<<endl;
 }

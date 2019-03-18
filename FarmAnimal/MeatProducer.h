@@ -1,21 +1,22 @@
 #ifndef MEAT_PRODUCER_H
 #define MEAT_PRODUCER_H
 
+
 #include "FarmAnimal.h"
-class MeatProducer : virtual FarmAnimal {
-    private :
-      
-    
+
+
+class MeatProducer : virtual public FarmAnimal {
     public :
-        // Penerusan overloading (virtual) destruktor 
+        /** Constructor maxTimeToGetHungry dengan nilai H */
+		MeatProducer(int _maxTimeToGetHungry, Point position, Cell***& worldMap);
+
+        /** Penerusan overloading (virtual) destruktor */
         virtual ~MeatProducer() = 0;
 
-        // mengembalikan daging yang diproduksi 
-        virtual FarmProduct* killProduct() = 0;
-        virtual void moveRandomly();
-        virtual bool isKillable();
-        virtual bool isInteractable();
 
+    private :
+        /** Mengecek apakah bisa pindah (tidak out of bound, bertipe GrassLand, tidak ada hewan lain) */
+        virtual bool canMoveTo(Cell toWhere) const;
 };
 
 #endif

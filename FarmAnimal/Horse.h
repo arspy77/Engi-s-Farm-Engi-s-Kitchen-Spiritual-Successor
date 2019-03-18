@@ -2,18 +2,16 @@
 #define HORSE_H
 
 #include "MilkProducer.h"
-#include "MeatProducer.h"
 
 class Horse: public MilkProducer {
     private:
-        static constexpr maxTimeToGetHungryHorse{10};
+        static constexpr int maxTimeToGetHungryHorse{10};
     public:
-        Horse();
-        FarmProduct* interactProduct();
+        /** Constructor */
+		Horse(Point position, Cell***& worldMap);
+        FarmProduct* produceProduct();
         /* Mengembalikan FarmProduk yang akan dihasilkan Horse bila Horse di interact */
-        void makeNoise();
-
-        void makeNoise();
+        std::string makeNoise();
 };
 
 #endif
