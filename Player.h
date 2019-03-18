@@ -4,6 +4,7 @@
 #include "LivingThing.h"
 #include "LinkedList.h"
 #include "FarmAnimal.h"
+#include "Cell/Cell.h"
 #include "Product/BeefChickenOmelette.h"
 #include "Product/BeefMuttonSate.h"
 #include "Product/SuperSecretSpecialProduct.h"
@@ -12,24 +13,21 @@
 class Player : public LivingThing {
     public :
         /** Constructor Player di position, recipeBook diinisalisasi dengan semua SideProduct yang terdefinisi */
-        Player(Point position, Cell***& worldMap);
-
+        Player(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
         /** Destructor Player */
         ~Player();
 
-
         /** Player berbicara dengan semua FarmAnimal terdekat. */
 		void talk(LinkedList<FarmAnimal>& farmAnimal);
-
 
         /**
          * Player mengambil FarmProduct dari semua FarmAnimal terdekat tanpa membunuh FarmAnimal tersebut.
          * Bekerja untuk FarmAnimal jenis MilkProducing dan EggProducing.
          * Contoh FarmProduct : ChickenEgg, CowMilk.
+         * 
          */
 		void interact(LinkedList<FarmAnimal>& farmAnimal);
-
 
 		/**
          * Player mengambil FarmProduct dari semua FarmAnimal terdekat dengan cara membunuh FarmAnimal tersebut.
@@ -38,27 +36,21 @@ class Player : public LivingThing {
          */
         void kill(LinkedList<FarmAnimal>& farmAnimal);
 
-
         /** Menumbuhkan rumput pada cell yang sedang ditempati oleh Player */
-		void grow(Cell*** cellMat);
-
+		void grow();
 
         /** Menciptakan SideProduct dari FarmProduct bila Player dekat dengan mixer */
-		void mix(Cell*** cellMat, Product* makeTo);
+		void mix(Product* makeTo);
 
         /** Mengembalikan char untuk dirender ke layar */
         char render();
-
 
     private :
         /** Product yang dipegang Player */
 		LinkedList<Product&> inventory;
 
-        /** Side Product yang bisa dibuat oleh player */
-
         /** Uang yang dimiliki Player */
     	int money{500000};
-
 
         /** Air yang dipegang Player */
 		int water{5}; 
@@ -69,12 +61,12 @@ class Player : public LivingThing {
          * Bila player ingin membuat BeefMuttonSate, program tranversal di recipeeBook sampai
          * menemukan sideProdect dengan Category = BEEFMUTTONSATE lalu melihat resep dari objek
          * tersebut.
-         * recipeeBook diinisalisasi di ctor
+         * recipeBook diinisalisasi di implementasi
          */
-        const LinkedList<SideProduct*> recipeBook {(new SuperSecretSpecialProduct), (new BeefChickenOmelette), (new BeefMuttonSate)};
-
+        static LinkedList<SideProduct*> recipeBook;
+        
+        /** Apakah bisa masuk suatu area (cek out of bound, jenis Cell, kekosongan Cell) */
         bool canMoveTo(Cell toWhere);
 };
-
 
 #endif

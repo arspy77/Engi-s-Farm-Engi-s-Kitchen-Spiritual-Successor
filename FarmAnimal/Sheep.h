@@ -1,17 +1,25 @@
 #ifndef SHEEP_H
 #define SHEEP_H
 
+#include "../Point.h"
+#include "../Cell/Cell.h"
 #include "MeatProducer.h"
+#include <string>
 
-class Sheep: public MeatProducer {
-    private:
-        static constexpr int maxTimeToGetHungrySheep{5};
+class Sheep: public MeatProducer { 
     public:
         /** Constructor */
-		Sheep(Point position, Cell***& worldMap);
-        FarmProduct* produceProduct();
-        /* Mengembalikan FarmProduk yang akan dihasilkan Sheep bila Sheep di sembelih */
-        std::string makeNoise();
+		Sheep(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
+
+        /** Mengembalikan FarmProduk yang akan dihasilkan Sheep bila Sheep di kill*/
+        FarmProduct* ProduceProduct(Action) const;
+        
+        /** Mengembalikan suara dari Sheep */
+        std::string makeNoise() const;
+
+    private:
+        /** Nilai dari maxTimeToGetHungry */
+        static constexpr int maxTimeToGetHungrySheep {15};
 };
 
 #endif

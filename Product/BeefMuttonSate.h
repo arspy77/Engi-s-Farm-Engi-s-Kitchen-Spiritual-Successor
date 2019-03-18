@@ -1,25 +1,35 @@
 #ifndef BEEF_MUTTON_SATE_H
 #define BEEF_MUTTON_SATE_H
 
+#include "../LinkedList.h"
 #include "SideProduct.h"
-#include "CowMeat.h"
-#include "SheepMeat.h"
 
 class BeefMuttonSate : public SideProduct {
-    private:
-        static const int price{404000};
-        static constexpr Category category{BEEFMUTONSATE};
-        
-
-        const LinkedList<Product*> resep {new CowMeat, new SheepMeat};
-
     public:
+        /** Constructor untuk inisialisasi recipe */
+        BeefMuttonSate();
+
         /** getPrice mengembalikan harga yang didefinisikan */  
         int getPrice() const;
 
-
         /** Mengembalikan category dari produk */
         Category getCategory() const;
+
+        /** Mengembalikan resep dari produk */
+        static LinkedList<Product*>& getRecipe();
+
+    private:
+        /** Harga dari BeefMuttonSate */
+        static const int price{404000};
+
+        /** Kategori dari BeefMuttonSate */
+        static constexpr Category category{BEEFMUTONSATE};
+        
+        /** 
+         *  Resep BeefMuttonSate.
+         *  Terdiri dari CowMeat dan SheepMeat.
+         */
+        static LinkedList<Product*> recipe;
 };
 
 #endif

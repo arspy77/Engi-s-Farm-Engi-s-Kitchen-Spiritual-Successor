@@ -1,17 +1,25 @@
-#ifndef OSTRITCH_H
-#define OSTRITCH_H
+#ifndef OSTRICH_H
+#define OSTRICH_H
 
+#include "../Point.h"
+#include "../Cell/Cell.h"
 #include "EggProducer.h"
+#include <string>
 
-class Ostrich: public EggProducer {
-    private:
-        static constexpr int maxTimeToGetHungryOstrich {20};
+class Ostrich: public EggProducer { 
     public:
         /** Constructor */
-		Ostrich(Point position, Cell***& worldMap);
-        FarmProduct* produceProduct();
-        /* Mengembalikan FarmProduk yang akan dihasilkan Ostrich bila Ostrich di interact */
-        std::string makeNoise();
+		Ostrich(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
+
+        /** Mengembalikan FarmProduk yang akan dihasilkan Ostrich bila Ostrich di kill*/
+        FarmProduct* ProduceProduct(Action) const;
+
+        /** Mengembalikan suara dari Chicken */
+        std::string makeNoise() const;
+
+    private:
+        /** Nilai dari maxTimeToGetHungry */
+        static constexpr int maxTimeToGetHungryOstrich {15};
 };
 
 #endif

@@ -2,7 +2,6 @@
 #define PRODUCT_H
 
 class Product {
-/*Abstract Base Class*/
     public:
         enum Category {
             CHICKENEGG, CHICKENMEAT, BEEFCHICKENOMELETTE, BEEFMUTONSATE, 

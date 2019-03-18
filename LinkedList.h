@@ -1,10 +1,8 @@
 #include <initializer_list>
 
-
 /** Forward declaration dari kelas LinkedListNode */
 template<class T>
 class LinkedListNode;
-
 
 /** Tipe data LinkedList, diimplementasi secara rekursif dengan LinkedListNode */
 template<class T>
@@ -13,41 +11,32 @@ class LinkedList {
 		/** Konstruktor default LinkedList, membuat empty list */
 		LinkedList();
 
-
 		/** Konstruktor dengan initializer list */
 		LinkedList(std::initializer_list<T> args);
-
 
 		/** Copy constructor LinkedList */
 		LinkedList(const LinkedList<T>& l);
 
-
 		/** Destructor LinkedList */
 		~LinkedList();
-
 
 		/** Operator= LinkedList */
 		LinkedList<T>& operator=(const LinkedList<T>& l);
 
-		
 		/** 
 		 *  Mencari indeks pertama dari elm dari LinkedList.
 		 *  Jika tidak ada, bernilai -1.
 		 */
 		int find(T elm);
 
-
 		/** Mengembalikan apakah list empty atau tidak */
 		bool isEmpty() const;
-
 
 		/** Menambah elm sebagai elemen terakhir */
 		void add(T elm);
 
-
 		/** Menghapus keberadaan pertama elm */
 		void remove(T elm);
-
 
 		/**
 		 *  Menghapus elemen berindeks idx.
@@ -55,20 +44,17 @@ class LinkedList {
 		 */
 		void removeIdx(int idx);
 
-
 		/**
 		 *  Mengembalikan elemen berindeks idx.
 		 * Jika diluar range, melempar "Index is out of bounds".
 		 */
 		T get(int idx);
 
-
 		/**
 		 *  Mengembalikan reference ke elemen berindeks idx.
 		 *  Jika diluar range, melempar "Index is out of bounds".
 		 */
 		T& operator[](int idx);
-
 
 	private:
 		/** Pointer ke LinkedListNode, kalau empty bernilai nullptr */
@@ -82,25 +68,19 @@ public:
 	/** Konstruktor LinkedListNode dengan initializer list */ 
 	LinkedListNode(T head, LinkedList<T> tail);
 
-
 	/** Membuat LinkedList dapat mengakses head dan tail */
     friend LinkedList<T>;
-
 
 private:
 	/** Tipe data pertama pada LinkedListNode */
 	T head;
 
-
 	/** Sisa dari LinkedListNode berupa LinkedList */
 	LinkedList<T> tail;
 };
 
-
 template<class T>
 LinkedList<T>::LinkedList() : list{ nullptr } {}
-
-
 
 template<class T>
 LinkedList<T>::LinkedList(std::initializer_list<T> args) : LinkedList() {
@@ -116,14 +96,12 @@ LinkedList<T>::LinkedList(const LinkedList<T>& l) {
 	}
 }
 
-
 template<class T>
 LinkedList<T>::~LinkedList() {
 	if (!isEmpty()) {
 		delete list;
 	}
 }
-
 
 template<class T>
 LinkedList<T>& LinkedList<T>::operator=(const LinkedList<T>& l) {
@@ -138,12 +116,10 @@ LinkedList<T>& LinkedList<T>::operator=(const LinkedList<T>& l) {
 	return *this;
 }
 
-
 template<class T>
 bool LinkedList<T>::isEmpty() const {
 	return list == nullptr;
 }
-
 
 template<class T>
 void LinkedList<T>::add(T elm) {
@@ -153,7 +129,6 @@ void LinkedList<T>::add(T elm) {
 		list->tail.add(elm);
 	}
 }
-
 
 template<class T>
 void LinkedList<T>::remove(T elm) {
@@ -167,7 +142,6 @@ void LinkedList<T>::remove(T elm) {
 		}
 	}
 }
-
 
 template<class T>
 void LinkedList<T>::removeIdx(int idx) {
@@ -221,7 +195,6 @@ T& LinkedList<T>::operator[](int idx) {
 		throw "Index is out of bounds";
 	}
 }
-
 
 template<class T>
 LinkedListNode<T>::LinkedListNode(T head, LinkedList<T> tail) : head{ head }, tail{ tail } {}

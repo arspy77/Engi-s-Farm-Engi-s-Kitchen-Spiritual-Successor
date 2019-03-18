@@ -1,30 +1,29 @@
 #ifndef COW_H
 #define COW_H
 
+#include "../Point.h"
+#include "../Cell/Cell.h"
 #include "MilkProducer.h"
 #include "MeatProducer.h"
-#include "FarmProduct.h"
+#include <string>
 
-class Cow: public MilkProducer,public MeatProducer{
-    private:
-        static constexpr int maxTimeToGetHungryCow {20};
-
-        void moveRandomly();
-
+class Cow: public MilkProducer, public MeatProducer { 
     public:
         /** Constructor */
-		Cow(Point position, Cell***& worldMap);
-        /** Mengembalikan FarmProduk yang akan dihasilkan Chicken bila Chicken di kill*/
-        FarmProduct* killProduct();
-        /** Mengembalikan FarmProduk yang akan dihasilkan Chicken bila Chicken di interact */    
-        FarmProduct* interactProduct();
-        /** Set time to get hungry dengen 5 dan timeToDeath dengan nilai konstan yg diasign untuk chicken (belum diimplementasikan)*/        
-        void eat();
+		Cow(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
-        std::string makeNoise();
+        /** Mengembalikan FarmProduk yang akan dihasilkan Cow bila Cow di kill*/
+        FarmProduct* ProduceProduct(Action) const;
+        
+        /** Mengembalikan suara dari Cow */
+        std::string makeNoise() const;
 
-        bool isKillable();
-        bool isInteractable();
+    private:
+        /** Nilai dari maxTimeToGetHungry */
+        static constexpr int maxTimeToGetHungryCow {20};
+
+        /** Mengecek apakah bisa pindah (tidak out of bound, bertipe Barn atau GrassLand, tidak ada hewan lain) */
+        virtual bool canMoveTo(Cell toWhere) const;
 };
 
 #endif
