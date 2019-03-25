@@ -29,7 +29,7 @@ class SuperSecretSpecialProduct : public SideProduct {
          *  Resep SuperSecretSpecialProduct.
          *  Terdiri dari OstrichEgg dan HorseMeat.
          */
-        static const LinkedList<Product*> recipe;
+        static LinkedList<Product*> recipe;
 };
 
 #endif
