@@ -26,4 +26,8 @@ void Cell::removeGrass()
     //do nothing
 }
 
+Cell::~Cell() {
+	
+}
+
 

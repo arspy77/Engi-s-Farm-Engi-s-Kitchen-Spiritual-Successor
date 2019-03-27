@@ -3,7 +3,12 @@
 
 #include "Player.h"
 #include "LinkedList.h"
-#include "Cell/Cell.h"
+#include "Cell/GrassLand.h"
+#include "Cell/Coop.h"
+#include "Cell/Barn.h"
+#include "Cell/Truck.h"
+#include "Cell/Mixer.h"
+#include "Cell/Well.h"
 #include "FarmAnimal/FarmAnimal.h"
 
 class World{
@@ -49,7 +54,7 @@ class World{
 
     private :
         /** Player yang berada pada World */
-        Player pl;
+        Player* pl;
 
         /** Matriks dari pointer ke seluruh Cell pada World */
         Cell*** map;

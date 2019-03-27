@@ -11,7 +11,7 @@ class Ostrich: public EggProducer {
         /** Constructor */
 		Ostrich(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
-        /** Mengembalikan FarmProduk yang akan dihasilkan Ostrich bila Ostrich di kill*/
+        /** Mengembalikan FarmProduk yang akan dihasilkan Ostrich bila Ostrich di interact*/
         FarmProduct* ProduceProduct(Action) const;
 
         /** Mengembalikan suara dari Chicken */

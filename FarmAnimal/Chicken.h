@@ -12,7 +12,7 @@ class Chicken: public EggProducer, public MeatProducer {
         /** Constructor */
 		Chicken(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
-        /** Mengembalikan FarmProduk yang akan dihasilkan Chicken bila Chicken di kill*/
+        /** Mengembalikan FarmProduk yang akan dihasilkan Chicken bila Chicken di kill atau di interact */
         FarmProduct* ProduceProduct(Action) const;
         
         /** Mengembalikan suara dari Chicken */
@@ -22,8 +22,9 @@ class Chicken: public EggProducer, public MeatProducer {
         /** Nilai dari maxTimeToGetHungry */
         static constexpr int maxTimeToGetHungryChicken {15};
 
+        // Sekarang Cell pake reference
         /** Mengecek apakah bisa pindah (tidak out of bound, bertipe Coop atau GrassLand, tidak ada hewan lain) */
-        virtual bool canMoveTo(Cell toWhere) const;
+        virtual bool canMoveTo(Cell& toWhere) const;
 };
 
 #endif

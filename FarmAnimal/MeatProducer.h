@@ -14,8 +14,9 @@ class MeatProducer : virtual public FarmAnimal {
         virtual ~MeatProducer() = 0;
 
     private :
+        // Sekarang Cell pake reference
         /** Mengecek apakah bisa pindah (tidak out of bound, bertipe GrassLand, tidak ada hewan lain) */
-        virtual bool canMoveTo(Cell toWhere) const;
+        virtual bool canMoveTo(Cell& toWhere) const;
 };
 
 #endif

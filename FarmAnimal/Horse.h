@@ -11,7 +11,7 @@ class Horse: public MilkProducer {
         /** Constructor */
 		Horse(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
-        /** Mengembalikan FarmProduk yang akan dihasilkan Horse bila Horse di kill*/
+        /** Mengembalikan FarmProduk yang akan dihasilkan Horse bila Horse di interact*/
         FarmProduct* ProduceProduct(Action) const;
 
         /** Mengembalikan suara dari Horse */

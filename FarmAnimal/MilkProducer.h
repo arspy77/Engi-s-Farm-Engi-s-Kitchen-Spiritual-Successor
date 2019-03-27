@@ -20,8 +20,9 @@ class MilkProducer : virtual public FarmAnimal {
         /** Mengubah nilai canProduce */
         void eat();
 
+        // Sekarang Cell pake reference
         /** Mengecek apakah bisa pindah (tidak out of bound, bertipe Barn, tidak ada hewan lain) */
-        virtual bool canMoveTo(Cell toWhere) const;
+        virtual bool canMoveTo(Cell& toWhere) const;
 };
 
 #endif

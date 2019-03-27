@@ -12,7 +12,7 @@ class Cow: public MilkProducer, public MeatProducer {
         /** Constructor */
 		Cow(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
-        /** Mengembalikan FarmProduk yang akan dihasilkan Cow bila Cow di kill*/
+        /** Mengembalikan FarmProduk yang akan dihasilkan Cow bila Cow di kill atau di interact */
         FarmProduct* ProduceProduct(Action) const;
         
         /** Mengembalikan suara dari Cow */
@@ -22,8 +22,9 @@ class Cow: public MilkProducer, public MeatProducer {
         /** Nilai dari maxTimeToGetHungry */
         static constexpr int maxTimeToGetHungryCow {20};
 
+        // Sekarang Cell pake reference
         /** Mengecek apakah bisa pindah (tidak out of bound, bertipe Barn atau GrassLand, tidak ada hewan lain) */
-        virtual bool canMoveTo(Cell toWhere) const;
+        virtual bool canMoveTo(Cell& toWhere) const;
 };
 
 #endif
