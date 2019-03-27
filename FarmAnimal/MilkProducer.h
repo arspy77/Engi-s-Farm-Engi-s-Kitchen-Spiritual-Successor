@@ -5,7 +5,7 @@
 #include "../Cell/Cell.h"
 #include "FarmAnimal.h"
 
-class MilkProducer : virtual public FarmAnimal {
+class MilkProducer : public FarmAnimal {
     public :
         /** Constructor maxTimeToGetHungry dengan nilai H */
 		MilkProducer(int _maxTimeToGetHungry, Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);

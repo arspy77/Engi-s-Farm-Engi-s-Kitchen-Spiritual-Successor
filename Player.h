@@ -66,7 +66,7 @@ class Player : public LivingThing {
         static LinkedList<SideProduct*> recipeBook;
         
         /** Apakah bisa masuk suatu area (cek out of bound, jenis Cell, kekosongan Cell) */
-        bool canMoveTo(Cell& toWhere);
+        bool canMoveTo(Cell& toWhere) const;
 };
 
 #endif

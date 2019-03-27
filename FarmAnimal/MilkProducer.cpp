@@ -2,7 +2,9 @@
 
 /** Constructor maxTimeToGetHungry dengan nilai H */
 MilkProducer::MilkProducer(int _maxTimeToGetHungry, Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)
-: FarmAnimal(_maxTimeToGetHungry, position, worldMap, nRowCell, nCollumnCell){}
+: FarmAnimal(_maxTimeToGetHungry, position, worldMap, nRowCell, nCollumnCell){
+
+}
 
 /** Mengubah nilai canProduce */
 void MilkProducer::eat(){
@@ -14,3 +16,7 @@ void MilkProducer::eat(){
 bool MilkProducer::canMoveTo(Cell& toWhere) const{
     return ( !toWhere.getIsOcupied() && (toWhere.getCategory() == Cell::Category::BARN) );
 }
+
+MilkProducer::~MilkProducer() {
+	
+} 

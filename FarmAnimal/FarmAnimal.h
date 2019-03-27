@@ -38,6 +38,9 @@ class FarmAnimal : private LivingThing {
          */
         virtual void eat();
 
+        /** return true apabila timeToGetHungry <= 0 */
+        bool isHungry() const;
+
     private:
         /** Waktu FarmAnimal sampai menjadi lapar */
         int timeToGetHungry;
@@ -53,9 +56,6 @@ class FarmAnimal : private LivingThing {
 
         /** Nilai max dari timeToDeath */
         static constexpr int maxTimeToDeath{5};
-        
-        /** return true apabila timeToGetHungry <= 0 */
-        bool isHungry() const;
         
         /** mengurangi timeToGetHungry */
         void decTimeToGetHungry();
@@ -73,7 +73,7 @@ class FarmAnimal : private LivingThing {
 
         // Ini aawalnya gaada
         /** Apakah bisa masuk suatu area (cek out of bound, jenis Cell, kekosongan Cell) */
-        virtual bool canMoveTo(Cell& toWhere) = 0;
+        virtual bool canMoveTo(Cell& toWhere) const = 0;
 };
 
 #endif

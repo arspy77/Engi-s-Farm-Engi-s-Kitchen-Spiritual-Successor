@@ -12,6 +12,6 @@ char Player::render() {
 	return 'P';
 }
 
-bool Player::canMoveTo(Cell& toWhere) {
+bool Player::canMoveTo(Cell& toWhere) const{
 	return !toWhere.getIsOcupied();
 }

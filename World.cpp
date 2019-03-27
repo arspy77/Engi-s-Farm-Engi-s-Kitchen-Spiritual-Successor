@@ -54,6 +54,19 @@ World::World() {
 	pLoc.x = 0;
 	pLoc.y = 0;
 	pl = new Player(pLoc, map, nRowCell, nCollumnCell);
+
+	for (int i = 0; i < rand() % (nRowCell+nCollumnCell)*5/40; i++) {
+		pLoc.x = rand() % nCollumnCell;
+		pLoc.y = rand() % nRowCell;
+		while ((pLoc.x < (nRowCell*3/11) && pLoc.y < (nCollumnCell*3/10)) || 
+			pLoc.x >= (nRowCell*5/11) && pLoc.x < (nCollumnCell*8/11) && pLoc.y < (nRowCell*6/10)) {
+			pLoc.x = rand() % nCollumnCell;
+			pLoc.y = rand() % nRowCell;
+		}
+		Horse* hrse;
+		hrse = new Horse(pLoc, map, nRowCell, nCollumnCell);
+		animalList.add(hrse);
+	}
 }
 
 World::~World() {
@@ -89,7 +102,7 @@ void World::Input() {
 //gerakin farmanimal, grow rumput, blablabla
 void World::Update() {
 	int x, y;
-	for (int i = 0; i < rand() % 5; i++) {
+	for (int i = 0; i < rand() % (nRowCell+nCollumnCell)*5/40; i++) {
 		x = rand() % nCollumnCell;
 		y = rand() % nRowCell;
 		map[y][x]->growGrass();

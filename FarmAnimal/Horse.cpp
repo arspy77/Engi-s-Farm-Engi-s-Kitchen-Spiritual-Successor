@@ -3,10 +3,12 @@
 
 /** Constructor */
 Horse::Horse(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)
-: MilkProducer(maxTimeToGetHungryHorse, position, worldMap, nRowCell, nCollumnCell){}
+: MilkProducer(maxTimeToGetHungryHorse, position, worldMap, nRowCell, nCollumnCell) {
+	
+}
 
 /** Mengembalikan FarmProduk yang akan dihasilkan Horse bila Horse di interact */
-FarmProduct* Horse::ProduceProduct(Action act) const{
+FarmProduct* Horse::produceProduct(Action act) const{
     FarmProduct* fp;
     if (act == Action::INTERACT){
         fp = new HorseMilk();
@@ -17,4 +19,12 @@ FarmProduct* Horse::ProduceProduct(Action act) const{
 /** Mengembalikan suara dari Horse */
 std::string Horse::makeNoise() const{
     return "hihiin~";
+}
+
+char Horse::render() {
+	if (this->isHungry()) {
+		return 'h';
+	} else {
+		return 'H';
+	}
 }

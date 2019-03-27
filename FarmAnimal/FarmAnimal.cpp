@@ -80,3 +80,7 @@ void FarmAnimal::moveRandomly(){
         }
     }
 }
+
+FarmAnimal::~FarmAnimal() {
+    
+}

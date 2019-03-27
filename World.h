@@ -9,7 +9,7 @@
 #include "Cell/Truck.h"
 #include "Cell/Mixer.h"
 #include "Cell/Well.h"
-#include "FarmAnimal/FarmAnimal.h"
+#include "FarmAnimal/Horse.h"
 
 class World{
      public :

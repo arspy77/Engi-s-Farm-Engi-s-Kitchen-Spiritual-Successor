@@ -42,7 +42,7 @@ class LivingThing {
         
         // Sekarang Cell pake reference
         /** Apakah bisa masuk suatu area (cek out of bound, jenis Cell, kekosongan Cell) */
-        virtual bool canMoveTo(Cell& toWhere) = 0;
+        virtual bool canMoveTo(Cell& toWhere) const = 0;
 };
 
 #endif
