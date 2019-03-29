@@ -7,23 +7,23 @@
 #include "MeatProducer.h"
 #include <string>
 
-class Cow: public MilkProducer, public MeatProducer { 
+class Cow: public MeatProducer { 
     public:
         /** Constructor */
 		Cow(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
-        /** Mengembalikan FarmProduk yang akan dihasilkan Cow bila Cow di kill*/
-        FarmProduct* ProduceProduct(Action) const;
+        /** Mengembalikan FarmProduk yang akan dihasilkan Cow bila Cow di kill atau di interact */
+        FarmProduct* produceProduct(Action) const;
         
         /** Mengembalikan suara dari Cow */
         std::string makeNoise() const;
 
+        //Awalnya gaada
+        char render();
+
     private:
         /** Nilai dari maxTimeToGetHungry */
         static constexpr int maxTimeToGetHungryCow {20};
-
-        /** Mengecek apakah bisa pindah (tidak out of bound, bertipe Barn atau GrassLand, tidak ada hewan lain) */
-        virtual bool canMoveTo(Cell toWhere) const;
 };
 
 #endif

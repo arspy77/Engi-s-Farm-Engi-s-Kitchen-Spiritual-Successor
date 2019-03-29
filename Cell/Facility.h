@@ -5,6 +5,8 @@
 
 class Facility : public Cell { 
     public:
+        Facility();
+
         /** Destructor Land */
         virtual ~Facility() = 0;
 

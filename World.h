@@ -3,8 +3,21 @@
 
 #include "Player.h"
 #include "LinkedList.h"
-#include "Cell/Cell.h"
-#include "FarmAnimal/FarmAnimal.h"
+#include "Cell/GrassLand.h"
+#include "Cell/Coop.h"
+#include "Cell/Barn.h"
+#include "Cell/Truck.h"
+#include "Cell/Mixer.h"
+#include "Cell/Well.h"
+#include "FarmAnimal/Horse.h"
+#include "FarmAnimal/Chicken.h"
+#include "FarmAnimal/Cow.h"
+#include "FarmAnimal/Duck.h"
+#include "FarmAnimal/Ostrich.h"
+#include "FarmAnimal/Sheep.h"
+
+
+
 
 class World{
      public :
@@ -49,7 +62,7 @@ class World{
 
     private :
         /** Player yang berada pada World */
-        Player pl;
+        Player* pl;
 
         /** Matriks dari pointer ke seluruh Cell pada World */
         Cell*** map;
@@ -59,6 +72,9 @@ class World{
         
         /** Nilai efektif kolom untuk Matriks Cell */
         int nCollumnCell;
+
+        /** Banyaknya Animal yang hidup */
+        int nAnimal;
 
         /** LinkedList dari seluruh pointer ke FarmAnimal yang berada pada World 000*/
         LinkedList<FarmAnimal*> animalList;

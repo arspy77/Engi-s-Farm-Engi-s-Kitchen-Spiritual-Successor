@@ -1,67 +1,96 @@
+#include <initializer_list>
 #include <bits/stdc++.h>
-using namespace std;
-
-
+/** Forward declaration dari kelas LinkedListNode */
 template<class T>
-class LinkedList;
+class LinkedListNode;
 
-template<class T>
-class LinkedListNode {
-private:
-	T head;
-	LinkedList<T> tail;
-	friend class LinkedList<T>;
-
-public:
-	LinkedListNode(T head, LinkedList<T> tail);
-};
-
+/** Tipe data LinkedList, diimplementasi secara rekursif dengan LinkedListNode */
 template<class T>
 class LinkedList {
-private:
-	LinkedListNode<T>* list;
+	public:
+		/** Konstruktor default LinkedList, membuat empty list */
+		LinkedList();
 
-public:
-	// first = nullptr
-	LinkedList();
+		/** Konstruktor dengan initializer list */
+		LinkedList(std::initializer_list<T> args);
 
-	LinkedList(const LinkedList<T>& l);
+		/** Copy constructor LinkedList */
+		LinkedList(const LinkedList<T>& l);
 
-	~LinkedList();
+		/** Destructor LinkedList */
+		~LinkedList();
 
-	LinkedList<T>& operator=(const LinkedList<T>& l);
+		/** Operator= LinkedList */
+		LinkedList<T>& operator=(const LinkedList<T>& l);
 
-	// -1 if not found
-	int find(T elm);
+		/** 
+		 *  Mencari indeks pertama dari elm dari LinkedList.
+		 *  Jika tidak ada, bernilai -1.
+		 */
+		int find(T elm);
 
-	bool isEmpty() const;
+		/** Mengembalikan apakah list empty atau tidak */
+		bool isEmpty() const;
 
-	// add elm as last element
-	void add(T elm);
+		/** Menambah elm sebagai elemen terakhir */
+		void add(T elm);
 
-    // remove the first occurence of element
-	void remove(T elm);
+		/** Menghapus keberadaan pertama elm */
+		void remove(T elm);
 
-	void removeIdx(int idx);
+		/**
+		 *  Menghapus elemen berindeks idx.
+		 *  Jika diluar range, melempar "Index is out of bounds".
+		 */
+		void removeIdx(int idx);
 
-	T get(int idx);
+		/**
+		 *  Mengembalikan elemen berindeks idx.
+		 * Jika diluar range, melempar "Index is out of bounds".
+		 */
+		T get(int idx);
 
-	T& operator[](int idx);
+		/**
+		 *  Mengembalikan reference ke elemen berindeks idx.
+		 *  Jika diluar range, melempar "Index is out of bounds".
+		 */
+		T& operator[](int idx);
 
-    friend ostream& operator<<(ostream& os, LinkedList<T> l);
-
-	friend class LinkedListNode<T>;
+	private:
+		/** Pointer ke LinkedListNode, kalau empty bernilai nullptr */
+		LinkedListNode<T>* list;
 };
 
+/** Anggota kelas implementasi LinkedList secara rekursifs */
 template<class T>
-LinkedListNode<T>::LinkedListNode(T head, LinkedList<T> tail) : head{ head }, tail{ tail } {}
+class LinkedListNode {
+public:
+	/** Konstruktor LinkedListNode dengan initializer list */ 
+	LinkedListNode(T head, LinkedList<T> tail);
 
+	/** Membuat LinkedList dapat mengakses head dan tail */
+    friend LinkedList<T>;
+
+private:
+	/** Tipe data pertama pada LinkedListNode */
+	T head;
+
+	/** Sisa dari LinkedListNode berupa LinkedList */
+	LinkedList<T> tail;
+};
 
 template<class T>
 LinkedList<T>::LinkedList() : list{ nullptr } {}
 
 template<class T>
-LinkedList<T>::LinkedList(const LinkedList<T>& l) : LinkedList() {
+LinkedList<T>::LinkedList(std::initializer_list<T> args) : LinkedList() {
+	for (auto i = args.begin(); i != args.end(); ++i) {
+        add(*i);
+    }
+}
+
+template<class T>
+LinkedList<T>::LinkedList(const LinkedList<T>& l) {
 	if (!l.isEmpty()) {
 		list = new LinkedListNode<T>{ l.list->head, l.list->tail };
 	}
@@ -105,6 +134,7 @@ template<class T>
 void LinkedList<T>::remove(T elm) {
 	if (!isEmpty()) {
 		if (elm == list->head) {
+			/** Membuat list temp berisi tail untuk dipindahkan ke list sekarang */
 			LinkedList<T> temp{ list->tail };
 			operator=(temp);
 		} else {
@@ -120,10 +150,11 @@ void LinkedList<T>::removeIdx(int idx) {
 	}
 	if (!isEmpty()) {
 		if (idx == 0) {
+			/** Membuat list temp berisi tail untuk dipindahkan ke list sekarang */
 			LinkedList<T> temp{ list->tail };
 			operator=(temp);
 		} else {
-			list->tail.remove(idx - 1);
+			list->tail.removeIdx(idx - 1);
 		}
 	}
 	else {
@@ -165,17 +196,10 @@ T& LinkedList<T>::operator[](int idx) {
 	}
 }
 
-template <class T>
-ostream& operator<<(ostream& os, LinkedList<T> l) {
-    if (!isEmpty()) {
-        os << list->head << ' ' << list->tail;
-    }
-}
+template<class T>
+LinkedListNode<T>::LinkedListNode(T head, LinkedList<T> tail) : head{ head }, tail{ tail } {}
 
-int main () {
-    LinkedList<int> L;
-    L.add(5);
-    L.add(4);
-    L.add(2);
-    cout << L << '\n';
+int main(){
+	std::cout << "hehe";
+	return 0;
 }

@@ -7,7 +7,7 @@
 #include "../Product/FarmProduct.h"
 #include <string>
 
-class FarmAnimal : private LivingThing {                               
+class FarmAnimal : public LivingThing {                               
     public: 
         /** Jenis aksi yang dapat dilakukan ke FarmAnimal */
         enum Action {
@@ -29,6 +29,22 @@ class FarmAnimal : private LivingThing {
         /** Mengembalikan suara dari FarmAnimal */
         virtual std::string makeNoise() const = 0;
 
+        // awalnya private
+        /** Mengembalikan true jika timeToDeath == 0, lalu di destruct di main atau di class world */
+        bool isDead() const;
+
+    protected:
+        // awalnya private
+        /**
+         *  Jika FarmAnimal sedang berdiri pada land dengan rumput,
+         *  maka timeToDeath di set nilai semula dan timeToGdengan nilai sesuai dengan derived
+         *  classnya, lalu grass di land dihapus
+         */
+        virtual void eat();
+
+        /** return true apabila timeToGetHungry <= 0 */
+        bool isHungry() const;
+
     private:
         /** Waktu FarmAnimal sampai menjadi lapar */
         int timeToGetHungry;
@@ -45,27 +61,18 @@ class FarmAnimal : private LivingThing {
         /** Nilai max dari timeToDeath */
         static constexpr int maxTimeToDeath{5};
         
-        /** return true apabila timeToGetHungry <= 0 */
-        bool isHungry() const;
-        
         /** mengurangi timeToGetHungry */
         void decTimeToGetHungry();
         
         /** mengurangi timeToDeath */
         void decTimetoDeath();
         
-        /** Mengembalikan true jika timeToDeath == 0, lalu di destruct di main atau di class world */
-        bool isDead() const;
-        
-        /**
-         *  Jika FarmAnimal sedang berdiri pada land dengan rumput,
-         *  maka timeToDeath di set nilai semula dan timeToGdengan nilai sesuai dengan derived
-         *  classnya, lalu grass di land dihapus
-         */
-        virtual void eat();
-
         /** Menggerakan FarmAnimal secara random ke posisi yang mungkin ditempati */
         virtual void moveRandomly();
+
+        // Ini awalnya gaada
+        /** Apakah bisa masuk suatu area (cek out of bound, jenis Cell, kekosongan Cell) */
+        virtual bool canMoveTo(Cell& toWhere) const = 0;
 };
 
 #endif

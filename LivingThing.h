@@ -2,8 +2,9 @@
 #define LIVING_THING_H
 
 #include "Point.h"
-#include "Cell.h"
+#include "Cell/Cell.h"
 #include "Direction.h"
+
 
 class LivingThing {
     public:
@@ -20,7 +21,7 @@ class LivingThing {
          *  Berpindah ke suatu lokasi.
          *  Apabila tidak bisa (!canMoveTo), throw "Cannot move to the direction".
          */
-        bool move(Direction toWhere);
+        void move(Direction toWhere);
 
         /** Mengembalikan char untuk dirender ke layar */
         virtual char render() = 0;
@@ -39,8 +40,9 @@ class LivingThing {
         /** Posisi dari LivingThing */
         Point position;
         
+        // Sekarang Cell pake reference
         /** Apakah bisa masuk suatu area (cek out of bound, jenis Cell, kekosongan Cell) */
-        virtual bool canMoveTo(Cell toWhere) = 0;
+        virtual bool canMoveTo(Cell& toWhere) const = 0;
 };
 
 #endif

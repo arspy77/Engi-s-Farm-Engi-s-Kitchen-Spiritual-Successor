@@ -1,5 +1,9 @@
 #include <initializer_list>
 
+
+#ifndef LINKEDLIST_H
+#define LINKEDLIST_H
+
 /** Forward declaration dari kelas LinkedListNode */
 template<class T>
 class LinkedListNode;
@@ -154,7 +158,7 @@ void LinkedList<T>::removeIdx(int idx) {
 			LinkedList<T> temp{ list->tail };
 			operator=(temp);
 		} else {
-			list->tail.remove(idx - 1);
+			list->tail.removeIdx(idx - 1);
 		}
 	}
 	else {
@@ -198,3 +202,5 @@ T& LinkedList<T>::operator[](int idx) {
 
 template<class T>
 LinkedListNode<T>::LinkedListNode(T head, LinkedList<T> tail) : head{ head }, tail{ tail } {}
+
+#endif

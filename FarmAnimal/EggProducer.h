@@ -5,7 +5,7 @@
 #include "../Cell/Cell.h"
 #include "FarmAnimal.h"
 
-class EggProducer : virtual public FarmAnimal {
+class EggProducer : public FarmAnimal {
     public :
         /** Constructor maxTimeToGetHungry dengan nilai H */
 		EggProducer(int _maxTimeToGetHungry, Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
@@ -20,8 +20,9 @@ class EggProducer : virtual public FarmAnimal {
         /** Mengubah nilai canProduce */
         void eat();
 
+        // Sekarang Cell pake reference
         /** Mengecek apakah bisa pindah (tidak out of bound, bertipe Coop, tidak ada hewan lain) */
-        virtual bool canMoveTo(Cell toWhere) const;
+        virtual bool canMoveTo(Cell& toWhere) const;
 };
 
 #endif

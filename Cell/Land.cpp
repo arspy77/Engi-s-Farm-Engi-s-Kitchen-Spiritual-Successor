@@ -29,3 +29,7 @@ bool Land::isGrassExist() const
 {
     return existGrass;
 }
+
+Land::~Land() {
+    
+}

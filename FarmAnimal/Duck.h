@@ -12,10 +12,13 @@ class Duck: public MeatProducer {
 		Duck(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
         /** Mengembalikan FarmProduk yang akan dihasilkan Duck bila Duck di kill*/
-        FarmProduct* ProduceProduct(Action) const;
+        FarmProduct* produceProduct(Action) const;
         
         /** Mengembalikan suara dari Duck */
         std::string makeNoise() const;
+
+        //Awalnya gaada
+        char render();
 
     private:
         /** Nilai dari maxTimeToGetHungry */

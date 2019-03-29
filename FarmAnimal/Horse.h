@@ -11,12 +11,15 @@ class Horse: public MilkProducer {
         /** Constructor */
 		Horse(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
-        /** Mengembalikan FarmProduk yang akan dihasilkan Horse bila Horse di kill*/
-        FarmProduct* ProduceProduct(Action) const;
+        /** Mengembalikan FarmProduk yang akan dihasilkan Horse bila Horse di interact*/
+        FarmProduct* produceProduct(Action) const;
 
         /** Mengembalikan suara dari Horse */
         std::string makeNoise() const;
 
+        //Awalnya gaada
+        char render();
+        
     private:
         /** Nilai dari maxTimeToGetHungry */
         static constexpr int maxTimeToGetHungryHorse {18};
