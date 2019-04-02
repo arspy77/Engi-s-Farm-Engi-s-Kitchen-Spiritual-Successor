@@ -16,9 +16,6 @@
 #include "FarmAnimal/Ostrich.h"
 #include "FarmAnimal/Sheep.h"
 
-
-
-
 class World{
      public :
         /** 
@@ -78,6 +75,11 @@ class World{
 
         /** LinkedList dari seluruh pointer ke FarmAnimal yang berada pada World 000*/
         LinkedList<FarmAnimal*> animalList;
+
+        /** 
+         * Antrian pesan yang akan ditampilkan saat render 
+         */
+        LinkedList<std::string> mesQueue;
 };
 
 #endif

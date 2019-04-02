@@ -1,5 +1,5 @@
 #include <initializer_list>
-
+#include <iostream>
 
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
@@ -49,10 +49,10 @@ class LinkedList {
 		void removeIdx(int idx);
 
 		/**
-		 *  Mengembalikan elemen berindeks idx.
+		 * Mengembalikan elemen berindeks idx.
 		 * Jika diluar range, melempar "Index is out of bounds".
 		 */
-		T get(int idx);
+		T& get(int idx);
 
 		/**
 		 *  Mengembalikan reference ke elemen berindeks idx.
@@ -60,31 +60,52 @@ class LinkedList {
 		 */
 		T& operator[](int idx);
 
+		/** Menampilkan isi dar list ke layar */
+		void print();
+
+		/** Mengembalikan panjang dari list */
+		int len();
 	private:
 		/** Pointer ke LinkedListNode, kalau empty bernilai nullptr */
-		LinkedListNode<T>* list;
+		LinkedListNode<T>* first;
 };
 
 /** Anggota kelas implementasi LinkedList secara rekursifs */
 template<class T>
 class LinkedListNode {
-public:
-	/** Konstruktor LinkedListNode dengan initializer list */ 
-	LinkedListNode(T head, LinkedList<T> tail);
+	public:
+		/** Konstruktor LinkedListNode dengan argume, deafult tail = nullptr */ 
+		LinkedListNode(T _head, LinkedListNode<T>* _next = nullptr);
 
-	/** Membuat LinkedList dapat mengakses head dan tail */
-    friend LinkedList<T>;
+		/** dtor */
+		~LinkedListNode();
 
-private:
-	/** Tipe data pertama pada LinkedListNode */
-	T head;
+		/** Membuat LinkedList dapat mengakses head dan tail */
+		friend LinkedList<T>;
 
-	/** Sisa dari LinkedListNode berupa LinkedList */
-	LinkedList<T> tail;
+	private:
+		/** Tipe data pertama pada LinkedListNode */
+		T head;
+
+		/** Pointer yang menghubungkan ke Node lainnya */
+		LinkedListNode<T>* next;
 };
 
 template<class T>
-LinkedList<T>::LinkedList() : list{ nullptr } {}
+LinkedListNode<T>::LinkedListNode(T _head, LinkedListNode<T>* _next) {
+	head = _head;
+	next = _next;
+}
+
+template<class T>
+LinkedListNode<T>::~LinkedListNode() {
+	delete next; //Will recursively call LinkedListNode<T>::~LinkedListNode(), BE CAREFULL
+}
+
+template<class T>
+LinkedList<T>::LinkedList() {
+	first = nullptr;
+}
 
 template<class T>
 LinkedList<T>::LinkedList(std::initializer_list<T> args) : LinkedList() {
@@ -94,113 +115,148 @@ LinkedList<T>::LinkedList(std::initializer_list<T> args) : LinkedList() {
 }
 
 template<class T>
-LinkedList<T>::LinkedList(const LinkedList<T>& l) {
-	if (!l.isEmpty()) {
-		list = new LinkedListNode<T>{ l.list->head, l.list->tail };
+LinkedList<T>::LinkedList(const LinkedList<T>& L2) : LinkedList() {
+	LinkedListNode<T>* currNode;
+	if (!L2.isEmpty()) {
+		currNode = L2.first;
+		while(currNode != nullptr) {
+			add(currNode->head);
+			currNode = currNode->next;
+		}
+	} else {
+		first = nullptr;
 	}
 }
 
 template<class T>
 LinkedList<T>::~LinkedList() {
 	if (!isEmpty()) {
-		delete list;
+		delete first; //Will recursively call LinkedListNode<T>::~LinkedListNode() BE CAREFULL
 	}
 }
 
 template<class T>
-LinkedList<T>& LinkedList<T>::operator=(const LinkedList<T>& l) {
-	if (this != &l) {
-		if (!isEmpty()) {
-			delete list;
+LinkedList<T>& LinkedList<T>::operator=(const LinkedList<T>& L2) {
+	LinkedListNode<T>* currNode;
+	first = nullptr;
+	if (!L2.isEmpty()) {
+		currNode = L2.first;
+		while(currNode != nullptr) {
+			add(currNode->head);
+			currNode = currNode->next;
 		}
-		if (!l.isEmpty()) {
-			list = new LinkedListNode<T>{ l.list->head, l.list->tail };
-		}
+	} else {
+		first = nullptr;
 	}
 	return *this;
 }
 
 template<class T>
 bool LinkedList<T>::isEmpty() const {
-	return list == nullptr;
+	return first == nullptr;
+}
+
+template<class T>
+void LinkedList<T>::print() {
+	LinkedListNode<T>* currNode;
+	currNode = first;
+	while (currNode != nullptr) {
+		std::cout << currNode->head << " ";
+		currNode = currNode->next;
+	}
 }
 
 template<class T>
 void LinkedList<T>::add(T elm) {
 	if (isEmpty()) {
-		list = new LinkedListNode<T>{ elm, LinkedList<T>{} };
+		first = new LinkedListNode<T>(elm);
 	} else {
-		list->tail.add(elm);
+		LinkedListNode<T>* currNode;
+		currNode = first;
+		while (currNode->next != nullptr) {
+			currNode = currNode->next;
+		} // Last node found
+		currNode->next = new LinkedListNode<T>(elm);
 	}
 }
 
 template<class T>
 void LinkedList<T>::remove(T elm) {
-	if (!isEmpty()) {
-		if (elm == list->head) {
-			/** Membuat list temp berisi tail untuk dipindahkan ke list sekarang */
-			LinkedList<T> temp{ list->tail };
-			operator=(temp);
-		} else {
-			list->tail.remove(elm);
-		}
+	LinkedListNode<T>* deletedNode;
+	int idx = 0;
+	deletedNode = first;
+	while (deletedNode != nullptr && deletedNode->head != elm) {
+		deletedNode = deletedNode->next;
+		idx++;
+	}
+	if (deletedNode == nullptr) {
+		throw "element not found";
+	} else {
+		removeIdx(idx);
 	}
 }
 
 template<class T>
 void LinkedList<T>::removeIdx(int idx) {
-	if (idx < 0) {
-		throw "Index is out of bounds";
-	}
-	if (!isEmpty()) {
-		if (idx == 0) {
-			/** Membuat list temp berisi tail untuk dipindahkan ke list sekarang */
-			LinkedList<T> temp{ list->tail };
-			operator=(temp);
-		} else {
-			list->tail.removeIdx(idx - 1);
-		}
-	}
-	else {
-		throw "Index is out of bounds";
+	LinkedListNode<T>* deletedNode; 
+	LinkedListNode<T>* prevNode;
+	if (idx < 0 || idx >= len()) {
+		throw "Index out of range";
+	} else if (len() == 1) {
+		deletedNode = first;
+		delete deletedNode;
+		first = nullptr;
+	} else if (idx == 0) {
+		deletedNode = first;
+		first = deletedNode->next;
+		deletedNode->next = nullptr;
+		delete deletedNode;
+	} else {
+		deletedNode = first;
+		while (idx > 0) {
+			deletedNode = deletedNode->next;
+			idx--;
+		} //deletedNode found
+		prevNode = first;
+		while (prevNode->next != deletedNode) {
+			prevNode = prevNode->next;
+		} //prevNode found
+		prevNode->next = deletedNode->next;
+		deletedNode->next = nullptr;
+		delete deletedNode;
 	}
 }
 
 template <class T>
-T LinkedList<T>::get(int idx) {
-	if (idx < 0) {
-		throw "Index is out of bounds";
+int LinkedList<T>::len() {
+	LinkedListNode<T>* currNode;
+
+	int i = 0;
+	currNode = first;
+	while (currNode != nullptr) {
+		currNode = currNode->next;
+		i++;
 	}
-	if (!isEmpty()) {
-		if (idx == 0) {
-			return list->head;
-		} else {
-			return list->tail.get(idx - 1);
-		}
+	return i;
+}
+
+template <class T>
+T& LinkedList<T>::get(int idx) {
+	LinkedListNode<T>* currNode;
+	currNode = first;
+	if (idx < 0 || idx >= len()) {
+		throw "Index out of range";
 	} else {
-		throw "Index is out of bounds";
-	}
+		while (idx > 0) {
+			currNode = currNode->next;
+			idx--;
+		} 
+		return currNode->head;
+	}	
 }
 
 template <class T>
 T& LinkedList<T>::operator[](int idx) {
-	if (idx < 0) {
-		throw "Index is out of bounds";
-	}
-	if (!isEmpty()) {
-		if (idx == 0) {
-			return list->head;
-		}
-		else {
-			return list->tail[idx-1];
-		}
-	}
-	else {
-		throw "Index is out of bounds";
-	}
+	return get(idx);
 }
-
-template<class T>
-LinkedListNode<T>::LinkedListNode(T head, LinkedList<T> tail) : head{ head }, tail{ tail } {}
-
 #endif

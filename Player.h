@@ -5,6 +5,8 @@
 #include "LinkedList.h"
 #include "FarmAnimal/FarmAnimal.h"
 #include "Cell/Cell.h"
+#include "Product/ChickenEgg.h"
+#include "Product/CowMeat.h"
 #include "Product/BeefChickenOmelette.h"
 #include "Product/BeefMuttonSate.h"
 #include "Product/SuperSecretSpecialProduct.h"
@@ -19,7 +21,7 @@ class Player : public LivingThing {
         ~Player();
 
         /** Player berbicara dengan semua FarmAnimal terdekat. */
-		void talk(LinkedList<FarmAnimal>& farmAnimal);
+		void talk(LinkedList<FarmAnimal*>& farmAnimal,LinkedList<std::string>& mesQueue);
 
         /**
          * Player mengambil FarmProduct dari semua FarmAnimal terdekat tanpa membunuh FarmAnimal tersebut.
@@ -27,14 +29,14 @@ class Player : public LivingThing {
          * Contoh FarmProduct : ChickenEgg, CowMilk.
          * 
          */
-		void interact(LinkedList<FarmAnimal>& farmAnimal);
+		void interact(LinkedList<FarmAnimal*>& farmAnimal);
 
 		/**
          * Player mengambil FarmProduct dari semua FarmAnimal terdekat dengan cara membunuh FarmAnimal tersebut.
          * Bekerja untuk FarmAnimal jenis MeatProducing.
          * Contoh FarmProduct : CowMeat, ChickenMeat.
          */
-        void kill(LinkedList<FarmAnimal>& farmAnimal);
+        void kill(LinkedList<FarmAnimal*>& farmAnimal);
 
         /** Menumbuhkan rumput pada cell yang sedang ditempati oleh Player */
 		void grow();
@@ -45,9 +47,20 @@ class Player : public LivingThing {
         /** Mengembalikan char untuk dirender ke layar */
         char render();
 
+        /** Mengambil air dari well */ //Awalnya tidak ada
+        void takeWater();
+
+        /** Menjual semua product di inventory */ //Awalnya tidak ada
+        void sellAll();
+
+        /** Getter */ //Awalnya tidak ada
+        int getMoney();
+        int getWater();
+        LinkedList<Product*>& getInventory();
+
     private :
         /** Product yang dipegang Player */
-		LinkedList<Product&> inventory;
+		LinkedList<Product*> inventory;
 
         /** Uang yang dimiliki Player */
     	int money{500000};

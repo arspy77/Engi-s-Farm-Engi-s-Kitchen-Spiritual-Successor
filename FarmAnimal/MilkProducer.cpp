@@ -14,8 +14,18 @@ void MilkProducer::eat(){
 
 /** Mengecek apakah bisa pindah (tidak out of bound, bertipe Grassland, tidak ada hewan lain) */
 bool MilkProducer::canMoveTo(Cell& toWhere) const{
-    return ( !toWhere.getIsOcupied() && (toWhere.getCategory() == Cell::Category::GRASSLAND) );
+    return (!toWhere.getIsOcupied() && (toWhere.getCategory() == Cell::Category::GRASSLAND) );
 }
 
 /** Penerusan overloading (virtual) destruktor */
-MilkProducer::~MilkProducer() {} 
+MilkProducer::~MilkProducer() {}
+
+bool MilkProducer::getProduce() {
+    return canProduce;
+}
+
+bool MilkProducer::getKillable() {
+    return false;
+}
+
+

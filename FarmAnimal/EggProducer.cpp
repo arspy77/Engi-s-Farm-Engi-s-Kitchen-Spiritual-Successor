@@ -17,3 +17,11 @@ bool EggProducer::canMoveTo(Cell& toWhere) const{
 
 /** Penerusan overloading (virtual) destruktor */
 EggProducer::~EggProducer() {} 
+
+bool EggProducer::getProduce() {
+    return canProduce;
+}
+
+bool EggProducer::getKillable() {
+    return false;
+}

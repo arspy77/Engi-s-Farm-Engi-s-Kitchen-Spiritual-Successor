@@ -1,9 +1,9 @@
 #include <iostream>
 #include <cstring>
 #include <stdlib.h>
-#include <Windows.h>
 #include "World.h"
-
+#include <unistd.h>
+//#include <Windows.h>
 
 void titleScreen() {
 printf(" /$$$$$$$$                     /$$ /$$              /$$$$$$$$                              \n");
@@ -23,10 +23,10 @@ int main() {
 	World W;
 	system("clear");
 	titleScreen();
-	Sleep(1000);
+	usleep(1000000);
 	while (true) {
 		try {
-			system("CLS");
+			system("clear");
 			W.Draw();
 			W.Input();
 			W.Update();

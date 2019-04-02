@@ -33,6 +33,9 @@ class FarmAnimal : public LivingThing {
         /** Mengembalikan true jika timeToDeath == 0, lalu di destruct di main atau di class world */
         bool isDead() const;
 
+        virtual bool getProduce() = 0;
+        virtual bool getKillable() = 0;
+
     protected:
         // awalnya private
         /**
@@ -40,7 +43,7 @@ class FarmAnimal : public LivingThing {
          *  maka timeToDeath di set nilai semula dan timeToGdengan nilai sesuai dengan derived
          *  classnya, lalu grass di land dihapus
          */
-        virtual void eat();
+        void eat();
 
         /** return true apabila timeToGetHungry <= 0 */
         bool isHungry() const;

@@ -1,4 +1,6 @@
 #include "LivingThing.h"
+#include <iostream>                       
+
 
 /** Constructor LivingThing */
 LivingThing::LivingThing(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell) : worldMap(worldMap){
@@ -17,6 +19,7 @@ Point LivingThing::getPosition() const{
  *  Apabila tidak bisa (!canMoveTo), throw "Cannot move to the direction".
  */
 void LivingThing::move(Direction toWhere){
+    worldMap[this->getPosition().y][this->getPosition().x]->setIsOcupied(false);
     switch (toWhere){
         case Direction::LEFT:
             if ((this->getPosition().x - 1 >= 0 && this->getPosition().x - 1 < nCollumnCell) &&
@@ -43,6 +46,7 @@ void LivingThing::move(Direction toWhere){
             }
             break;
     }
+    worldMap[this->getPosition().y][this->getPosition().x]->setIsOcupied(true);
 }
 
 LivingThing::~LivingThing() {

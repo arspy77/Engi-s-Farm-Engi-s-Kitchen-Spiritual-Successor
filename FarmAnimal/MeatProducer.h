@@ -12,11 +12,16 @@ class MeatProducer : public FarmAnimal {
 
         /** Penerusan overloading (virtual) destruktor */
         virtual ~MeatProducer() = 0;
-
+        
+        bool getKillable();
+    
+        bool getProduce();
+        
     private :
         // Sekarang Cell pake reference
         /** Mengecek apakah bisa pindah (tidak out of bound, bertipe Barn, tidak ada hewan lain) */
         virtual bool canMoveTo(Cell& toWhere) const;
+        bool killable{true};
 };
 
 #endif

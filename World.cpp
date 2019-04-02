@@ -20,8 +20,18 @@ void drawFrame(int n) {
 	}
 }
 
+/** Return the length of an integer */
+int intLen(int x) {
+	int len = 0;
+	while (x != 0) {
+		x /= 10;
+		len++;
+	}
+	return len;
+}
+
 World::World() {
-	std::cout << "NRow NCol?";
+	std::cout << "NRow NCol? ";
 	std::cin >> nRowCell >> nCollumnCell;
 	map = new Cell**[nRowCell];
 	for (int i = 0; i < nRowCell; i++) {
@@ -55,11 +65,12 @@ World::World() {
 	pLoc.x = 0;
 	pLoc.y = 0;
 	pl = new Player(pLoc, map, nRowCell, nCollumnCell);
+    map[pl->getPosition().y][pl->getPosition().x]->setIsOcupied(true);
 
 	srand(time(nullptr));
 	nAnimal = 0;
 	//Horse
-	for (int i = 0; i < (nRowCell+nCollumnCell)*5/40; i++) {
+	for (int i = 0; i < (nRowCell+nCollumnCell)*8/40; i++) {
 		pLoc.x = rand() % nCollumnCell;
 		pLoc.y = rand() % nRowCell;
 		while ((map[pLoc.y][pLoc.x]->getCategory() != Cell::Category::GRASSLAND) || //bukan di grassland
@@ -67,9 +78,7 @@ World::World() {
 			pLoc.x = rand() % nCollumnCell;
 			pLoc.y = rand() % nRowCell;
 		}
-		Horse* horse;
-		horse = new Horse(pLoc, map, nRowCell, nCollumnCell);
-		animalList.add(horse);
+		animalList.add(new Horse(pLoc, map, nRowCell, nCollumnCell));
 		nAnimal++;
 		map[pLoc.y][pLoc.x]->setIsOcupied(true);
 	}
@@ -83,9 +92,7 @@ World::World() {
 			pLoc.x = rand() % nCollumnCell;
 			pLoc.y = rand() % nRowCell;
 		}
-		Chicken* chicken;
-		chicken = new Chicken(pLoc, map, nRowCell, nCollumnCell);
-		animalList.add(chicken);
+		animalList.add(new Chicken(pLoc, map, nRowCell, nCollumnCell));
 		nAnimal++;
 		map[pLoc.y][pLoc.x]->setIsOcupied(true);
 	}
@@ -99,9 +106,7 @@ World::World() {
 			pLoc.x = rand() % nCollumnCell;
 			pLoc.y = rand() % nRowCell;
 		}
-		Cow* cow;
-		cow = new Cow(pLoc, map, nRowCell, nCollumnCell);
-		animalList.add(cow);
+		animalList.add(new Cow(pLoc, map, nRowCell, nCollumnCell));
 		nAnimal++;
 		map[pLoc.y][pLoc.x]->setIsOcupied(true);
 	}
@@ -115,9 +120,7 @@ World::World() {
 			pLoc.x = rand() % nCollumnCell;
 			pLoc.y = rand() % nRowCell;
 		}
-		Duck* duck;
-		duck = new Duck(pLoc, map, nRowCell, nCollumnCell);
-		animalList.add(duck);
+		animalList.add(new Duck(pLoc, map, nRowCell, nCollumnCell));
 		nAnimal++;
 		map[pLoc.y][pLoc.x]->setIsOcupied(true);
 	}
@@ -131,9 +134,7 @@ World::World() {
 			pLoc.x = rand() % nCollumnCell;
 			pLoc.y = rand() % nRowCell;
 		}
-		Ostrich* hewan;
-		hewan = new Ostrich(pLoc, map, nRowCell, nCollumnCell);
-		animalList.add(hewan);
+		animalList.add(new Ostrich(pLoc, map, nRowCell, nCollumnCell));
 		nAnimal++;
 		map[pLoc.y][pLoc.x]->setIsOcupied(true);
 	}
@@ -147,9 +148,7 @@ World::World() {
 			pLoc.x = rand() % nCollumnCell;
 			pLoc.y = rand() % nRowCell;
 		}
-		Sheep* hewan;
-		hewan = new Sheep(pLoc, map, nRowCell, nCollumnCell);
-		animalList.add(hewan);
+		animalList.add(new Sheep(pLoc, map, nRowCell, nCollumnCell));
 		nAnimal++;
 		map[pLoc.y][pLoc.x]->setIsOcupied(true);
 	}
@@ -165,7 +164,10 @@ World::~World() {
 	for (int i = 0; i < nRowCell; i++) {
 		delete[] map[i];
 	}
-	delete[] map;	
+	delete[] map;
+	for (int i = 0; i < nAnimal; i++) {
+			delete animalList[i];
+	}
 }
 
 void World::Input() {
@@ -179,6 +181,10 @@ void World::Input() {
 		pl->move(Direction::LEFT);
 	} else if (inp == "D") {
 		pl->move(Direction::RIGHT);
+	} else if (inp == "TALK") {
+		pl->talk(animalList, mesQueue);
+	} else if (inp == "GROW") {
+		pl->grow();
 	} else if (inp == "EXIT") {
 		throw "EXIT";
 	}
@@ -192,10 +198,12 @@ void World::Update() {
 		y = rand() % nRowCell;
 		map[y][x]->growGrass();
 	}
+	
 	for (int i = 0; i < nAnimal; i++) {
 		animalList[i]->tick();
 		if (animalList[i]->isDead()) {
 			map[animalList[i]->getPosition().y][animalList[i]->getPosition().x]->setIsOcupied(false);
+			delete animalList[i];
 			animalList.removeIdx(i);
 			nAnimal--;
 		}
@@ -242,29 +250,43 @@ void World::Draw() {
 		localMap[animalList[i]->getPosition().y][animalList[i]->getPosition().x] = animalList[i]->render();
 	}
 
-	const int InventoryTabLength = 15;
-	drawFrame(1 + nCollumnCell*2 + InventoryTabLength + 1); printf("\n");
+	const int InventoryTabLength = 23;
+	drawFrame(1 + nCollumnCell*2 + InventoryTabLength + 1 + 2); printf("\n");
 	for (int i = 0; i < nRowCell; i++) {
-		printf("#");
+		printf("# ");
 		for (int j = 0; j < nCollumnCell; j++) {
 			printf("%c", localMap[i][j]);
 			if (j != nCollumnCell - 1) {
 				printf("|");
 			}
 		}
-		printf("#");
+		printf(" #");
 		if (i == 0) {
-			printf("Inventory");drawTrueSpaces(InventoryTabLength - strlen("Inventory"));
+			printf(" Inventory");drawTrueSpaces(InventoryTabLength - strlen(" Inventory"));
 		} else if (i >= 1 && i < nRowCell - 3) {
-			printf("invItem");drawTrueSpaces(InventoryTabLength - strlen("invItem"));
+			char invObj[23];
+			strcpy(invObj, "");
+			if ((i - 1) < pl->getInventory().len()) {
+				if (pl->getInventory()[i-1]->getCategory() == Product::Category::CHICKENEGG) {
+					strcpy(invObj, " Chicken Egg");
+				} else if (pl->getInventory()[i-1]->getCategory() == Product::Category::COWMEAT) {
+					strcpy(invObj, " Cow Meat");
+				}
+			}
+			printf("%s", invObj);drawTrueSpaces(InventoryTabLength - strlen(invObj));
 		} else if (i == nRowCell - 3) {
 			drawFrame(InventoryTabLength);
 		} else if (i == nRowCell - 2) {
-			printf("Money : ");drawTrueSpaces(InventoryTabLength - strlen("Money : "));
+			printf(" Money : %d", pl->getMoney());drawTrueSpaces(InventoryTabLength - strlen(" Money : ") - intLen(pl->getMoney()));
 		} else if (i == nRowCell - 1) {
-			printf("Water : ");drawTrueSpaces(InventoryTabLength - strlen("Money : "));
+			printf(" Water : %d", pl->getWater());drawTrueSpaces(InventoryTabLength - strlen(" Money : ") - intLen(pl->getWater()));
 		}
-		printf("#\n");
+		printf("# ");
+		if (!mesQueue.isEmpty()) {
+			std::cout << mesQueue[0];
+			mesQueue.removeIdx(0);
+		}
+		printf("\n");
 
 	}
 	drawFrame(1 + nCollumnCell*2 + InventoryTabLength + 1); printf("\n");

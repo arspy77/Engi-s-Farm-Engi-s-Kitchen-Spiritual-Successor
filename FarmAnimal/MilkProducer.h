@@ -12,7 +12,11 @@ class MilkProducer : public FarmAnimal {
 
         /** Penerusan overloading (virtual) destruktor */
         virtual ~MilkProducer() = 0;
+        
+        bool getProduce();
     
+        bool getKillable();
+
     private :
         /** Menentukan apakah FarmAnimal dapat menghasilkan produk apabila diinteract */
         bool canProduce{false};

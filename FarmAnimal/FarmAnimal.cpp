@@ -1,6 +1,6 @@
 #include "FarmAnimal.h"
 #include <stdlib.h>
-#include <time.h>                             
+#include <time.h>
 
 /** Constructor maxTimeToGetHungry dengan nilai H */
 FarmAnimal::FarmAnimal(int _maxTimeToGetHungry, Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)
@@ -12,15 +12,13 @@ FarmAnimal::FarmAnimal(int _maxTimeToGetHungry, Point position, Cell***& worldMa
 /** Melakukan aksi yang dilakukan FarmAnimal setiap satuan waktu */
 void FarmAnimal::tick(){
     moveRandomly();
-    srand(time(nullptr));
-    int willEat = rand() % 2;
-    if ( (willEat == 1) && (worldMap[getPosition().x][getPosition().y]->isGrassExist()) ){ 
+    char willEat = rand() % 2;
+    if (willEat == 1){ 
         eat();
     }
     if (isHungry()){
         timeToDeath--;
-    }
-    else{
+    } else {
         timeToGetHungry--;
     }
 }
@@ -51,42 +49,32 @@ bool FarmAnimal::isDead() const{
  *  classnya, lalu grass di land dihapus
  */
 void FarmAnimal::eat(){
-    timeToDeath = maxTimeToDeath;
-    timeToGetHungry = maxTimeToGetHungry;
-    worldMap[getPosition().x][getPosition().y]->removeGrass();
+    if (worldMap[this->getPosition().y][this->getPosition().x]->isGrassExist()) {    
+        timeToDeath = maxTimeToDeath;
+        timeToGetHungry = maxTimeToGetHungry;
+        worldMap[getPosition().y][getPosition().x]->removeGrass();
+    }
 }
 
 /** Menggerakan FarmAnimal secara random ke posisi yang mungkin ditempati */
 void FarmAnimal::moveRandomly(){
-    srand(time(nullptr));
     int randomInt = rand() % 4;
     Direction d;
-    Point nextP = getPosition();
     switch(randomInt){
         case 0:
             d = Direction::LEFT;
-            nextP.x--;
             break;
         case 1:
             d = Direction::RIGHT;
-            nextP.x++;
             break;
         case 2:
             d = Direction::UP;
-            nextP.y--;
             break;
         case 3:
             d = Direction::DOWN;
-            nextP.y++;
             break;
     }
-    if (nextP.x >= 0 && nextP.y >= 0 && nextP.x < nRowCell && nextP.y < nCollumnCell){
-        if (canMoveTo(*worldMap[nextP.y][nextP.x])){
-            worldMap[getPosition().y][getPosition().x]->setIsOcupied(false);
-            move(d);
-            worldMap[getPosition().y][getPosition().x]->setIsOcupied(true);
-        }
-    }
+    move(d);
 }
 
 FarmAnimal::~FarmAnimal() {

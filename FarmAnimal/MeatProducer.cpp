@@ -11,3 +11,12 @@ bool MeatProducer::canMoveTo(Cell& toWhere) const{
 
 /** Penerusan overloading (virtual) destruktor */
 MeatProducer::~MeatProducer() {} 
+
+bool MeatProducer::getProduce() {
+    return false;
+}
+
+bool MeatProducer::getKillable() {
+    return killable;
+}
+
