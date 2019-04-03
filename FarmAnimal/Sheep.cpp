@@ -6,7 +6,7 @@ Sheep::Sheep(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)
 : MeatProducer(maxTimeToGetHungrySheep, position, worldMap, nRowCell, nCollumnCell){}
 
 /** Mengembalikan FarmProduk yang akan dihasilkan Sheep bila Sheep di kill */
-FarmProduct* Sheep::produceProduct(Action act) const{
+FarmProduct* Sheep::produceProduct(Action act){
     FarmProduct* fp;
     if (act == Action::KILL){
         fp = new SheepMeat();

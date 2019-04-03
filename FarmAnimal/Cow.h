@@ -13,7 +13,7 @@ class Cow: public MeatProducer {
 		Cow(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
         /** Mengembalikan FarmProduk yang akan dihasilkan Cow bila Cow di kill atau di interact */
-        FarmProduct* produceProduct(Action) const;
+        FarmProduct* produceProduct(Action);
         
         /** Mengembalikan suara dari Cow */
         std::string makeNoise() const;

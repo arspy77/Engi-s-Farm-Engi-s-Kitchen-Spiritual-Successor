@@ -2,8 +2,8 @@
 #include <cstring>
 #include <stdlib.h>
 #include "World.h"
-#include <unistd.h>
-//#include <Windows.h>
+//#include <unistd.h>
+#include <Windows.h>
 
 void titleScreen() {
 printf(" /$$$$$$$$                     /$$ /$$              /$$$$$$$$                              \n");
@@ -21,12 +21,12 @@ printf("                     \\______/                                          
 
 int main() {
 	World W;
-	system("clear");
+	system("CLS");
 	titleScreen();
-	usleep(1000000);
+	Sleep(1000);
 	while (true) {
 		try {
-			system("clear");
+			system("CLS");
 			W.Draw();
 			W.Input();
 			W.Update();

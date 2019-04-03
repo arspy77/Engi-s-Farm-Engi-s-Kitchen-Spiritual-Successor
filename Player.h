@@ -36,13 +36,13 @@ class Player : public LivingThing {
          * Bekerja untuk FarmAnimal jenis MeatProducing.
          * Contoh FarmProduct : CowMeat, ChickenMeat.
          */
-        void kill(LinkedList<FarmAnimal*>& farmAnimal);
+        void kill(LinkedList<FarmAnimal*>& farmAnimal,int& nAnimal);
 
         /** Menumbuhkan rumput pada cell yang sedang ditempati oleh Player */
-		void grow();
+		void grow(LinkedList<std::string>& mesQueue);
 
         /** Menciptakan SideProduct dari FarmProduct bila Player dekat dengan mixer */
-		void mix(Product* makeTo);
+		void mix(LinkedList<std::string>& mesQueue);
 
         /** Mengembalikan char untuk dirender ke layar */
         char render();
@@ -57,6 +57,7 @@ class Player : public LivingThing {
         int getMoney();
         int getWater();
         LinkedList<Product*>& getInventory();
+        static LinkedList<SideProduct*> getrecipeBook();
 
     private :
         /** Product yang dipegang Player */

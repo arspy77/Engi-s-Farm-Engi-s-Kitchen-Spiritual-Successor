@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include "World.h"
 #include <time.h>
+#include <algorithm>
 
 void drawTrueSpaces(int n) {
 	while(n > 0) {
@@ -42,8 +43,8 @@ World::World() {
 			map[i][j] = new GrassLand();
 		}
 	}
-	for (int i = 0; i < (nRowCell*3/10); i++) {
-		for (int j = 0; j < (nCollumnCell*3/11) ; j++) {
+	for (int i = 0; i < (nRowCell*6/10); i++) {
+		for (int j = 0; j < (nCollumnCell*4/11) ; j++) {
 			delete map[i][j];
 			map[i][j] = new Coop();
 		}
@@ -62,15 +63,15 @@ World::World() {
 	map[3][nCollumnCell - 1] = new Well();
 
 	Point pLoc;
-	pLoc.x = 0;
-	pLoc.y = 0;
+	pLoc.x = nCollumnCell - 1;
+	pLoc.y = 3;
 	pl = new Player(pLoc, map, nRowCell, nCollumnCell);
     map[pl->getPosition().y][pl->getPosition().x]->setIsOcupied(true);
 
 	srand(time(nullptr));
 	nAnimal = 0;
 	//Horse
-	for (int i = 0; i < (nRowCell+nCollumnCell)*8/40; i++) {
+	for (int i = 0; i < (nRowCell+nCollumnCell)*15/40; i++) {
 		pLoc.x = rand() % nCollumnCell;
 		pLoc.y = rand() % nRowCell;
 		while ((map[pLoc.y][pLoc.x]->getCategory() != Cell::Category::GRASSLAND) || //bukan di grassland
@@ -171,21 +172,33 @@ World::~World() {
 }
 
 void World::Input() {
+	std::cout << pl->getInventory().len() << std::endl;
 	std::string inp;
 	std::cin >> inp;
-	if (inp == "W") {
+	std::transform(inp.begin(), inp.end(), inp.begin(), ::tolower);
+	if (inp == "w") {
 		pl->move(Direction::UP);		
-	} else if (inp == "S") {
+	} else if (inp == "s") {
 		pl->move(Direction::DOWN);		
-	} else if (inp == "A") {
+	} else if (inp == "a") {
 		pl->move(Direction::LEFT);
-	} else if (inp == "D") {
+	} else if (inp == "d") {
 		pl->move(Direction::RIGHT);
-	} else if (inp == "TALK") {
+	} else if (inp == "talk") {
 		pl->talk(animalList, mesQueue);
-	} else if (inp == "GROW") {
-		pl->grow();
-	} else if (inp == "EXIT") {
+	} else if (inp == "grow") {
+		pl->grow(mesQueue);
+	} else if (inp == "kill") {
+		pl->kill(animalList,nAnimal);
+	} else if (inp == "interact") {
+		pl->interact(animalList);
+	} else if (inp == "sellall") {
+		pl->sellAll();
+	} else if (inp == "mix") {
+		pl->mix(mesQueue);
+	} else if (inp == "getwater") {
+		pl->takeWater();
+	} else if (inp == "exit") {
 		throw "EXIT";
 	}
 }
@@ -193,12 +206,12 @@ void World::Input() {
 //gerakin farmanimal, grow rumput, blablabla
 void World::Update() {
 	int x, y;
-	for (int i = 0; i < rand() % (nRowCell+nCollumnCell)*5/40; i++) {
+	for (int i = 0; i < rand() % (nRowCell+nCollumnCell)*10/40; i++) {
 		x = rand() % nCollumnCell;
 		y = rand() % nRowCell;
 		map[y][x]->growGrass();
 	}
-	
+
 	for (int i = 0; i < nAnimal; i++) {
 		animalList[i]->tick();
 		if (animalList[i]->isDead()) {
@@ -208,6 +221,49 @@ void World::Update() {
 			nAnimal--;
 		}
 	}
+
+	mesQueue.add("========RECIPE=======");
+	for (int i = 0; i < pl->getrecipeBook().len(); i++) {
+		std::string sideProd;
+		if (pl->getrecipeBook()[i]->getCategory() == Product::Category::BEEFCHICKENOMELETTE) {
+				sideProd =  (i+1) + ".  *Beef Chicken Omelette*";
+		} else if (pl->getrecipeBook()[i]->getCategory() == Product::Category::BEEFMUTONSATE) {
+			sideProd = ".  *Beef Muton Sate*";
+		} else if (pl->getrecipeBook()[i]->getCategory() == Product::Category::SUPERSECRETSPECIALPRODUCT) {
+			sideProd = ".  *Super Secret Special Product*";
+		}
+		mesQueue.add(std::to_string(i+1) + sideProd);
+		for (int j = 0; j < pl->getrecipeBook()[i]->getRecipe().len(); j++){
+			std::string prod;
+			if (pl->getrecipeBook()[i]->getRecipe()[j]->getCategory() == Product::Category::CHICKENEGG) {
+				prod = "      -Chicken Egg";
+			} else if (pl->getrecipeBook()[i]->getRecipe()[j]->getCategory() == Product::Category::COWMEAT) {
+				prod = "       -Cow Meat";
+			} else if (pl->getrecipeBook()[i]->getRecipe()[j]->getCategory() == Product::Category::BEEFCHICKENOMELETTE) {
+				prod = "       -Beef Chicken Omelette";
+			} else if (pl->getrecipeBook()[i]->getRecipe()[j]->getCategory() == Product::Category::BEEFMUTONSATE) {
+				prod = "       -Beef Muton Sate";
+			} else if (pl->getrecipeBook()[i]->getRecipe()[j]->getCategory() == Product::Category::DUCKMEAT) {
+				prod = "       -Duck Meat";
+			} else if (pl->getrecipeBook()[i]->getRecipe()[j]->getCategory() == Product::Category::HORSEMILK) {
+				prod = "       -Horse Milk";
+			} else if (pl->getrecipeBook()[i]->getRecipe()[j]->getCategory() == Product::Category::OSTRICHEGG) {
+				prod = "       -Ostrich Egg";
+			} else if (pl->getrecipeBook()[i]->getRecipe()[j]->getCategory() == Product::Category::SHEEPMEAT) {
+				prod = "       -Sheep Meat";
+			} else if (pl->getrecipeBook()[i]->getRecipe()[j]->getCategory() == Product::Category::SUPERSECRETSPECIALPRODUCT) {
+				prod = "       -Super Secret Special Product";
+			}
+			mesQueue.add(prod);
+		}
+		/*switch (i) :
+			case 0:	
+				mesQueue.add("*BeefChickenOmelette*");
+				mesQueue.add(" -Beef Meat          ");
+				mesQueue.add(" -Chicken Egg        ");
+				break;*/
+	}
+
 
 }
 
@@ -250,44 +306,61 @@ void World::Draw() {
 		localMap[animalList[i]->getPosition().y][animalList[i]->getPosition().x] = animalList[i]->render();
 	}
 
-	const int InventoryTabLength = 23;
-	drawFrame(1 + nCollumnCell*2 + InventoryTabLength + 1 + 2); printf("\n");
+	const int InventoryTabLength = 30;
+	drawFrame(1 + nCollumnCell*2 + InventoryTabLength + 1 + 4); printf("\n");
+	printf("#"); drawTrueSpaces(nCollumnCell*2 + 1 + 2); printf("#");
+	printf(" Inventory");drawTrueSpaces(InventoryTabLength - strlen(" Inventory"));
+	printf("#\n");
 	for (int i = 0; i < nRowCell; i++) {
-		printf("# ");
+		printf("#  ");
 		for (int j = 0; j < nCollumnCell; j++) {
 			printf("%c", localMap[i][j]);
 			if (j != nCollumnCell - 1) {
 				printf("|");
 			}
 		}
-		printf(" #");
-		if (i == 0) {
-			printf(" Inventory");drawTrueSpaces(InventoryTabLength - strlen(" Inventory"));
-		} else if (i >= 1 && i < nRowCell - 3) {
-			char invObj[23];
+		printf("  #");
+		if (i >= 0 && i < nRowCell - 2) {
+			char invObj[30];
 			strcpy(invObj, "");
-			if ((i - 1) < pl->getInventory().len()) {
-				if (pl->getInventory()[i-1]->getCategory() == Product::Category::CHICKENEGG) {
+			if ((i) < pl->getInventory().len()) {
+				if (pl->getInventory()[i]->getCategory() == Product::Category::CHICKENEGG) {
 					strcpy(invObj, " Chicken Egg");
-				} else if (pl->getInventory()[i-1]->getCategory() == Product::Category::COWMEAT) {
+				} else if (pl->getInventory()[i]->getCategory() == Product::Category::COWMEAT) {
 					strcpy(invObj, " Cow Meat");
+				} else if (pl->getInventory()[i]->getCategory() == Product::Category::BEEFCHICKENOMELETTE) {
+					strcpy(invObj, " Beef Chicken Omelette");
+				} else if (pl->getInventory()[i]->getCategory() == Product::Category::BEEFMUTONSATE) {
+					strcpy(invObj, " Beef Muton Sate");
+				} else if (pl->getInventory()[i]->getCategory() == Product::Category::DUCKMEAT) {
+					strcpy(invObj, " Duck Meat");
+				} else if (pl->getInventory()[i]->getCategory() == Product::Category::HORSEMILK) {
+					strcpy(invObj, " Horse Milk");
+				} else if (pl->getInventory()[i]->getCategory() == Product::Category::OSTRICHEGG) {
+					strcpy(invObj, " Ostrich Egg");
+				} else if (pl->getInventory()[i]->getCategory() == Product::Category::SHEEPMEAT) {
+					strcpy(invObj, " Sheep Meat");
+				} else if (pl->getInventory()[i]->getCategory() == Product::Category::SUPERSECRETSPECIALPRODUCT) {
+					strcpy(invObj, " Super Secret Special Product");
 				}
+				
 			}
 			printf("%s", invObj);drawTrueSpaces(InventoryTabLength - strlen(invObj));
-		} else if (i == nRowCell - 3) {
-			drawFrame(InventoryTabLength);
 		} else if (i == nRowCell - 2) {
-			printf(" Money : %d", pl->getMoney());drawTrueSpaces(InventoryTabLength - strlen(" Money : ") - intLen(pl->getMoney()));
+			drawFrame(InventoryTabLength);
 		} else if (i == nRowCell - 1) {
-			printf(" Water : %d", pl->getWater());drawTrueSpaces(InventoryTabLength - strlen(" Money : ") - intLen(pl->getWater()));
+			printf(" Money : %d", pl->getMoney());drawTrueSpaces(InventoryTabLength - strlen(" Money : ") - intLen(pl->getMoney()));
 		}
+
 		printf("# ");
 		if (!mesQueue.isEmpty()) {
 			std::cout << mesQueue[0];
 			mesQueue.removeIdx(0);
 		}
 		printf("\n");
-
 	}
-	drawFrame(1 + nCollumnCell*2 + InventoryTabLength + 1); printf("\n");
+	printf("#"); drawTrueSpaces(nCollumnCell*2 + 1 + 2); printf("#");
+	printf(" Water : %d", pl->getWater());drawTrueSpaces(InventoryTabLength - strlen(" Money : ") - intLen(pl->getWater()));	
+	printf("#\n");
+	drawFrame(1 + nCollumnCell*2 + InventoryTabLength + 1 + 4); printf("\n");
 }

@@ -13,7 +13,7 @@ class Chicken: public EggProducer {
 		Chicken(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
         /** Mengembalikan FarmProduk yang akan dihasilkan Chicken bila Chicken di kill atau di interact */
-        FarmProduct* produceProduct(Action) const;
+        FarmProduct* produceProduct(Action);
         
         /** Mengembalikan suara dari Chicken */
         std::string makeNoise() const;

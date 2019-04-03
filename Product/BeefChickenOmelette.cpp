@@ -1,14 +1,11 @@
 #include "BeefChickenOmelette.h"
 #include "ChickenEgg.h"
 #include "CowMeat.h"
-LinkedList<Product*> BeefChickenOmelette::recipe;
 /** Constructor untuk inisialisasi recipe */
 BeefChickenOmelette::BeefChickenOmelette()
 {
-    CowMeat daging;
-    ChickenEgg telur;
-    recipe.add(&daging);
-    recipe.add(&telur);
+    recipe.add(new CowMeat());
+    recipe.add(new ChickenEgg());
 }
 
 /** getPrice mengembalikan harga yang didefinisikan */  
@@ -24,7 +21,7 @@ Product::Category BeefChickenOmelette::getCategory() const
 }
 
 /** Mengembalikan resep dari produk */
-LinkedList<Product*>&::BeefChickenOmelette::getRecipe()
+LinkedList<Product*>& BeefChickenOmelette::getRecipe()
 {
     return recipe;
 }

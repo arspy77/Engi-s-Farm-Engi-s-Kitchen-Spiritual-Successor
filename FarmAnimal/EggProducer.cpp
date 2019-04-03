@@ -7,7 +7,9 @@ EggProducer::EggProducer(int _maxTimeToGetHungry, Point position, Cell***& world
 /** Mengubah nilai canProduce */
 void EggProducer::eat(){
     FarmAnimal::eat();
-    canProduce = true;
+    if (timeToGetHungry == maxTimeToGetHungry){
+        canProduce = true;
+    }
 }
 
 /** Mengecek apakah bisa pindah (tidak out of bound, bertipe Coop, tidak ada hewan lain) */

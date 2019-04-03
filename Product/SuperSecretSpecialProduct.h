@@ -16,7 +16,7 @@ class SuperSecretSpecialProduct : public SideProduct {
         Category getCategory() const;
 
         /** Mengembalikan resep dari produk */
-        static LinkedList<Product*>& getRecipe();
+        LinkedList<Product*>& getRecipe();
 
     private:
         /** Harga dari SuperSecretSpecialProduct */
@@ -29,7 +29,7 @@ class SuperSecretSpecialProduct : public SideProduct {
          *  Resep SuperSecretSpecialProduct.
          *  Terdiri dari OstrichEgg dan HorseMeat.
          */
-        static LinkedList<Product*> recipe;
+        LinkedList<Product*> recipe;
 };
 
 #endif

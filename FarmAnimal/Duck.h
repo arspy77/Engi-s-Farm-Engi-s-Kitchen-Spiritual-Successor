@@ -12,7 +12,7 @@ class Duck: public MeatProducer {
 		Duck(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
         /** Mengembalikan FarmProduk yang akan dihasilkan Duck bila Duck di kill*/
-        FarmProduct* produceProduct(Action) const;
+        FarmProduct* produceProduct(Action);
         
         /** Mengembalikan suara dari Duck */
         std::string makeNoise() const;

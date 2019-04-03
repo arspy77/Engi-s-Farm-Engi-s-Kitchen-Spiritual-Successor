@@ -6,11 +6,13 @@ Ostrich::Ostrich(Point position, Cell***& worldMap, int nRowCell, int nCollumnCe
 : EggProducer(maxTimeToGetHungryOstrich, position, worldMap, nRowCell, nCollumnCell){}
 
 /** Mengembalikan FarmProduk yang akan dihasilkan Ostrich bila Ostrich di interact */
-FarmProduct* Ostrich::produceProduct(Action act) const{
+FarmProduct* Ostrich::produceProduct(Action act){
     FarmProduct* fp;
     if (act == Action::INTERACT){
         fp = new OstrichEgg();
+        canProduce = false;
     }
+    
     return fp;
 }
 

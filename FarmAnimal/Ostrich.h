@@ -12,7 +12,7 @@ class Ostrich: public EggProducer {
 		Ostrich(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
         /** Mengembalikan FarmProduk yang akan dihasilkan Ostrich bila Ostrich di interact*/
-        FarmProduct* produceProduct(Action) const;
+        FarmProduct* produceProduct(Action);
 
         /** Mengembalikan suara dari Chicken */
         std::string makeNoise() const;

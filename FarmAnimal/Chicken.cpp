@@ -6,11 +6,13 @@ Chicken::Chicken(Point position, Cell***& worldMap, int nRowCell, int nCollumnCe
 :EggProducer(maxTimeToGetHungryChicken, position, worldMap, nRowCell, nCollumnCell){}
 
 /** Mengembalikan FarmProduk yang akan dihasilkan Chicken bila Chicken di kill atau di interact */
-FarmProduct* Chicken::produceProduct(Action act) const{
+FarmProduct* Chicken::produceProduct(Action act){
     FarmProduct* fp;
     if (act == Action::INTERACT){
         fp = new ChickenEgg();
+        this->canProduce = false;
     }
+    
     return fp;
 }
 

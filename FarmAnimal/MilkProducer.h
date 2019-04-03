@@ -17,9 +17,11 @@ class MilkProducer : public FarmAnimal {
     
         bool getKillable();
 
-    private :
+    protected :
         /** Menentukan apakah FarmAnimal dapat menghasilkan produk apabila diinteract */
-        bool canProduce{false};
+        bool canProduce = false;
+    
+    private :
 
         /** Mengubah nilai canProduce */
         void eat();

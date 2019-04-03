@@ -9,7 +9,9 @@ MilkProducer::MilkProducer(int _maxTimeToGetHungry, Point position, Cell***& wor
 /** Mengubah nilai canProduce */
 void MilkProducer::eat(){
     FarmAnimal::eat();
-    canProduce = true;
+    if (timeToGetHungry == maxTimeToGetHungry){
+        canProduce = true;
+    }
 }
 
 /** Mengecek apakah bisa pindah (tidak out of bound, bertipe Grassland, tidak ada hewan lain) */

@@ -1,14 +1,10 @@
 #include "SuperSecretSpecialProduct.h"
 #include "OstrichEgg.h"
 #include "HorseMilk.h"
-LinkedList<Product*> SuperSecretSpecialProduct::recipe;
 /** Constructor untuk inisialisasi recipe */
-SuperSecretSpecialProduct::SuperSecretSpecialProduct()
-{
-    HorseMilk susu;
-    OstrichEgg telur;
-    recipe.add(&susu);
-    recipe.add(&telur);
+SuperSecretSpecialProduct::SuperSecretSpecialProduct(){
+    recipe.add(new HorseMilk());
+    recipe.add(new OstrichEgg());
 }
 
 /** getPrice mengembalikan harga yang didefinisikan */  
@@ -24,7 +20,7 @@ Product::Category SuperSecretSpecialProduct::getCategory() const
 }
 
 /** Mengembalikan resep dari produk */
-LinkedList<Product*>&::SuperSecretSpecialProduct::getRecipe()
+LinkedList<Product*>& SuperSecretSpecialProduct::getRecipe()
 {
     return recipe;
 }

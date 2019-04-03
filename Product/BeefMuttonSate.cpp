@@ -1,14 +1,10 @@
 #include "BeefMuttonSate.h"
 #include "CowMeat.h"
 #include "SheepMeat.h"
-LinkedList<Product*> BeefMuttonSate::recipe;
 /** Constructor untuk inisialisasi recipe */
-BeefMuttonSate::BeefMuttonSate()
-{
-    CowMeat daging;
-    SheepMeat domba;
-    recipe.add(&daging);
-    recipe.add(&domba);
+BeefMuttonSate::BeefMuttonSate() {
+    recipe.add(new CowMeat());
+    recipe.add(new SheepMeat());
 }
 
 /** getPrice mengembalikan harga yang didefinisikan */  
@@ -24,7 +20,7 @@ Product::Category BeefMuttonSate::getCategory() const
 }
 
 /** Mengembalikan resep dari produk */
-LinkedList<Product*>&::BeefMuttonSate::getRecipe()
+LinkedList<Product*>& BeefMuttonSate::getRecipe()
 {
     return recipe;
 }

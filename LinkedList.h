@@ -32,6 +32,7 @@ class LinkedList {
 		 *  Jika tidak ada, bernilai -1.
 		 */
 		int find(T elm);
+		int findPointer(T elm);
 
 		/** Mengembalikan apakah list empty atau tidak */
 		bool isEmpty() const;
@@ -193,6 +194,38 @@ void LinkedList<T>::remove(T elm) {
 		throw "element not found";
 	} else {
 		removeIdx(idx);
+	}
+}
+
+template<class T>
+int LinkedList<T>::find(T elm) {
+	LinkedListNode<T>* currNode;
+	currNode = first;
+	int idx = 0;
+	while (currNode != nullptr && currNode->head != elm) {
+		currNode = currNode->next;
+		idx++;
+	}
+	if (currNode == nullptr) {
+		return -1;
+	} else {
+		return idx;
+	}
+}
+
+template<class T>
+int LinkedList<T>::findPointer(T elm) {
+	LinkedListNode<T>* currNode;
+	currNode = first;
+	int idx = 0;
+	while (currNode != nullptr && *(currNode->head) != *elm) {
+		currNode = currNode->next;
+		idx++;
+	}
+	if (currNode == nullptr) {
+		return -1;
+	} else {
+		return idx;
 	}
 }
 

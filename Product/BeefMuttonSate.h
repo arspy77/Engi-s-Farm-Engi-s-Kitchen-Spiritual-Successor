@@ -16,7 +16,7 @@ class BeefMuttonSate : public SideProduct {
         Category getCategory() const;
 
         /** Mengembalikan resep dari produk */
-        static LinkedList<Product*>& getRecipe();
+        LinkedList<Product*>& getRecipe();
 
     private:
         /** Harga dari BeefMuttonSate */
@@ -29,7 +29,7 @@ class BeefMuttonSate : public SideProduct {
          *  Resep BeefMuttonSate.
          *  Terdiri dari CowMeat dan SheepMeat.
          */
-        static LinkedList<Product*> recipe;
+        LinkedList<Product*> recipe;
 };
 
 #endif

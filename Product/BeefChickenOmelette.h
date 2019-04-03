@@ -16,7 +16,7 @@ class BeefChickenOmelette : public SideProduct {
         Category getCategory() const;
 
         /** Mengembalikan resep dari produk */
-        static LinkedList<Product*>& getRecipe();
+        LinkedList<Product*>& getRecipe();
 
     private:
         /** Harga dari BeefChickenOmelette */
@@ -29,7 +29,7 @@ class BeefChickenOmelette : public SideProduct {
          *  Resep BeefChickenOmelette.
          *  Terdiri dari CowMeat dan ChickenEgg.
          */
-        static LinkedList<Product*> recipe;
+        LinkedList<Product*> recipe;
 };
 
 #endif

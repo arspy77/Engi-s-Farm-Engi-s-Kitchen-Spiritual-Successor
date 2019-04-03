@@ -12,7 +12,7 @@ class Horse: public MilkProducer {
 		Horse(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
         /** Mengembalikan FarmProduk yang akan dihasilkan Horse bila Horse di interact*/
-        FarmProduct* produceProduct(Action) const;
+        FarmProduct* produceProduct(Action);
 
         /** Mengembalikan suara dari Horse */
         std::string makeNoise() const;

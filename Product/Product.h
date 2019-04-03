@@ -4,8 +4,9 @@
 class Product {
     public:
         enum Category {
-            CHICKENEGG, CHICKENMEAT, BEEFCHICKENOMELETTE, BEEFMUTONSATE, 
-            COWMILK, COWMEAT, DUCKMEAT, HORSEMILK, OSTRICHEGG, SHEEPMEAT, SUPERSECRETSPECIALPRODUCT
+            CHICKENEGG, BEEFCHICKENOMELETTE, BEEFMUTONSATE, 
+            COWMEAT, DUCKMEAT, HORSEMILK, OSTRICHEGG, 
+            SHEEPMEAT, SUPERSECRETSPECIALPRODUCT
         };
 
         /** getPrice mengembalikan harga yang didefinisikan */  
@@ -13,6 +14,10 @@ class Product {
 
         /** mengembalikan kategori dari produk ini */
         virtual Category getCategory() const = 0;
+
+        bool operator==(Product& P);
+
+        bool operator!=(Product& P);
 };
 
 #endif

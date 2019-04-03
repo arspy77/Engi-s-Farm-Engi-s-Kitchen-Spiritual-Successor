@@ -1,6 +1,7 @@
 #include "FarmAnimal.h"
 #include <stdlib.h>
 #include <time.h>
+#include <math.h>
 
 /** Constructor maxTimeToGetHungry dengan nilai H */
 FarmAnimal::FarmAnimal(int _maxTimeToGetHungry, Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)
@@ -11,16 +12,13 @@ FarmAnimal::FarmAnimal(int _maxTimeToGetHungry, Point position, Cell***& worldMa
 
 /** Melakukan aksi yang dilakukan FarmAnimal setiap satuan waktu */
 void FarmAnimal::tick(){
-    moveRandomly();
-    char willEat = rand() % 2;
-    if (willEat == 1){ 
-        eat();
-    }
+    moveHeuristically();
     if (isHungry()){
         timeToDeath--;
     } else {
         timeToGetHungry--;
     }
+    eat();
 }
 
 /** return true apabila timeToGetHungry <= 0 */
@@ -56,23 +54,59 @@ void FarmAnimal::eat(){
     }
 }
 
+
+int manhattanDist(Point P1, Point P2) {
+    return (abs(P1.x - P2.x) + abs(P1.y - P2.y));
+}
+
 /** Menggerakan FarmAnimal secara random ke posisi yang mungkin ditempati */
-void FarmAnimal::moveRandomly(){
-    int randomInt = rand() % 4;
+void FarmAnimal::moveHeuristically(){
+    Point nearestPoint, currPoint;
+    nearestPoint.x = -1;
+    nearestPoint.y = -1;
+    for (int i = 0; i < nRowCell; i++) {
+        for (int j = 0; j < nCollumnCell; j++) {
+            if (worldMap[i][j]->isGrassExist() && canMoveTo(*worldMap[i][j])) {
+                currPoint.x = j;
+                currPoint.y = i;
+                if (manhattanDist(getPosition(), currPoint) < manhattanDist(getPosition(), nearestPoint)){
+                    nearestPoint.x = currPoint.x;
+                    nearestPoint.y = currPoint.y;
+                }
+            }
+        }
+    } //nearestPoint Found
     Direction d;
-    switch(randomInt){
-        case 0:
-            d = Direction::LEFT;
-            break;
-        case 1:
-            d = Direction::RIGHT;
-            break;
-        case 2:
-            d = Direction::UP;
-            break;
-        case 3:
-            d = Direction::DOWN;
-            break;
+    if (nearestPoint.x == -1) {
+        int randomInt = rand() % 4;
+        switch(randomInt){
+            case 0:
+                d = Direction::LEFT;
+                break;
+            case 1:
+                d = Direction::RIGHT;
+                break;
+            case 2:
+                d = Direction::UP;
+                break;
+            case 3:
+                d = Direction::DOWN;
+                break;
+        }
+    } else if (manhattanDist(getPosition(), nearestPoint) != 0) {
+        if (abs(getPosition().x - nearestPoint.x) > abs(getPosition().y - nearestPoint.y)) {
+            if (getPosition().x < nearestPoint.x) {
+                d = Direction::RIGHT;
+            } else {
+                d = Direction::LEFT;
+            }
+        } else {
+            if (getPosition().y < nearestPoint.y) {
+                d = Direction::DOWN;
+            } else {
+                d = Direction::UP;
+            }
+        }
     }
     move(d);
 }

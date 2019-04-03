@@ -6,7 +6,7 @@ Cow::Cow(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)
 : MeatProducer(maxTimeToGetHungryCow, position, worldMap, nRowCell, nCollumnCell){}
 
 /** Mengembalikan FarmProduk yang akan dihasilkan Cow bila Cow di kill atau di interact*/
-FarmProduct* Cow::produceProduct(Action act) const{
+FarmProduct* Cow::produceProduct(Action act){
     FarmProduct* fp;
     if (act == Action::KILL){
         fp = new CowMeat();

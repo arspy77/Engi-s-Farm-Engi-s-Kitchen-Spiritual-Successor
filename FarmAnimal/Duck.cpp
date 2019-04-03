@@ -6,7 +6,7 @@ Duck::Duck(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)
 : MeatProducer(maxTimeToGetHungryDuck, position, worldMap, nRowCell, nCollumnCell){}
 
 /** Mengembalikan FarmProduk yang akan dihasilkan Duck bila Duck di kill*/
-FarmProduct* Duck::produceProduct(Action act) const{
+FarmProduct* Duck::produceProduct(Action act){
     FarmProduct* fp;
     if (act == Action::KILL){
         fp = new DuckMeat();

@@ -8,10 +8,11 @@ Horse::Horse(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)
 }
 
 /** Mengembalikan FarmProduk yang akan dihasilkan Horse bila Horse di interact */
-FarmProduct* Horse::produceProduct(Action act) const{
+FarmProduct* Horse::produceProduct(Action act){
     FarmProduct* fp;
     if (act == Action::INTERACT){
         fp = new HorseMilk();
+        canProduce = false;
     }
     return fp;
 }

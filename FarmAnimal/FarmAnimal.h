@@ -24,7 +24,7 @@ class FarmAnimal : public LivingThing {
         void tick();
 
         /** Mengembalikan produk yang dihasilkan FarmAnimal apabila diinteract/dikill */
-        virtual FarmProduct* produceProduct(Action) const = 0;
+        virtual FarmProduct* produceProduct(Action) = 0;
 
         /** Mengembalikan suara dari FarmAnimal */
         virtual std::string makeNoise() const = 0;
@@ -43,14 +43,19 @@ class FarmAnimal : public LivingThing {
          *  maka timeToDeath di set nilai semula dan timeToGdengan nilai sesuai dengan derived
          *  classnya, lalu grass di land dihapus
          */
-        void eat();
+        virtual void eat();
 
         /** return true apabila timeToGetHungry <= 0 */
         bool isHungry() const;
 
-    private:
         /** Waktu FarmAnimal sampai menjadi lapar */
-        int timeToGetHungry;
+        int timeToGetHungry; //Awalnya private
+    
+        /** Nilai max dari timeToGetHungry */
+        const int maxTimeToGetHungry;
+
+    private:
+        
 
         /** 
          *  Waktu FarmAnimal yang lapar sampai mati
@@ -58,9 +63,7 @@ class FarmAnimal : public LivingThing {
          */
         int timeToDeath;
 
-        /** Nilai max dari timeToGetHungry */
-        const int maxTimeToGetHungry;
-
+        
         /** Nilai max dari timeToDeath */
         static constexpr int maxTimeToDeath{5};
         
@@ -71,7 +74,7 @@ class FarmAnimal : public LivingThing {
         void decTimetoDeath();
         
         /** Menggerakan FarmAnimal secara random ke posisi yang mungkin ditempati */
-        virtual void moveRandomly();
+        virtual void moveHeuristically();
 
         // Ini awalnya gaada
         /** Apakah bisa masuk suatu area (cek out of bound, jenis Cell, kekosongan Cell) */
