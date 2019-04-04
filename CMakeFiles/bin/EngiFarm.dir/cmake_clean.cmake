@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/bin/EngiFarm.dir/src/main.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/LivingThing.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Player.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/World.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Cell/Barn.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Cell/Cell.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Cell/Coop.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Cell/Facility.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Cell/GrassLand.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Cell/Land.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Cell/Mixer.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Cell/Truck.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Cell/Well.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/FarmAnimal/Chicken.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/FarmAnimal/Cow.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/FarmAnimal/Duck.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/FarmAnimal/EggProducer.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/FarmAnimal/FarmAnimal.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/FarmAnimal/Horse.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/FarmAnimal/MeatProducer.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/FarmAnimal/MilkProducer.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/FarmAnimal/Ostrich.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Product/BeefChickenOmelette.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Product/BeefMuttonSate.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Product/ChickenEgg.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Product/CowMeat.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Product/DuckMeat.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Product/HorseMilk.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Product/OstrichEgg.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Product/Product.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Product/SheepMeat.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Product/SideProduct.cpp.o"
+  "CMakeFiles/bin/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.o"
+  "bin/EngiFarm.pdb"
+  "bin/EngiFarm"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/bin/EngiFarm.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
