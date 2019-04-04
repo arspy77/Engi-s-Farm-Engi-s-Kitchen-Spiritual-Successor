@@ -8,6 +8,7 @@ class Product {
             COWMEAT, DUCKMEAT, HORSEMILK, OSTRICHEGG, 
             SHEEPMEAT, SUPERSECRETSPECIALPRODUCT
         };
+        virtual ~Product();
 
         /** getPrice mengembalikan harga yang didefinisikan */  
         virtual int getPrice() const = 0;

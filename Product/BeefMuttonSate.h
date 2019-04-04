@@ -9,6 +9,9 @@ class BeefMuttonSate : public SideProduct {
         /** Constructor untuk inisialisasi recipe */
         BeefMuttonSate();
 
+        /** Dtor */ //Awalnya ga ada
+        ~BeefMuttonSate();
+
         /** getPrice mengembalikan harga yang didefinisikan */  
         int getPrice() const;
 

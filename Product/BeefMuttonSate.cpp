@@ -7,6 +7,12 @@ BeefMuttonSate::BeefMuttonSate() {
     recipe.add(new SheepMeat());
 }
 
+BeefMuttonSate::~BeefMuttonSate() {
+    for (int i = 0; i < recipe.len(); i++) {
+        delete recipe[i];
+    }
+}
+
 /** getPrice mengembalikan harga yang didefinisikan */  
 int BeefMuttonSate::getPrice() const
 {

@@ -9,6 +9,9 @@ class BeefChickenOmelette : public SideProduct {
         /** Constructor untuk inisialisasi recipe */
         BeefChickenOmelette();
 
+        /** Dtor */ //Awalnya tidak ada
+        ~BeefChickenOmelette();
+
         /** getPrice mengembalikan harga yang didefinisikan */  
         int getPrice() const;
 

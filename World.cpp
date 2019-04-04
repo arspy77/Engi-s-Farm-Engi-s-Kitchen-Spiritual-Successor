@@ -21,7 +21,7 @@ void drawFrame(int n) {
 	}
 }
 
-/** Return the length of an integer */
+/** Mengembalikan banyak digit dari suatu bilangan positif */
 int intLen(int x) {
 	int len = 0;
 	while (x != 0) {
@@ -63,8 +63,8 @@ World::World() {
 	map[3][nCollumnCell - 1] = new Well();
 
 	Point pLoc;
-	pLoc.x = nCollumnCell - 1;
-	pLoc.y = 3;
+	pLoc.x = nCollumnCell / 2;
+	pLoc.y = nRowCell / 2;
 	pl = new Player(pLoc, map, nRowCell, nCollumnCell);
     map[pl->getPosition().y][pl->getPosition().x]->setIsOcupied(true);
 
@@ -172,7 +172,6 @@ World::~World() {
 }
 
 void World::Input() {
-	std::cout << pl->getInventory().len() << std::endl;
 	std::string inp;
 	std::cin >> inp;
 	std::transform(inp.begin(), inp.end(), inp.begin(), ::tolower);
@@ -206,7 +205,7 @@ void World::Input() {
 //gerakin farmanimal, grow rumput, blablabla
 void World::Update() {
 	int x, y;
-	for (int i = 0; i < rand() % (nRowCell+nCollumnCell)*10/40; i++) {
+	for (int i = 0; i < rand() % (nRowCell+nCollumnCell)*20/40; i++) {
 		x = rand() % nCollumnCell;
 		y = rand() % nRowCell;
 		map[y][x]->growGrass();

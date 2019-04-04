@@ -7,6 +7,12 @@ SuperSecretSpecialProduct::SuperSecretSpecialProduct(){
     recipe.add(new OstrichEgg());
 }
 
+SuperSecretSpecialProduct::~SuperSecretSpecialProduct() {
+    for (int i = 0; i < recipe.len(); i++) {
+        delete recipe[i];
+    }
+}
+
 /** getPrice mengembalikan harga yang didefinisikan */  
 int SuperSecretSpecialProduct::getPrice() const
 {

@@ -9,6 +9,8 @@ class SuperSecretSpecialProduct : public SideProduct {
         /** Constructor untuk inisialisasi recipe */
         SuperSecretSpecialProduct();
 
+        ~SuperSecretSpecialProduct();
+
         /** getPrice mengembalikan harga yang didefinisikan */  
         int getPrice() const;
 

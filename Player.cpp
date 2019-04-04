@@ -23,13 +23,17 @@ Player::Player(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell
 	recipeBook.add(new BeefChickenOmelette());
 	recipeBook.add(new BeefMuttonSate());
 	recipeBook.add(new SuperSecretSpecialProduct());
-
 	inventory.add(new ChickenEgg());
 	inventory.add(new CowMeat());
 }
 
 Player::~Player() {
-
+	for (int i = 0; i < inventory.len(); i++) {
+		delete inventory[i];
+	}
+	for (int i = 0; i < recipeBook.len(); i++) {
+		delete recipeBook[i];
+	}
 }
 
 char Player::render() {
@@ -70,7 +74,6 @@ void Player::talk(LinkedList<FarmAnimal*>& farmAnimal, LinkedList<std::string>& 
  * Player mengambil FarmProduct dari semua FarmAnimal terdekat tanpa membunuh FarmAnimal tersebut.
  * Bekerja untuk FarmAnimal jenis MilkProducing dan EggProducing.
  * Contoh FarmProduct : ChickenEgg, CowMilk.
- * 
  */
 void Player::interact(LinkedList<FarmAnimal*>& farmAnimal) {
 	for(int i = 0; i < farmAnimal.len(); i++) {
