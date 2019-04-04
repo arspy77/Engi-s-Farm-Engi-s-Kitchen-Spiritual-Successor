@@ -3,7 +3,6 @@
 
 #include "../Point.h"
 #include "../Cell/Cell.h"
-#include "MilkProducer.h"
 #include "MeatProducer.h"
 #include <string>
 
@@ -12,7 +11,7 @@ class Cow: public MeatProducer {
         /** Constructor */
 		Cow(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell);
 
-        /** Mengembalikan FarmProduk yang akan dihasilkan Cow bila Cow di kill atau di interact */
+        /** Mengembalikan FarmProduk yang akan dihasilkan Cow bila Cow di kill */
         FarmProduct* produceProduct(Action);
         
         /** Mengembalikan suara dari Cow */

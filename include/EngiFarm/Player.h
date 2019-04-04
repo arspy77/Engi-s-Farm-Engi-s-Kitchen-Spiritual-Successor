@@ -64,7 +64,7 @@ class Player : public LivingThing {
 		LinkedList<Product*> inventory;
 
         /** Uang yang dimiliki Player */
-    	int money{500000};
+    	int money{0};
 
         /** Air yang dipegang Player */
 		int water{5}; 

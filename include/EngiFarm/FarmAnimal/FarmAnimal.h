@@ -1,10 +1,10 @@
 #ifndef FARM_ANIMAL_H
 #define FARM_ANIMAL_H
 
-#include "../Point.h"
-#include "../Cell/Cell.h"
-#include "../LivingThing.h"
-#include "../Product/FarmProduct.h"
+#include "Point.h"
+#include "Cell/Cell.h"
+#include "LivingThing.h"
+#include "Product/FarmProduct.h"
 #include <string>
 
 class FarmAnimal : public LivingThing {                               

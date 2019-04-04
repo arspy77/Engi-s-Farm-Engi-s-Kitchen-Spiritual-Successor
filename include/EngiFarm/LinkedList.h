@@ -45,19 +45,19 @@ class LinkedList {
 
 		/**
 		 *  Menghapus elemen berindeks idx.
-		 *  Jika diluar range, melempar "Index is out of bounds".
+		 *  Jika diluar range, melempar "Index out of range".
 		 */
 		void removeIdx(int idx);
 
 		/**
 		 * Mengembalikan elemen berindeks idx.
-		 * Jika diluar range, melempar "Index is out of bounds".
+		 * Jika diluar range, melempar "Index out of range".
 		 */
 		T& get(int idx);
 
 		/**
 		 *  Mengembalikan reference ke elemen berindeks idx.
-		 *  Jika diluar range, melempar "Index is out of bounds".
+		 *  Jika diluar range, melempar "Index out of range".
 		 */
 		T& operator[](int idx);
 

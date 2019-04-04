@@ -1,6 +1,31 @@
 cmake_minimum_required(VERSION 2.8)
 project(EngiFarm) 
 
+# file globbing ########################################################
+
+file(GLOB_RECURSE sources 
+	src/*.cpp 
+	src/Cell/*.cpp 
+	src/FarmAnimal/*.cpp 
+	src/Product/*.cpp
+)
+
+file(GLOB_RECURSE to_remove src/main.cpp)
+list(REMOVE_ITEM sources ${to_remove})
+
+file(GLOB_RECURSE testers
+	test/*.cpp
+)
+
+# packaging ############################################################
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+
+# target definitions ###################################################
+
 include_directories(
 	include/EngiFarm
 	include/EngiFarm/Cell
@@ -8,28 +33,13 @@ include_directories(
 	include/EngiFarm/Product
 )
 
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
- 
-file(GLOB cell_SRC
-	"src/Cell/*.cpp"
-)
+add_executable(EngiFarm ${sources} src/main.cpp)
 
-file(GLOB farmAnimal_SRC
-	"src/FarmAnimal/*.cpp"
-)
+# testing ##############################################################
 
-file(GLOB product_SRC
-	"src/Product/*.cpp"
-)
+enable_testing()
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-add_executable(EngiFarm
-	src/main.cpp
-	src/LivingThing.cpp
-	src/Player.cpp
-	src/World.cpp
-	${cell_SRC}
-	${farmAnimal_SRC}
-	${product_SRC}
-)
+add_executable(EngiFarmTest ${testers} ${sources})
+target_link_libraries(EngiFarmTest pthread gmock gtest gtest_main)
+add_test(NAME AllTest COMMAND EngiFarmTest)

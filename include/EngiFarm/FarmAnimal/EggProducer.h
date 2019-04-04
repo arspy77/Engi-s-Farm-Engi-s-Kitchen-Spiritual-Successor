@@ -25,9 +25,9 @@ class EggProducer : public FarmAnimal {
         /** Mengubah nilai canProduce */
         void eat();
 
-        // Sekarang Cell pake reference
+        // Sekarang Cell pake reference, gk virtual
         /** Mengecek apakah bisa pindah (tidak out of bound, bertipe Coop, tidak ada hewan lain) */
-        virtual bool canMoveTo(Cell& toWhere) const;
+        bool canMoveTo(Cell& toWhere) const;
 };
 
 #endif

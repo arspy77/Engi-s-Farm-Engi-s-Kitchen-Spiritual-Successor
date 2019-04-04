@@ -1,5 +1,5 @@
 #include "Chicken.h"
-#include "../Product/ChickenEgg.h"
+#include "ChickenEgg.h"
 
 /** Constructor */
 Chicken::Chicken(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)

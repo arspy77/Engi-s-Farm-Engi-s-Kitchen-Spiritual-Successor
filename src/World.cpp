@@ -191,12 +191,10 @@ void World::Input() {
 		pl->kill(animalList,nAnimal);
 	} else if (inp == "interact") {
 		pl->interact(animalList);
-	} else if (inp == "sellall") {
+		pl->takeWater();
 		pl->sellAll();
 	} else if (inp == "mix") {
 		pl->mix(mesQueue);
-	} else if (inp == "getwater") {
-		pl->takeWater();
 	} else if (inp == "exit") {
 		throw "EXIT";
 	}

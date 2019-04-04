@@ -18,9 +18,9 @@ class MeatProducer : public FarmAnimal {
         bool getProduce();
         
     private :
-        // Sekarang Cell pake reference
+        // Sekarang Cell pake reference, gk virtual
         /** Mengecek apakah bisa pindah (tidak out of bound, bertipe Barn, tidak ada hewan lain) */
-        virtual bool canMoveTo(Cell& toWhere) const;
+        bool canMoveTo(Cell& toWhere) const;
         bool killable{true};
 };
 
