@@ -1,0 +1,3 @@
+OUTPUT_DIRECTORY       = /mnt/sda1/Documents/University/OOP/EngiFarm/doc/doxygen/
+INPUT                  = /mnt/sda1/Documents/University/OOP/EngiFarm/include/EngiFarm @CMAKE_CURRENT_SOURCE
+RECURSIVE              = YES
