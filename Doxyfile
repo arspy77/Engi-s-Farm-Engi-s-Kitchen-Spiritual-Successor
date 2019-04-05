@@ -1,3 +1,4 @@
+PROJECT_NAME		   = EngiFarm
 OUTPUT_DIRECTORY       = /mnt/sda1/Documents/University/OOP/EngiFarm/doc/doxygen/
-INPUT                  = /mnt/sda1/Documents/University/OOP/EngiFarm/include/EngiFarm @CMAKE_CURRENT_SOURCE
+INPUT                  = /mnt/sda1/Documents/University/OOP/EngiFarm/include/EngiFarm/
 RECURSIVE              = YES

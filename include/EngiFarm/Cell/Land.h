@@ -14,7 +14,7 @@ class Land : public Cell {
         /** Membuat existGrass menjadi true */        
         void growGrass();
 
-        /* Membuat existGrass menjadi false */
+        /** Membuat existGrass menjadi false */
         void removeGrass();
 
         /** Mengembalikan keberadaan grass */

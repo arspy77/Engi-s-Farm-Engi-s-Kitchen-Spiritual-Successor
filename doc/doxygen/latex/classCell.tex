@@ -38,8 +38,7 @@ void \mbox{\hyperlink{classCell_add7fa436236dcb54569f1ac2b6fb35c0}{set\+Is\+Ocup
 \item 
 virtual void \mbox{\hyperlink{classCell_ae4b73236e18d13424808a3bca6a5104f}{grow\+Grass}} ()
 \item 
-\mbox{\Hypertarget{classCell_aa5705030709094de275d79203dc98dfc}\label{classCell_aa5705030709094de275d79203dc98dfc}} 
-virtual void {\bfseries remove\+Grass} ()
+virtual void \mbox{\hyperlink{classCell_aa5705030709094de275d79203dc98dfc}{remove\+Grass}} ()
 \item 
 virtual bool \mbox{\hyperlink{classCell_a491dc502764a4215e12a8e9c0792bf33}{is\+Grass\+Exist}} () const =0
 \end{DoxyCompactItemize}
@@ -117,6 +116,16 @@ Implemented in \mbox{\hyperlink{classFacility_aec97ecb79c7603116afc4112ee33e4f9}
 Mengembalikan keberadaan grass jika \mbox{\hyperlink{classCell}{Cell}} bertipe \mbox{\hyperlink{classLand}{Land}} 
 
 Implemented in \mbox{\hyperlink{classFacility_a33dbacc180930790a426d8295d475360}{Facility}}, and \mbox{\hyperlink{classLand_a7e269684966bc26f0f82348b69ad582d}{Land}}.
+
+\mbox{\Hypertarget{classCell_aa5705030709094de275d79203dc98dfc}\label{classCell_aa5705030709094de275d79203dc98dfc}} 
+\index{Cell@{Cell}!removeGrass@{removeGrass}}
+\index{removeGrass@{removeGrass}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{removeGrass()}{removeGrass()}}
+{\footnotesize\ttfamily virtual void Cell\+::remove\+Grass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Jika \mbox{\hyperlink{classCell}{Cell}} bertipe \mbox{\hyperlink{classLand}{Land}} dan memiliki rumput maka rumput akan dihilangkan 
+
+Reimplemented in \mbox{\hyperlink{classLand_afcc13a96a158ca17a37d48373101fe1a}{Land}}.
 
 \mbox{\Hypertarget{classCell_add7fa436236dcb54569f1ac2b6fb35c0}\label{classCell_add7fa436236dcb54569f1ac2b6fb35c0}} 
 \index{Cell@{Cell}!setIsOcupied@{setIsOcupied}}

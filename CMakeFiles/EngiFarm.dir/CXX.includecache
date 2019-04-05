@@ -6,22 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Facility.cpp
-Facility.h
-/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Facility.h
-
-/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Mixer.cpp
-Mixer.h
-/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Mixer.h
-
-/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Truck.cpp
-Truck.h
-/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Truck.h
-
-/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Well.cpp
-Well.h
-/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Well.h
-
 /mnt/sda1/Documents/University/OOP/EngiFarm/src/World.cpp
 stdio.h
 -
@@ -38,18 +22,6 @@ World.h
 time.h
 -
 algorithm
--
-
-/mnt/sda1/Documents/University/OOP/EngiFarm/src/main.cpp
-iostream
--
-cstring
--
-stdlib.h
--
-World.h
-/mnt/sda1/Documents/University/OOP/EngiFarm/src/World.h
-unistd.h
 -
 
 include/EngiFarm/Cell/Barn.h
@@ -251,8 +223,8 @@ include/EngiFarm/Product/Product.h
 include/EngiFarm/Product/SideProduct.h
 Product.h
 include/EngiFarm/Product/Product.h
-../LinkedList.h
-include/EngiFarm/LinkedList.h
+LinkedList.h
+include/EngiFarm/Product/LinkedList.h
 
 include/EngiFarm/Product/SuperSecretSpecialProduct.h
 LinkedList.h

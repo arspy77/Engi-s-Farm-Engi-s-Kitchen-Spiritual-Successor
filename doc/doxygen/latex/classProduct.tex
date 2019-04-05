@@ -13,8 +13,7 @@ Inheritance diagram for Product\+:\begin{figure}[H]
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classProduct_a4be8926067abd593e348b753eedb9c6c}\label{classProduct_a4be8926067abd593e348b753eedb9c6c}} 
-enum {\bfseries Category} \{ \newline
+enum \mbox{\hyperlink{classProduct_a4be8926067abd593e348b753eedb9c6c}{Category}} \{ \newline
 {\bfseries C\+H\+I\+C\+K\+E\+N\+E\+GG}, 
 {\bfseries B\+E\+E\+F\+C\+H\+I\+C\+K\+E\+N\+O\+M\+E\+L\+E\+T\+TE}, 
 {\bfseries B\+E\+E\+F\+M\+U\+T\+O\+N\+S\+A\+TE}, 
@@ -33,7 +32,7 @@ enum {\bfseries Category} \{ \newline
 \item 
 virtual int \mbox{\hyperlink{classProduct_a865b39f7e47f1ba5f8275f82a893cd7a}{get\+Price}} () const =0
 \item 
-virtual Category \mbox{\hyperlink{classProduct_abb5ca0e6b503b6b8ca614791535420ff}{get\+Category}} () const =0
+virtual \mbox{\hyperlink{classProduct_a4be8926067abd593e348b753eedb9c6c}{Category}} \mbox{\hyperlink{classProduct_abb5ca0e6b503b6b8ca614791535420ff}{get\+Category}} () const =0
 \item 
 bool \mbox{\hyperlink{classProduct_a6d15b276d030e3e0da6e2f4fae74dc94}{operator==}} (\mbox{\hyperlink{classProduct}{Product}} \&P)
 \item 
@@ -44,12 +43,21 @@ bool \mbox{\hyperlink{classProduct_a435c3271fe6788fdee1a639ed168ccf0}{operator!=
 \doxysubsection{Detailed Description}
 \mbox{\hyperlink{classProduct}{Product}} adalah kelas abstrak yang merepresentasikan produk yang bisa dibuat dan dijual player 
 
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classProduct_a4be8926067abd593e348b753eedb9c6c}\label{classProduct_a4be8926067abd593e348b753eedb9c6c}} 
+\index{Product@{Product}!Category@{Category}}
+\index{Category@{Category}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{Category}{Category}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classProduct_a4be8926067abd593e348b753eedb9c6c}{Product\+::\+Category}}}
+
+enumerasi kategori dari suatu produk, return value dari get\+Category 
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classProduct_abb5ca0e6b503b6b8ca614791535420ff}\label{classProduct_abb5ca0e6b503b6b8ca614791535420ff}} 
 \index{Product@{Product}!getCategory@{getCategory}}
 \index{getCategory@{getCategory}!Product@{Product}}
 \doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
-{\footnotesize\ttfamily virtual Category Product\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classProduct_a4be8926067abd593e348b753eedb9c6c}{Category}} Product\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 mengembalikan kategori dari produk ini 
 

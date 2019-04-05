@@ -13,5 +13,6 @@ var searchData=
   ['_7emeatproducer',['~MeatProducer',['../classMeatProducer.html#ab9f646a8ab5354c4d266e4707fd07a73',1,'MeatProducer']]],
   ['_7emilkproducer',['~MilkProducer',['../classMilkProducer.html#a20877097e7cfb65ce81ea35d7efa7d75',1,'MilkProducer']]],
   ['_7eplayer',['~Player',['../classPlayer.html#a749d2c00e1fe0f5c2746f7505a58c062',1,'Player']]],
+  ['_7esideproduct',['~SideProduct',['../classSideProduct.html#a3ae3e4189e9e440db9e4fadb927bb228',1,'SideProduct']]],
   ['_7eworld',['~World',['../classWorld.html#a8c73fba541a5817fff65147ba47cd827',1,'World']]]
 ];

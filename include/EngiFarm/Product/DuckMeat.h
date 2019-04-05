@@ -2,7 +2,7 @@
 #define DUCk_MEAT_H
 
 #include "FarmProduct.h"
-/* kelas turunan dari Farmproduct yang dihasilkan dengan interact dengan duck*/
+/** kelas turunan dari Farmproduct yang dihasilkan dengan interact dengan duck*/
 class DuckMeat : public FarmProduct {
     public:
         /** getPrice mengembalikan harga yang didefinisikan */  

@@ -54,10 +54,16 @@ class Player : public LivingThing {
         /** Menjual semua product di inventory */ //Awalnya tidak ada
         void sellAll();
 
-        /** Getter */ //Awalnya tidak ada
+        /** Getter banyak uang yang dimiliki Player */ //Awalnya tidak ada
         int getMoney();
+
+        /** Getter banyak air yang dimiliki Player */
         int getWater();
+
+        /** Getter inventory yang dipegang Player */
         LinkedList<Product*>& getInventory();
+
+        /** Getter daftar resep yang dimiliki Player */
         LinkedList<SideProduct*> getrecipeBook();
 
     private :

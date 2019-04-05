@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.19)  5 APR 2019 10:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.19)  5 APR 2019 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -977,9 +977,11 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 157.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [5]
-[6] [7] [8] [9] [10
+[6] [7] [8]
+Underfull \vbox (badness 2865) has occurred while \output is active []
 
-]
+ [9]
+[10]
 Package hyperref Info: Option `pageanchor' set `true' on input line 159.
 
 Chapter 1.
@@ -1008,6 +1010,7 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 2.
  [1
 
+
 ]) [2]
 Chapter 2.
 (./annotated.tex) [3
@@ -1017,7 +1020,7 @@ Chapter 2.
 ]
 Chapter 3.
 (./classBarn.tex <./classBarn.pdf>
-<classBarn.pdf, id=2029, 501.875pt x 1254.6875pt>
+<classBarn.pdf, id=2119, 501.875pt x 1254.6875pt>
 File: classBarn.pdf Graphic file (type pdf)
 <use classBarn.pdf>
 Package pdftex.def Info: classBarn.pdf  used on input line 10.
@@ -1042,7 +1045,7 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 6.29996pt on input line 2.
  [5] <./classBeefChickenOmelette.pdf>
-<classBeefChickenOmelette.pdf, id=2051, 501.875pt x 427.12573pt>
+<classBeefChickenOmelette.pdf, id=2142, 501.875pt x 427.12573pt>
 File: classBeefChickenOmelette.pdf Graphic file (type pdf)
 <use classBeefChickenOmelette.pdf>
 Package pdftex.def Info: classBeefChickenOmelette.pdf  used on input line 10.
@@ -1054,23 +1057,23 @@ Underfull \hbox (badness 1622) in paragraph at lines 30--31
  []
 
 [6]) (./classBeefMuttonSate.tex <./classBeefMuttonSate.pdf>
-<classBeefMuttonSate.pdf, id=2084, 501.875pt x 552.52425pt>
+<classBeefMuttonSate.pdf, id=2178, 501.875pt x 552.52425pt>
 File: classBeefMuttonSate.pdf Graphic file (type pdf)
 <use classBeefMuttonSate.pdf>
 Package pdftex.def Info: classBeefMuttonSate.pdf  used on input line 10.
 (pdftex.def)             Requested size: 77.52943pt x 85.35826pt.
  [7])
 (./classCell.tex <./classCell.pdf>
-<classCell.pdf, id=2122, 501.875pt x 123.92297pt>
+<classCell.pdf, id=2217, 501.875pt x 123.92297pt>
 File: classCell.pdf Graphic file (type pdf)
 <use classCell.pdf>
 Package pdftex.def Info: classCell.pdf  used on input line 10.
 (pdftex.def)             Requested size: 345.68913pt x 85.35826pt.
- [8] [9]
+ [8] [9] [10]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 125.
- [10]) (./classChicken.tex <./classChicken.pdf>
-<classChicken.pdf, id=2186, 501.875pt x 845.2679pt>
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 134.
+) (./classChicken.tex <./classChicken.pdf>
+<classChicken.pdf, id=2285, 501.875pt x 845.2679pt>
 File: classChicken.pdf Graphic file (type pdf)
 <use classChicken.pdf>
 Package pdftex.def Info: classChicken.pdf  used on input line 10.
@@ -1079,90 +1082,90 @@ Package pdftex.def Info: classChicken.pdf  used on input line 10.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 35.
  [12]) (./classChickenEgg.tex <./classChickenEgg.pdf>
-<classChickenEgg.pdf, id=2239, 501.875pt x 647.57933pt>
+<classChickenEgg.pdf, id=2340, 501.875pt x 647.57933pt>
 File: classChickenEgg.pdf Graphic file (type pdf)
 <use classChickenEgg.pdf>
 Package pdftex.def Info: classChickenEgg.pdf  used on input line 10.
 (pdftex.def)             Requested size: 66.14967pt x 85.35826pt.
  [13])
 (./classCoop.tex <./classCoop.pdf>
-<classCoop.pdf, id=2263, 501.875pt x 1204.5pt>
+<classCoop.pdf, id=2366, 501.875pt x 1204.5pt>
 File: classCoop.pdf Graphic file (type pdf)
 <use classCoop.pdf>
 Package pdftex.def Info: classCoop.pdf  used on input line 10.
 (pdftex.def)             Requested size: 35.56367pt x 85.35826pt.
  [14]) (./classCow.tex <./classCow.pdf>
-<classCow.pdf, id=2283, 501.875pt x 795.05032pt>
+<classCow.pdf, id=2385, 501.875pt x 795.05032pt>
 File: classCow.pdf Graphic file (type pdf)
 <use classCow.pdf>
 Package pdftex.def Info: classCow.pdf  used on input line 10.
 (pdftex.def)             Requested size: 71.83955pt x 113.81102pt.
 
 [15]) (./classCowMeat.tex <./classCowMeat.pdf>
-<classCowMeat.pdf, id=2323, 501.875pt x 647.57933pt>
+<classCowMeat.pdf, id=2426, 501.875pt x 647.57933pt>
 File: classCowMeat.pdf Graphic file (type pdf)
 <use classCowMeat.pdf>
 Package pdftex.def Info: classCowMeat.pdf  used on input line 10.
 (pdftex.def)             Requested size: 66.14967pt x 85.35826pt.
  [16]) (./classDuck.tex <./classDuck.pdf>
-<classDuck.pdf, id=2340, 501.875pt x 795.05032pt>
+<classDuck.pdf, id=2445, 501.875pt x 795.05032pt>
 File: classDuck.pdf Graphic file (type pdf)
 <use classDuck.pdf>
 Package pdftex.def Info: classDuck.pdf  used on input line 10.
 (pdftex.def)             Requested size: 71.83955pt x 113.81102pt.
  [17] [18]) (./classDuckMeat.tex <./classDuckMeat.pdf>
-<classDuckMeat.pdf, id=2388, 501.875pt x 647.57933pt>
+<classDuckMeat.pdf, id=2492, 501.875pt x 647.57933pt>
 File: classDuckMeat.pdf Graphic file (type pdf)
 <use classDuckMeat.pdf>
-Package pdftex.def Info: classDuckMeat.pdf  used on input line 6.
+Package pdftex.def Info: classDuckMeat.pdf  used on input line 10.
 (pdftex.def)             Requested size: 66.14967pt x 85.35826pt.
  [19])
 (./classEggProducer.tex <./classEggProducer.pdf>
-<classEggProducer.pdf, id=2406, 501.875pt x 422.62892pt>
+<classEggProducer.pdf, id=2513, 501.875pt x 422.62892pt>
 File: classEggProducer.pdf Graphic file (type pdf)
 <use classEggProducer.pdf>
 Package pdftex.def Info: classEggProducer.pdf  used on input line 10.
 (pdftex.def)             Requested size: 135.14813pt x 113.81102pt.
  [20] [21])
 (./classFacility.tex <./classFacility.pdf>
-<classFacility.pdf, id=2447, 501.875pt x 329.0995pt>
+<classFacility.pdf, id=2553, 501.875pt x 329.0995pt>
 File: classFacility.pdf Graphic file (type pdf)
 <use classFacility.pdf>
 Package pdftex.def Info: classFacility.pdf  used on input line 10.
 (pdftex.def)             Requested size: 130.17044pt x 85.35826pt.
  [22]) (./classFarmAnimal.tex <./classFarmAnimal.pdf>
-<classFarmAnimal.pdf, id=2476, 501.875pt x 132.50504pt>
+<classFarmAnimal.pdf, id=2582, 501.875pt x 132.50504pt>
 File: classFarmAnimal.pdf Graphic file (type pdf)
 <use classFarmAnimal.pdf>
 Package pdftex.def Info: classFarmAnimal.pdf  used on input line 10.
 (pdftex.def)             Requested size: 398.36076pt x 105.17177pt.
  [23] [24] [25]) (./classFarmProduct.tex [26] <./classFarmProduct.pdf>
-<classFarmProduct.pdf, id=2577, 501.875pt x 107.93324pt>
+<classFarmProduct.pdf, id=2684, 501.875pt x 107.93324pt>
 File: classFarmProduct.pdf Graphic file (type pdf)
 <use classFarmProduct.pdf>
 Package pdftex.def Info: classFarmProduct.pdf  used on input line 10.
 (pdftex.def)             Requested size: 396.9134pt x 85.35826pt.
 ) (./classGrassLand.tex <./classGrassLand.pdf>
-<classGrassLand.pdf, id=2584, 501.875pt x 743.51776pt>
+<classGrassLand.pdf, id=2691, 501.875pt x 743.51776pt>
 File: classGrassLand.pdf Graphic file (type pdf)
 <use classGrassLand.pdf>
 Package pdftex.def Info: classGrassLand.pdf  used on input line 10.
 (pdftex.def)             Requested size: 57.61102pt x 85.35826pt.
  [27]) (./classHorse.tex <./classHorse.pdf>
-<classHorse.pdf, id=2604, 501.875pt x 836.455pt>
+<classHorse.pdf, id=2711, 501.875pt x 836.455pt>
 File: classHorse.pdf Graphic file (type pdf)
 <use classHorse.pdf>
 Package pdftex.def Info: classHorse.pdf  used on input line 10.
 (pdftex.def)             Requested size: 68.28625pt x 113.81102pt.
  [28]) (./classHorseMilk.tex <./classHorseMilk.pdf>
-<classHorseMilk.pdf, id=2643, 501.875pt x 647.57933pt>
+<classHorseMilk.pdf, id=2749, 501.875pt x 647.57933pt>
 File: classHorseMilk.pdf Graphic file (type pdf)
 <use classHorseMilk.pdf>
 Package pdftex.def Info: classHorseMilk.pdf  used on input line 10.
 (pdftex.def)             Requested size: 66.14967pt x 85.35826pt.
  [29])
 (./classLand.tex <./classLand.pdf>
-<classLand.pdf, id=2660, 501.875pt x 247.83592pt>
+<classLand.pdf, id=2769, 501.875pt x 247.83592pt>
 File: classLand.pdf Graphic file (type pdf)
 <use classLand.pdf>
 Package pdftex.def Info: classLand.pdf  used on input line 10.
@@ -1184,13 +1187,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2.
 
+[32]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 7.19995pt on input line 54.
+(Font)              scaled to size 7.19995pt on input line 53.
+
 
 LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 54.
+(Font)              using `T1/pcr/m/n' instead on input line 53.
 
-[32] [33] [34]) (./classLinkedListNode.tex
+[33] [34]) (./classLinkedListNode.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2.
@@ -1208,129 +1213,126 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2.
 
 [35]) (./classLivingThing.tex <./classLivingThing.pdf>
-<classLivingThing.pdf, id=2793, 501.875pt x 132.50504pt>
+<classLivingThing.pdf, id=2905, 501.875pt x 132.50504pt>
 File: classLivingThing.pdf Graphic file (type pdf)
 <use classLivingThing.pdf>
-Package pdftex.def Info: classLivingThing.pdf  used on input line 6.
+Package pdftex.def Info: classLivingThing.pdf  used on input line 10.
 (pdftex.def)             Requested size: 398.36076pt x 105.17177pt.
  [36] [37])
 (./classMeatProducer.tex <./classMeatProducer.pdf>
-<classMeatProducer.pdf, id=2847, 501.875pt x 265.02011pt>
+<classMeatProducer.pdf, id=2960, 501.875pt x 265.02011pt>
 File: classMeatProducer.pdf Graphic file (type pdf)
 <use classMeatProducer.pdf>
-Package pdftex.def Info: classMeatProducer.pdf  used on input line 6.
+Package pdftex.def Info: classMeatProducer.pdf  used on input line 10.
 (pdftex.def)             Requested size: 215.52635pt x 113.81102pt.
 
-Underfull \hbox (badness 3849) in paragraph at lines 12--14
+Underfull \hbox (badness 3849) in paragraph at lines 16--18
 [][] \T1/phv/m/n/10 (int []_[]max[]Time[]To[]Get[]Hungry, [] po-si-tion, [] $\O
 MS/cmsy/m/n/10 ^^C$$^^C$$^^C$\T1/phv/m/n/10 &[], int [], int
  []
 
 [38]) (./classMilkProducer.tex <./classMilkProducer.pdf>
-<classMilkProducer.pdf, id=2875, 501.875pt x 836.455pt>
+<classMilkProducer.pdf, id=2992, 501.875pt x 836.455pt>
 File: classMilkProducer.pdf Graphic file (type pdf)
 <use classMilkProducer.pdf>
-Package pdftex.def Info: classMilkProducer.pdf  used on input line 6.
+Package pdftex.def Info: classMilkProducer.pdf  used on input line 10.
 (pdftex.def)             Requested size: 68.28625pt x 113.81102pt.
  [39] [40])
 (./classMixer.tex <./classMixer.pdf>
-<classMixer.pdf, id=2909, 501.875pt x 987.29852pt>
+<classMixer.pdf, id=3031, 501.875pt x 987.29852pt>
 File: classMixer.pdf Graphic file (type pdf)
 <use classMixer.pdf>
 Package pdftex.def Info: classMixer.pdf  used on input line 10.
 (pdftex.def)             Requested size: 43.39014pt x 85.35826pt.
  [41]) (./classOstrich.tex <./classOstrich.pdf>
-<classOstrich.pdf, id=2927, 501.875pt x 845.2679pt>
+<classOstrich.pdf, id=3048, 501.875pt x 845.2679pt>
 File: classOstrich.pdf Graphic file (type pdf)
 <use classOstrich.pdf>
 Package pdftex.def Info: classOstrich.pdf  used on input line 10.
 (pdftex.def)             Requested size: 67.57407pt x 113.81102pt.
- [42]) (./classOstrichEgg.tex <./classOstrichEgg.pdf>
-<classOstrichEgg.pdf, id=2965, 501.875pt x 647.57933pt>
+ [42] [43]) (./classOstrichEgg.tex <./classOstrichEgg.pdf>
+<classOstrichEgg.pdf, id=3092, 501.875pt x 647.57933pt>
 File: classOstrichEgg.pdf Graphic file (type pdf)
 <use classOstrichEgg.pdf>
 Package pdftex.def Info: classOstrichEgg.pdf  used on input line 10.
 (pdftex.def)             Requested size: 66.14967pt x 85.35826pt.
- [43])
+ [44])
 (./classPlayer.tex <./classPlayer.pdf>
-<classPlayer.pdf, id=2983, 501.875pt x 472.3547pt>
+<classPlayer.pdf, id=3114, 501.875pt x 472.3547pt>
 File: classPlayer.pdf Graphic file (type pdf)
 <use classPlayer.pdf>
 Package pdftex.def Info: classPlayer.pdf  used on input line 10.
 (pdftex.def)             Requested size: 60.4598pt x 56.9055pt.
- [44] [45] [46]) (./structPoint.tex)
+ [45] [46]) (./structPoint.tex [47])
 (./classProduct.tex <./classProduct.pdf>
-<classProduct.pdf, id=3085, 501.875pt x 226.83746pt>
+<classProduct.pdf, id=3226, 501.875pt x 226.83746pt>
 File: classProduct.pdf Graphic file (type pdf)
 <use classProduct.pdf>
 Package pdftex.def Info: classProduct.pdf  used on input line 10.
 (pdftex.def)             Requested size: 398.34544pt x 180.04pt.
- [47] [48]) (./classSheep.tex <./classSheep.pdf>
-<classSheep.pdf, id=3133, 501.875pt x 795.05032pt>
+ [48] [49]) (./classSheep.tex <./classSheep.pdf>
+<classSheep.pdf, id=3278, 501.875pt x 795.05032pt>
 File: classSheep.pdf Graphic file (type pdf)
 <use classSheep.pdf>
 Package pdftex.def Info: classSheep.pdf  used on input line 10.
 (pdftex.def)             Requested size: 71.83955pt x 113.81102pt.
- [49]) (./classSheepMeat.tex <./classSheepMeat.pdf>
-<classSheepMeat.pdf, id=3175, 501.875pt x 647.57933pt>
+ [50] [51]) (./classSheepMeat.tex <./classSheepMeat.pdf>
+<classSheepMeat.pdf, id=3324, 501.875pt x 647.57933pt>
 File: classSheepMeat.pdf Graphic file (type pdf)
 <use classSheepMeat.pdf>
 Package pdftex.def Info: classSheepMeat.pdf  used on input line 10.
 (pdftex.def)             Requested size: 66.14967pt x 85.35826pt.
- [50])
+ [52])
 (./classSideProduct.tex <./classSideProduct.pdf>
-<classSideProduct.pdf, id=3193, 501.875pt x 113.41371pt>
+<classSideProduct.pdf, id=3344, 501.875pt x 113.41371pt>
 File: classSideProduct.pdf Graphic file (type pdf)
 <use classSideProduct.pdf>
-Package pdftex.def Info: classSideProduct.pdf  used on input line 6.
+Package pdftex.def Info: classSideProduct.pdf  used on input line 10.
 (pdftex.def)             Requested size: 377.74547pt x 85.35826pt.
- [51])
+ [53])
 (./classSuperSecretSpecialProduct.tex <./classSuperSecretSpecialProduct.pdf>
-<classSuperSecretSpecialProduct.pdf, id=3212, 501.875pt x 340.25119pt>
+<classSuperSecretSpecialProduct.pdf, id=3367, 501.875pt x 340.25119pt>
 File: classSuperSecretSpecialProduct.pdf Graphic file (type pdf)
 <use classSuperSecretSpecialProduct.pdf>
 Package pdftex.def Info: classSuperSecretSpecialProduct.pdf  used on input line
  10.
 (pdftex.def)             Requested size: 125.89728pt x 85.35826pt.
 
-[52] [53]) (./classTruck.tex <./classTruck.pdf>
-<classTruck.pdf, id=3245, 501.875pt x 987.29852pt>
+[54]) (./classTruck.tex <./classTruck.pdf>
+<classTruck.pdf, id=3397, 501.875pt x 987.29852pt>
 File: classTruck.pdf Graphic file (type pdf)
 <use classTruck.pdf>
 Package pdftex.def Info: classTruck.pdf  used on input line 10.
 (pdftex.def)             Requested size: 43.39014pt x 85.35826pt.
- [54]) (./classWell.tex <./classWell.pdf>
-<classWell.pdf, id=3262, 501.875pt x 987.29852pt>
+ [55]) (./classWell.tex <./classWell.pdf>
+<classWell.pdf, id=3415, 501.875pt x 987.29852pt>
 File: classWell.pdf Graphic file (type pdf)
 <use classWell.pdf>
 Package pdftex.def Info: classWell.pdf  used on input line 10.
 (pdftex.def)             Requested size: 43.39014pt x 85.35826pt.
- [55]) (./classWorld.tex [56]) [57] [58
-
-] (./refman.ind [59
+ [56]) (./classWorld.tex [57]) [58] (./refman.ind [59
 
 
-] [60]
-[61] [62
 
-])
+] [60] [61] [62])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
- (./refman.aux)
+
+(./refman.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 32848D4FC6D4B2094A85E580130FAEA7;66899.
+(rerunfilecheck)             Checksum: 6CEA66694EE54D18D467126CA22521F1;70539.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17782 strings out of 492634
- 271964 string characters out of 6129879
- 422048 words of memory out of 5000000
- 20701 multiletter control sequences out of 15000+600000
+ 17820 strings out of 492634
+ 272820 string characters out of 6129879
+ 425964 words of memory out of 5000000
+ 20720 multiletter control sequences out of 15000+600000
  59653 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,16n,92p,938b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1345,10 +1347,10 @@ mf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/
 type1/urw/helvetic/uhvb8ac.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
 urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (74 pages, 392112 bytes).
+Output written on refman.pdf (74 pages, 399975 bytes).
 PDF statistics:
- 3824 PDF objects out of 4296 (max. 8388607)
- 3635 compressed objects within 37 object streams
- 650 named destinations out of 1000 (max. 500000)
- 3038 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3996 PDF objects out of 4296 (max. 8388607)
+ 3805 compressed objects within 39 object streams
+ 669 named destinations out of 1000 (max. 500000)
+ 3182 words of extra memory for PDF output out of 10000 (max. 10000000)
 

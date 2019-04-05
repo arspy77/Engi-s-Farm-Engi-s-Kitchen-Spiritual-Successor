@@ -4,6 +4,7 @@
 /** Product adalah kelas abstrak yang merepresentasikan produk yang bisa dibuat dan dijual player */
 class Product {
     public:
+        /** enumerasi kategori dari suatu produk, return value dari getCategory */
         enum Category {
             CHICKENEGG, BEEFCHICKENOMELETTE, BEEFMUTONSATE, 
             COWMEAT, DUCKMEAT, HORSEMILK, OSTRICHEGG, 

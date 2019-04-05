@@ -5,7 +5,7 @@
 #include "Cell.h"
 #include "FarmAnimal.h"
 
-/* MeatProducer adalah kelas abstrak turunan dari FarmAnimal yang tinggal di barn dan
+/** MeatProducer adalah kelas abstrak turunan dari FarmAnimal yang tinggal di barn dan
  *dapat menghasilkan daging jiga dilakukan aksi kill*/
 class MeatProducer : public FarmAnimal {
     public :

@@ -5,7 +5,7 @@
 #include "Cell.h"
 #include "FarmAnimal.h"
 
-/* MilkProducer adalah kelas abstrak turunan dari FarmAnimal yang tinggal di GrassLand dan
+/** MilkProducer adalah kelas abstrak turunan dari FarmAnimal yang tinggal di GrassLand dan
  *dapat menghasilkan Product berupa Milk jika di Interact */
 class MilkProducer : public FarmAnimal {
     public :

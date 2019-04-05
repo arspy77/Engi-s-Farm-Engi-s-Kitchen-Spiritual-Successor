@@ -3,7 +3,10 @@
 
 /** Point adalah suatu struktur data yang menyimpan posisi di bidang 2 dimensi */
 struct Point {
-    int x, y;
+    /** Absis dari poin */
+    int x; 
+    /** Ordinat dari poin */
+    int y;
 };
 
 #endif

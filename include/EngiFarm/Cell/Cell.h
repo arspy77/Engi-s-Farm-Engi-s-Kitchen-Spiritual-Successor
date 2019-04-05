@@ -30,7 +30,7 @@ class Cell{
         */        
         virtual void growGrass();
 
-        /* Jika Cell bertipe Land dan memiliki rumput maka rumput akan dihilangkan*/
+        /** Jika Cell bertipe Land dan memiliki rumput maka rumput akan dihilangkan*/
         virtual void removeGrass();
 
         /** Mengembalikan keberadaan grass jika Cell bertipe Land */

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: SideProduct Class Reference</title>
+<title>EngiFarm: SideProduct Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">EngiFarm
    </div>
   </td>
  </tr>
@@ -68,6 +68,8 @@ $(function() {
 <div class="title">SideProduct Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="SideProduct_8h_source.html">SideProduct.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for SideProduct:</div>
 <div class="dyncontent">
@@ -85,10 +87,12 @@ Inheritance diagram for SideProduct:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adecf30d2cd8d30b939035bea3ff181f0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLinkedList.html">LinkedList</a>&lt; <a class="el" href="classProduct.html">Product</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSideProduct.html#adecf30d2cd8d30b939035bea3ff181f0">getRecipe</a> ()=0</td></tr>
 <tr class="separator:adecf30d2cd8d30b939035bea3ff181f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae3e4189e9e440db9e4fadb927bb228"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSideProduct.html#a3ae3e4189e9e440db9e4fadb927bb228">~SideProduct</a> ()</td></tr>
+<tr class="separator:a3ae3e4189e9e440db9e4fadb927bb228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classProduct"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classProduct')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classProduct.html">Product</a></td></tr>
 <tr class="memitem:a865b39f7e47f1ba5f8275f82a893cd7a inherit pub_methods_classProduct"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProduct.html#a865b39f7e47f1ba5f8275f82a893cd7a">getPrice</a> () const =0</td></tr>
 <tr class="separator:a865b39f7e47f1ba5f8275f82a893cd7a inherit pub_methods_classProduct"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb5ca0e6b503b6b8ca614791535420ff inherit pub_methods_classProduct"><td class="memItemLeft" align="right" valign="top">virtual Category&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProduct.html#abb5ca0e6b503b6b8ca614791535420ff">getCategory</a> () const =0</td></tr>
+<tr class="memitem:abb5ca0e6b503b6b8ca614791535420ff inherit pub_methods_classProduct"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classProduct.html#a4be8926067abd593e348b753eedb9c6c">Category</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProduct.html#abb5ca0e6b503b6b8ca614791535420ff">getCategory</a> () const =0</td></tr>
 <tr class="separator:abb5ca0e6b503b6b8ca614791535420ff inherit pub_methods_classProduct"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d15b276d030e3e0da6e2f4fae74dc94 inherit pub_methods_classProduct"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProduct.html#a6d15b276d030e3e0da6e2f4fae74dc94">operator==</a> (<a class="el" href="classProduct.html">Product</a> &amp;P)</td></tr>
 <tr class="separator:a6d15b276d030e3e0da6e2f4fae74dc94 inherit pub_methods_classProduct"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,7 +102,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classProduct"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classProduct')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classProduct.html">Product</a></td></tr>
-<tr class="memitem:a4be8926067abd593e348b753eedb9c6c inherit pub_types_classProduct"><td class="memItemLeft" align="right" valign="top"><a id="a4be8926067abd593e348b753eedb9c6c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Category</b> { <br />
+<tr class="memitem:a4be8926067abd593e348b753eedb9c6c inherit pub_types_classProduct"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProduct.html#a4be8926067abd593e348b753eedb9c6c">Category</a> { <br />
 &#160;&#160;<b>CHICKENEGG</b>, 
 <b>BEEFCHICKENOMELETTE</b>, 
 <b>BEEFMUTONSATE</b>, 
@@ -114,6 +118,35 @@ Additional Inherited Members</h2></td></tr>
  }</td></tr>
 <tr class="separator:a4be8926067abd593e348b753eedb9c6c inherit pub_types_classProduct"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classSideProduct.html">SideProduct</a> adalah kelas abstrak turunan dari kelas <a class="el" href="classProduct.html">Product</a> yang didapat dari hasil mix </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3ae3e4189e9e440db9e4fadb927bb228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae3e4189e9e440db9e4fadb927bb228">&#9670;&nbsp;</a></span>~SideProduct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual SideProduct::~SideProduct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor side product </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="adecf30d2cd8d30b939035bea3ff181f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adecf30d2cd8d30b939035bea3ff181f0">&#9670;&nbsp;</a></span>getRecipe()</h2>

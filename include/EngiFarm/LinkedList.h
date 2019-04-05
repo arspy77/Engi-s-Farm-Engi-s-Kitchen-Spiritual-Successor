@@ -35,6 +35,12 @@ class LinkedList {
 		 *  Jika tidak ada, bernilai -1.
 		 */
 		int find(T elm);
+
+		/**
+		 * Mencari indexs pertama dari (*elm) dari LinkedList
+		 * of pointer to Object.
+		 * Jika tidak ada, bernilai -1.
+		 */
 		int findPointer(T elm);
 
 		/** Mengembalikan apakah list empty atau tidak */

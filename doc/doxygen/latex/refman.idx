@@ -38,6 +38,8 @@
 \indexentry{isFacility@{isFacility}!Cell@{Cell}|hyperpage}{10}
 \indexentry{Cell@{Cell}!isGrassExist@{isGrassExist}|hyperpage}{11}
 \indexentry{isGrassExist@{isGrassExist}!Cell@{Cell}|hyperpage}{11}
+\indexentry{Cell@{Cell}!removeGrass@{removeGrass}|hyperpage}{11}
+\indexentry{removeGrass@{removeGrass}!Cell@{Cell}|hyperpage}{11}
 \indexentry{Cell@{Cell}!setIsOcupied@{setIsOcupied}|hyperpage}{11}
 \indexentry{setIsOcupied@{setIsOcupied}!Cell@{Cell}|hyperpage}{11}
 \indexentry{Cell@{Cell}!isOcupied@{isOcupied}|hyperpage}{11}
@@ -161,6 +163,8 @@
 \indexentry{isFacility@{isFacility}!Land@{Land}|hyperpage}{32}
 \indexentry{Land@{Land}!isGrassExist@{isGrassExist}|hyperpage}{32}
 \indexentry{isGrassExist@{isGrassExist}!Land@{Land}|hyperpage}{32}
+\indexentry{Land@{Land}!removeGrass@{removeGrass}|hyperpage}{32}
+\indexentry{removeGrass@{removeGrass}!Land@{Land}|hyperpage}{32}
 \indexentry{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}|hyperpage}{32}
 \indexentry{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!LinkedList@{LinkedList}|hyperpage}{33}
 \indexentry{LinkedList@{LinkedList}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}|hyperpage}{33}
@@ -174,6 +178,8 @@
 \indexentry{add@{add}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}|hyperpage}{33}
 \indexentry{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!find@{find}|hyperpage}{34}
 \indexentry{find@{find}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}|hyperpage}{34}
+\indexentry{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!findPointer@{findPointer}|hyperpage}{34}
+\indexentry{findPointer@{findPointer}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}|hyperpage}{34}
 \indexentry{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!get@{get}|hyperpage}{34}
 \indexentry{get@{get}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}|hyperpage}{34}
 \indexentry{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!isEmpty@{isEmpty}|hyperpage}{34}
@@ -186,8 +192,8 @@
 \indexentry{operator\mbox{[}\mbox{]}@{operator[]}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}|hyperpage}{34}
 \indexentry{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!print@{print}|hyperpage}{34}
 \indexentry{print@{print}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}|hyperpage}{34}
-\indexentry{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!remove@{remove}|hyperpage}{34}
-\indexentry{remove@{remove}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}|hyperpage}{34}
+\indexentry{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!remove@{remove}|hyperpage}{35}
+\indexentry{remove@{remove}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}|hyperpage}{35}
 \indexentry{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!removeIdx@{removeIdx}|hyperpage}{35}
 \indexentry{removeIdx@{removeIdx}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}|hyperpage}{35}
 \indexentry{LinkedListNode$<$ T $>$@{LinkedListNode$<$ T $>$}|hyperpage}{35}
@@ -226,104 +232,118 @@
 \indexentry{MilkProducer@{MilkProducer}|hyperpage}{40}
 \indexentry{MilkProducer@{MilkProducer}!MilkProducer@{MilkProducer}|hyperpage}{40}
 \indexentry{MilkProducer@{MilkProducer}!MilkProducer@{MilkProducer}|hyperpage}{40}
-\indexentry{MilkProducer@{MilkProducer}!````~MilkProducer@{$\sim$MilkProducer}|hyperpage}{40}
-\indexentry{````~MilkProducer@{$\sim$MilkProducer}!MilkProducer@{MilkProducer}|hyperpage}{40}
+\indexentry{MilkProducer@{MilkProducer}!````~MilkProducer@{$\sim$MilkProducer}|hyperpage}{41}
+\indexentry{````~MilkProducer@{$\sim$MilkProducer}!MilkProducer@{MilkProducer}|hyperpage}{41}
 \indexentry{MilkProducer@{MilkProducer}!getKillable@{getKillable}|hyperpage}{41}
 \indexentry{getKillable@{getKillable}!MilkProducer@{MilkProducer}|hyperpage}{41}
 \indexentry{MilkProducer@{MilkProducer}!getProduce@{getProduce}|hyperpage}{41}
 \indexentry{getProduce@{getProduce}!MilkProducer@{MilkProducer}|hyperpage}{41}
 \indexentry{MilkProducer@{MilkProducer}!canProduce@{canProduce}|hyperpage}{41}
 \indexentry{canProduce@{canProduce}!MilkProducer@{MilkProducer}|hyperpage}{41}
-\indexentry{Mixer@{Mixer}|hyperpage}{41}
+\indexentry{Mixer@{Mixer}|hyperpage}{42}
 \indexentry{Mixer@{Mixer}!getCategory@{getCategory}|hyperpage}{42}
 \indexentry{getCategory@{getCategory}!Mixer@{Mixer}|hyperpage}{42}
-\indexentry{Ostrich@{Ostrich}|hyperpage}{42}
+\indexentry{Ostrich@{Ostrich}|hyperpage}{43}
 \indexentry{Ostrich@{Ostrich}!Ostrich@{Ostrich}|hyperpage}{43}
 \indexentry{Ostrich@{Ostrich}!Ostrich@{Ostrich}|hyperpage}{43}
 \indexentry{Ostrich@{Ostrich}!makeNoise@{makeNoise}|hyperpage}{43}
 \indexentry{makeNoise@{makeNoise}!Ostrich@{Ostrich}|hyperpage}{43}
-\indexentry{Ostrich@{Ostrich}!produceProduct@{produceProduct}|hyperpage}{43}
-\indexentry{produceProduct@{produceProduct}!Ostrich@{Ostrich}|hyperpage}{43}
-\indexentry{Ostrich@{Ostrich}!render@{render}|hyperpage}{43}
-\indexentry{render@{render}!Ostrich@{Ostrich}|hyperpage}{43}
+\indexentry{Ostrich@{Ostrich}!produceProduct@{produceProduct}|hyperpage}{44}
+\indexentry{produceProduct@{produceProduct}!Ostrich@{Ostrich}|hyperpage}{44}
+\indexentry{Ostrich@{Ostrich}!render@{render}|hyperpage}{44}
+\indexentry{render@{render}!Ostrich@{Ostrich}|hyperpage}{44}
 \indexentry{OstrichEgg@{OstrichEgg}|hyperpage}{44}
-\indexentry{OstrichEgg@{OstrichEgg}!getCategory@{getCategory}|hyperpage}{44}
-\indexentry{getCategory@{getCategory}!OstrichEgg@{OstrichEgg}|hyperpage}{44}
-\indexentry{OstrichEgg@{OstrichEgg}!getPrice@{getPrice}|hyperpage}{44}
-\indexentry{getPrice@{getPrice}!OstrichEgg@{OstrichEgg}|hyperpage}{44}
+\indexentry{OstrichEgg@{OstrichEgg}!getCategory@{getCategory}|hyperpage}{45}
+\indexentry{getCategory@{getCategory}!OstrichEgg@{OstrichEgg}|hyperpage}{45}
+\indexentry{OstrichEgg@{OstrichEgg}!getPrice@{getPrice}|hyperpage}{45}
+\indexentry{getPrice@{getPrice}!OstrichEgg@{OstrichEgg}|hyperpage}{45}
 \indexentry{Player@{Player}|hyperpage}{45}
-\indexentry{Player@{Player}!Player@{Player}|hyperpage}{45}
-\indexentry{Player@{Player}!Player@{Player}|hyperpage}{45}
+\indexentry{Player@{Player}!Player@{Player}|hyperpage}{46}
+\indexentry{Player@{Player}!Player@{Player}|hyperpage}{46}
 \indexentry{Player@{Player}!````~Player@{$\sim$Player}|hyperpage}{46}
 \indexentry{````~Player@{$\sim$Player}!Player@{Player}|hyperpage}{46}
+\indexentry{Player@{Player}!getInventory@{getInventory}|hyperpage}{46}
+\indexentry{getInventory@{getInventory}!Player@{Player}|hyperpage}{46}
 \indexentry{Player@{Player}!getMoney@{getMoney}|hyperpage}{46}
 \indexentry{getMoney@{getMoney}!Player@{Player}|hyperpage}{46}
-\indexentry{Player@{Player}!grow@{grow}|hyperpage}{46}
-\indexentry{grow@{grow}!Player@{Player}|hyperpage}{46}
-\indexentry{Player@{Player}!interact@{interact}|hyperpage}{46}
-\indexentry{interact@{interact}!Player@{Player}|hyperpage}{46}
-\indexentry{Player@{Player}!kill@{kill}|hyperpage}{46}
-\indexentry{kill@{kill}!Player@{Player}|hyperpage}{46}
-\indexentry{Player@{Player}!mix@{mix}|hyperpage}{46}
-\indexentry{mix@{mix}!Player@{Player}|hyperpage}{46}
-\indexentry{Player@{Player}!render@{render}|hyperpage}{46}
-\indexentry{render@{render}!Player@{Player}|hyperpage}{46}
+\indexentry{Player@{Player}!getrecipeBook@{getrecipeBook}|hyperpage}{46}
+\indexentry{getrecipeBook@{getrecipeBook}!Player@{Player}|hyperpage}{46}
+\indexentry{Player@{Player}!getWater@{getWater}|hyperpage}{46}
+\indexentry{getWater@{getWater}!Player@{Player}|hyperpage}{46}
+\indexentry{Player@{Player}!grow@{grow}|hyperpage}{47}
+\indexentry{grow@{grow}!Player@{Player}|hyperpage}{47}
+\indexentry{Player@{Player}!interact@{interact}|hyperpage}{47}
+\indexentry{interact@{interact}!Player@{Player}|hyperpage}{47}
+\indexentry{Player@{Player}!kill@{kill}|hyperpage}{47}
+\indexentry{kill@{kill}!Player@{Player}|hyperpage}{47}
+\indexentry{Player@{Player}!mix@{mix}|hyperpage}{47}
+\indexentry{mix@{mix}!Player@{Player}|hyperpage}{47}
+\indexentry{Player@{Player}!render@{render}|hyperpage}{47}
+\indexentry{render@{render}!Player@{Player}|hyperpage}{47}
 \indexentry{Player@{Player}!sellAll@{sellAll}|hyperpage}{47}
 \indexentry{sellAll@{sellAll}!Player@{Player}|hyperpage}{47}
 \indexentry{Player@{Player}!takeWater@{takeWater}|hyperpage}{47}
 \indexentry{takeWater@{takeWater}!Player@{Player}|hyperpage}{47}
 \indexentry{Player@{Player}!talk@{talk}|hyperpage}{47}
 \indexentry{talk@{talk}!Player@{Player}|hyperpage}{47}
-\indexentry{Point@{Point}|hyperpage}{47}
-\indexentry{Product@{Product}|hyperpage}{48}
-\indexentry{Product@{Product}!getCategory@{getCategory}|hyperpage}{48}
-\indexentry{getCategory@{getCategory}!Product@{Product}|hyperpage}{48}
-\indexentry{Product@{Product}!getPrice@{getPrice}|hyperpage}{49}
-\indexentry{getPrice@{getPrice}!Product@{Product}|hyperpage}{49}
-\indexentry{Product@{Product}!operator"!=@{operator"!=}|hyperpage}{49}
-\indexentry{operator"!=@{operator"!=}!Product@{Product}|hyperpage}{49}
-\indexentry{Product@{Product}!operator==@{operator==}|hyperpage}{49}
-\indexentry{operator==@{operator==}!Product@{Product}|hyperpage}{49}
-\indexentry{Sheep@{Sheep}|hyperpage}{49}
-\indexentry{Sheep@{Sheep}!Sheep@{Sheep}|hyperpage}{50}
-\indexentry{Sheep@{Sheep}!Sheep@{Sheep}|hyperpage}{50}
-\indexentry{Sheep@{Sheep}!makeNoise@{makeNoise}|hyperpage}{50}
-\indexentry{makeNoise@{makeNoise}!Sheep@{Sheep}|hyperpage}{50}
-\indexentry{Sheep@{Sheep}!produceProduct@{produceProduct}|hyperpage}{50}
-\indexentry{produceProduct@{produceProduct}!Sheep@{Sheep}|hyperpage}{50}
-\indexentry{Sheep@{Sheep}!render@{render}|hyperpage}{50}
-\indexentry{render@{render}!Sheep@{Sheep}|hyperpage}{50}
-\indexentry{SheepMeat@{SheepMeat}|hyperpage}{51}
-\indexentry{SheepMeat@{SheepMeat}!getCategory@{getCategory}|hyperpage}{51}
-\indexentry{getCategory@{getCategory}!SheepMeat@{SheepMeat}|hyperpage}{51}
-\indexentry{SheepMeat@{SheepMeat}!getPrice@{getPrice}|hyperpage}{51}
-\indexentry{getPrice@{getPrice}!SheepMeat@{SheepMeat}|hyperpage}{51}
-\indexentry{SideProduct@{SideProduct}|hyperpage}{52}
-\indexentry{SideProduct@{SideProduct}!getRecipe@{getRecipe}|hyperpage}{52}
-\indexentry{getRecipe@{getRecipe}!SideProduct@{SideProduct}|hyperpage}{52}
-\indexentry{SuperSecretSpecialProduct@{SuperSecretSpecialProduct}|hyperpage}{53}
-\indexentry{SuperSecretSpecialProduct@{SuperSecretSpecialProduct}!SuperSecretSpecialProduct@{SuperSecretSpecialProduct}|hyperpage}{53}
-\indexentry{SuperSecretSpecialProduct@{SuperSecretSpecialProduct}!SuperSecretSpecialProduct@{SuperSecretSpecialProduct}|hyperpage}{53}
-\indexentry{SuperSecretSpecialProduct@{SuperSecretSpecialProduct}!getCategory@{getCategory}|hyperpage}{53}
-\indexentry{getCategory@{getCategory}!SuperSecretSpecialProduct@{SuperSecretSpecialProduct}|hyperpage}{53}
-\indexentry{SuperSecretSpecialProduct@{SuperSecretSpecialProduct}!getPrice@{getPrice}|hyperpage}{54}
-\indexentry{getPrice@{getPrice}!SuperSecretSpecialProduct@{SuperSecretSpecialProduct}|hyperpage}{54}
-\indexentry{SuperSecretSpecialProduct@{SuperSecretSpecialProduct}!getRecipe@{getRecipe}|hyperpage}{54}
-\indexentry{getRecipe@{getRecipe}!SuperSecretSpecialProduct@{SuperSecretSpecialProduct}|hyperpage}{54}
-\indexentry{Truck@{Truck}|hyperpage}{54}
-\indexentry{Truck@{Truck}!getCategory@{getCategory}|hyperpage}{55}
-\indexentry{getCategory@{getCategory}!Truck@{Truck}|hyperpage}{55}
-\indexentry{Well@{Well}|hyperpage}{55}
-\indexentry{Well@{Well}!getCategory@{getCategory}|hyperpage}{56}
-\indexentry{getCategory@{getCategory}!Well@{Well}|hyperpage}{56}
-\indexentry{World@{World}|hyperpage}{56}
-\indexentry{World@{World}!World@{World}|hyperpage}{57}
-\indexentry{World@{World}!World@{World}|hyperpage}{57}
-\indexentry{World@{World}!````~World@{$\sim$World}|hyperpage}{57}
-\indexentry{````~World@{$\sim$World}!World@{World}|hyperpage}{57}
-\indexentry{World@{World}!Draw@{Draw}|hyperpage}{57}
-\indexentry{Draw@{Draw}!World@{World}|hyperpage}{57}
-\indexentry{World@{World}!Input@{Input}|hyperpage}{57}
-\indexentry{Input@{Input}!World@{World}|hyperpage}{57}
-\indexentry{World@{World}!Update@{Update}|hyperpage}{57}
-\indexentry{Update@{Update}!World@{World}|hyperpage}{57}
+\indexentry{Point@{Point}|hyperpage}{48}
+\indexentry{Point@{Point}!x@{x}|hyperpage}{48}
+\indexentry{x@{x}!Point@{Point}|hyperpage}{48}
+\indexentry{Point@{Point}!y@{y}|hyperpage}{48}
+\indexentry{y@{y}!Point@{Point}|hyperpage}{48}
+\indexentry{Product@{Product}|hyperpage}{49}
+\indexentry{Product@{Product}!Category@{Category}|hyperpage}{49}
+\indexentry{Category@{Category}!Product@{Product}|hyperpage}{49}
+\indexentry{Product@{Product}!getCategory@{getCategory}|hyperpage}{50}
+\indexentry{getCategory@{getCategory}!Product@{Product}|hyperpage}{50}
+\indexentry{Product@{Product}!getPrice@{getPrice}|hyperpage}{50}
+\indexentry{getPrice@{getPrice}!Product@{Product}|hyperpage}{50}
+\indexentry{Product@{Product}!operator"!=@{operator"!=}|hyperpage}{50}
+\indexentry{operator"!=@{operator"!=}!Product@{Product}|hyperpage}{50}
+\indexentry{Product@{Product}!operator==@{operator==}|hyperpage}{50}
+\indexentry{operator==@{operator==}!Product@{Product}|hyperpage}{50}
+\indexentry{Sheep@{Sheep}|hyperpage}{51}
+\indexentry{Sheep@{Sheep}!Sheep@{Sheep}|hyperpage}{51}
+\indexentry{Sheep@{Sheep}!Sheep@{Sheep}|hyperpage}{51}
+\indexentry{Sheep@{Sheep}!makeNoise@{makeNoise}|hyperpage}{51}
+\indexentry{makeNoise@{makeNoise}!Sheep@{Sheep}|hyperpage}{51}
+\indexentry{Sheep@{Sheep}!produceProduct@{produceProduct}|hyperpage}{52}
+\indexentry{produceProduct@{produceProduct}!Sheep@{Sheep}|hyperpage}{52}
+\indexentry{Sheep@{Sheep}!render@{render}|hyperpage}{52}
+\indexentry{render@{render}!Sheep@{Sheep}|hyperpage}{52}
+\indexentry{SheepMeat@{SheepMeat}|hyperpage}{52}
+\indexentry{SheepMeat@{SheepMeat}!getCategory@{getCategory}|hyperpage}{53}
+\indexentry{getCategory@{getCategory}!SheepMeat@{SheepMeat}|hyperpage}{53}
+\indexentry{SheepMeat@{SheepMeat}!getPrice@{getPrice}|hyperpage}{53}
+\indexentry{getPrice@{getPrice}!SheepMeat@{SheepMeat}|hyperpage}{53}
+\indexentry{SideProduct@{SideProduct}|hyperpage}{53}
+\indexentry{SideProduct@{SideProduct}!````~SideProduct@{$\sim$SideProduct}|hyperpage}{54}
+\indexentry{````~SideProduct@{$\sim$SideProduct}!SideProduct@{SideProduct}|hyperpage}{54}
+\indexentry{SideProduct@{SideProduct}!getRecipe@{getRecipe}|hyperpage}{54}
+\indexentry{getRecipe@{getRecipe}!SideProduct@{SideProduct}|hyperpage}{54}
+\indexentry{SuperSecretSpecialProduct@{SuperSecretSpecialProduct}|hyperpage}{54}
+\indexentry{SuperSecretSpecialProduct@{SuperSecretSpecialProduct}!SuperSecretSpecialProduct@{SuperSecretSpecialProduct}|hyperpage}{55}
+\indexentry{SuperSecretSpecialProduct@{SuperSecretSpecialProduct}!SuperSecretSpecialProduct@{SuperSecretSpecialProduct}|hyperpage}{55}
+\indexentry{SuperSecretSpecialProduct@{SuperSecretSpecialProduct}!getCategory@{getCategory}|hyperpage}{55}
+\indexentry{getCategory@{getCategory}!SuperSecretSpecialProduct@{SuperSecretSpecialProduct}|hyperpage}{55}
+\indexentry{SuperSecretSpecialProduct@{SuperSecretSpecialProduct}!getPrice@{getPrice}|hyperpage}{55}
+\indexentry{getPrice@{getPrice}!SuperSecretSpecialProduct@{SuperSecretSpecialProduct}|hyperpage}{55}
+\indexentry{SuperSecretSpecialProduct@{SuperSecretSpecialProduct}!getRecipe@{getRecipe}|hyperpage}{55}
+\indexentry{getRecipe@{getRecipe}!SuperSecretSpecialProduct@{SuperSecretSpecialProduct}|hyperpage}{55}
+\indexentry{Truck@{Truck}|hyperpage}{56}
+\indexentry{Truck@{Truck}!getCategory@{getCategory}|hyperpage}{56}
+\indexentry{getCategory@{getCategory}!Truck@{Truck}|hyperpage}{56}
+\indexentry{Well@{Well}|hyperpage}{57}
+\indexentry{Well@{Well}!getCategory@{getCategory}|hyperpage}{57}
+\indexentry{getCategory@{getCategory}!Well@{Well}|hyperpage}{57}
+\indexentry{World@{World}|hyperpage}{58}
+\indexentry{World@{World}!World@{World}|hyperpage}{58}
+\indexentry{World@{World}!World@{World}|hyperpage}{58}
+\indexentry{World@{World}!````~World@{$\sim$World}|hyperpage}{58}
+\indexentry{````~World@{$\sim$World}!World@{World}|hyperpage}{58}
+\indexentry{World@{World}!Draw@{Draw}|hyperpage}{58}
+\indexentry{Draw@{Draw}!World@{World}|hyperpage}{58}
+\indexentry{World@{World}!Input@{Input}|hyperpage}{58}
+\indexentry{Input@{Input}!World@{World}|hyperpage}{58}
+\indexentry{World@{World}!Update@{Update}|hyperpage}{58}
+\indexentry{Update@{Update}!World@{World}|hyperpage}{58}

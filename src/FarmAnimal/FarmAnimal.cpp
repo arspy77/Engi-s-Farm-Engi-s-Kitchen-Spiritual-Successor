@@ -76,7 +76,7 @@ void FarmAnimal::moveHeuristically(){
             }
         }
     } //nearestPoint Found
-    Direction d;
+    Direction d = Direction::UP;
     if (nearestPoint.x == -1) {
         int randomInt = rand() % 4;
         switch(randomInt){

@@ -23,11 +23,13 @@
   \item {$\sim$MeatProducer}
     \subitem {MeatProducer}, \hyperpage{39}
   \item {$\sim$MilkProducer}
-    \subitem {MilkProducer}, \hyperpage{40}
+    \subitem {MilkProducer}, \hyperpage{41}
   \item {$\sim$Player}
     \subitem {Player}, \hyperpage{46}
+  \item {$\sim$SideProduct}
+    \subitem {SideProduct}, \hyperpage{54}
   \item {$\sim$World}
-    \subitem {World}, \hyperpage{57}
+    \subitem {World}, \hyperpage{58}
 
   \indexspace
 
@@ -60,6 +62,7 @@
     \subitem {MilkProducer}, \hyperpage{41}
   \item {Category}
     \subitem {Cell}, \hyperpage{10}
+    \subitem {Product}, \hyperpage{49}
   \item {Cell}, \hyperpage{9}
     \subitem {$\sim$Cell}, \hyperpage{10}
     \subitem {Category}, \hyperpage{10}
@@ -69,6 +72,7 @@
     \subitem {isFacility}, \hyperpage{10}
     \subitem {isGrassExist}, \hyperpage{11}
     \subitem {isOcupied}, \hyperpage{11}
+    \subitem {removeGrass}, \hyperpage{11}
     \subitem {setIsOcupied}, \hyperpage{11}
   \item {Chicken}, \hyperpage{12}
     \subitem {Chicken}, \hyperpage{12}
@@ -92,7 +96,7 @@
   \indexspace
 
   \item {Draw}
-    \subitem {World}, \hyperpage{57}
+    \subitem {World}, \hyperpage{58}
   \item {Duck}, \hyperpage{18}
     \subitem {Duck}, \hyperpage{18}
     \subitem {makeNoise}, \hyperpage{18}
@@ -137,6 +141,8 @@
   \item {FarmProduct}, \hyperpage{27}
   \item {find}
     \subitem {LinkedList$<$ T $>$}, \hyperpage{34}
+  \item {findPointer}
+    \subitem {LinkedList$<$ T $>$}, \hyperpage{34}
 
   \indexspace
 
@@ -154,12 +160,14 @@
     \subitem {GrassLand}, \hyperpage{28}
     \subitem {HorseMilk}, \hyperpage{30}
     \subitem {Mixer}, \hyperpage{42}
-    \subitem {OstrichEgg}, \hyperpage{44}
-    \subitem {Product}, \hyperpage{48}
-    \subitem {SheepMeat}, \hyperpage{51}
-    \subitem {SuperSecretSpecialProduct}, \hyperpage{53}
-    \subitem {Truck}, \hyperpage{55}
-    \subitem {Well}, \hyperpage{56}
+    \subitem {OstrichEgg}, \hyperpage{45}
+    \subitem {Product}, \hyperpage{50}
+    \subitem {SheepMeat}, \hyperpage{53}
+    \subitem {SuperSecretSpecialProduct}, \hyperpage{55}
+    \subitem {Truck}, \hyperpage{56}
+    \subitem {Well}, \hyperpage{57}
+  \item {getInventory}
+    \subitem {Player}, \hyperpage{46}
   \item {getIsOcupied}
     \subitem {Cell}, \hyperpage{10}
   \item {getKillable}
@@ -178,10 +186,10 @@
     \subitem {CowMeat}, \hyperpage{17}
     \subitem {DuckMeat}, \hyperpage{20}
     \subitem {HorseMilk}, \hyperpage{30}
-    \subitem {OstrichEgg}, \hyperpage{44}
-    \subitem {Product}, \hyperpage{49}
-    \subitem {SheepMeat}, \hyperpage{51}
-    \subitem {SuperSecretSpecialProduct}, \hyperpage{54}
+    \subitem {OstrichEgg}, \hyperpage{45}
+    \subitem {Product}, \hyperpage{50}
+    \subitem {SheepMeat}, \hyperpage{53}
+    \subitem {SuperSecretSpecialProduct}, \hyperpage{55}
   \item {getProduce}
     \subitem {EggProducer}, \hyperpage{21}
     \subitem {FarmAnimal}, \hyperpage{26}
@@ -190,12 +198,16 @@
   \item {getRecipe}
     \subitem {BeefChickenOmelette}, \hyperpage{7}
     \subitem {BeefMuttonSate}, \hyperpage{8}
-    \subitem {SideProduct}, \hyperpage{52}
-    \subitem {SuperSecretSpecialProduct}, \hyperpage{54}
+    \subitem {SideProduct}, \hyperpage{54}
+    \subitem {SuperSecretSpecialProduct}, \hyperpage{55}
+  \item {getrecipeBook}
+    \subitem {Player}, \hyperpage{46}
+  \item {getWater}
+    \subitem {Player}, \hyperpage{46}
   \item {GrassLand}, \hyperpage{27}
     \subitem {getCategory}, \hyperpage{28}
   \item {grow}
-    \subitem {Player}, \hyperpage{46}
+    \subitem {Player}, \hyperpage{47}
   \item {growGrass}
     \subitem {Cell}, \hyperpage{10}
     \subitem {Land}, \hyperpage{31}
@@ -214,9 +226,9 @@
   \indexspace
 
   \item {Input}
-    \subitem {World}, \hyperpage{57}
+    \subitem {World}, \hyperpage{58}
   \item {interact}
-    \subitem {Player}, \hyperpage{46}
+    \subitem {Player}, \hyperpage{47}
   \item {isDead}
     \subitem {FarmAnimal}, \hyperpage{26}
   \item {isEmpty}
@@ -237,7 +249,7 @@
   \indexspace
 
   \item {kill}
-    \subitem {Player}, \hyperpage{46}
+    \subitem {Player}, \hyperpage{47}
 
   \indexspace
 
@@ -246,6 +258,7 @@
     \subitem {growGrass}, \hyperpage{31}
     \subitem {isFacility}, \hyperpage{32}
     \subitem {isGrassExist}, \hyperpage{32}
+    \subitem {removeGrass}, \hyperpage{32}
   \item {len}
     \subitem {LinkedList$<$ T $>$}, \hyperpage{34}
   \item {LinkedList}
@@ -254,6 +267,7 @@
     \subitem {$\sim$LinkedList}, \hyperpage{33}
     \subitem {add}, \hyperpage{33}
     \subitem {find}, \hyperpage{34}
+    \subitem {findPointer}, \hyperpage{34}
     \subitem {get}, \hyperpage{34}
     \subitem {isEmpty}, \hyperpage{34}
     \subitem {len}, \hyperpage{34}
@@ -262,7 +276,7 @@
     \subitem {operator=}, \hyperpage{34}
     \subitem {operator[]}, \hyperpage{34}
     \subitem {print}, \hyperpage{34}
-    \subitem {remove}, \hyperpage{34}
+    \subitem {remove}, \hyperpage{35}
     \subitem {removeIdx}, \hyperpage{35}
   \item {LinkedListNode}
     \subitem {LinkedListNode$<$ T $>$}, \hyperpage{36}
@@ -289,7 +303,7 @@
     \subitem {FarmAnimal}, \hyperpage{26}
     \subitem {Horse}, \hyperpage{29}
     \subitem {Ostrich}, \hyperpage{43}
-    \subitem {Sheep}, \hyperpage{50}
+    \subitem {Sheep}, \hyperpage{51}
   \item {maxTimeToGetHungry}
     \subitem {FarmAnimal}, \hyperpage{26}
   \item {MeatProducer}, \hyperpage{38}
@@ -298,14 +312,14 @@
     \subitem {getProduce}, \hyperpage{39}
     \subitem {MeatProducer}, \hyperpage{39}
   \item {MilkProducer}, \hyperpage{40}
-    \subitem {$\sim$MilkProducer}, \hyperpage{40}
+    \subitem {$\sim$MilkProducer}, \hyperpage{41}
     \subitem {canProduce}, \hyperpage{41}
     \subitem {getKillable}, \hyperpage{41}
     \subitem {getProduce}, \hyperpage{41}
     \subitem {MilkProducer}, \hyperpage{40}
   \item {mix}
-    \subitem {Player}, \hyperpage{46}
-  \item {Mixer}, \hyperpage{41}
+    \subitem {Player}, \hyperpage{47}
+  \item {Mixer}, \hyperpage{42}
     \subitem {getCategory}, \hyperpage{42}
   \item {move}
     \subitem {LivingThing}, \hyperpage{37}
@@ -320,37 +334,42 @@
   \indexspace
 
   \item {operator!=}
-    \subitem {Product}, \hyperpage{49}
+    \subitem {Product}, \hyperpage{50}
   \item {operator=}
     \subitem {LinkedList$<$ T $>$}, \hyperpage{34}
   \item {operator==}
-    \subitem {Product}, \hyperpage{49}
+    \subitem {Product}, \hyperpage{50}
   \item {operator[]}
     \subitem {LinkedList$<$ T $>$}, \hyperpage{34}
-  \item {Ostrich}, \hyperpage{42}
+  \item {Ostrich}, \hyperpage{43}
     \subitem {makeNoise}, \hyperpage{43}
     \subitem {Ostrich}, \hyperpage{43}
-    \subitem {produceProduct}, \hyperpage{43}
-    \subitem {render}, \hyperpage{43}
+    \subitem {produceProduct}, \hyperpage{44}
+    \subitem {render}, \hyperpage{44}
   \item {OstrichEgg}, \hyperpage{44}
-    \subitem {getCategory}, \hyperpage{44}
-    \subitem {getPrice}, \hyperpage{44}
+    \subitem {getCategory}, \hyperpage{45}
+    \subitem {getPrice}, \hyperpage{45}
 
   \indexspace
 
   \item {Player}, \hyperpage{45}
     \subitem {$\sim$Player}, \hyperpage{46}
+    \subitem {getInventory}, \hyperpage{46}
     \subitem {getMoney}, \hyperpage{46}
-    \subitem {grow}, \hyperpage{46}
-    \subitem {interact}, \hyperpage{46}
-    \subitem {kill}, \hyperpage{46}
-    \subitem {mix}, \hyperpage{46}
-    \subitem {Player}, \hyperpage{45}
-    \subitem {render}, \hyperpage{46}
+    \subitem {getrecipeBook}, \hyperpage{46}
+    \subitem {getWater}, \hyperpage{46}
+    \subitem {grow}, \hyperpage{47}
+    \subitem {interact}, \hyperpage{47}
+    \subitem {kill}, \hyperpage{47}
+    \subitem {mix}, \hyperpage{47}
+    \subitem {Player}, \hyperpage{46}
+    \subitem {render}, \hyperpage{47}
     \subitem {sellAll}, \hyperpage{47}
     \subitem {takeWater}, \hyperpage{47}
     \subitem {talk}, \hyperpage{47}
-  \item {Point}, \hyperpage{47}
+  \item {Point}, \hyperpage{48}
+    \subitem {x}, \hyperpage{48}
+    \subitem {y}, \hyperpage{48}
   \item {print}
     \subitem {LinkedList$<$ T $>$}, \hyperpage{34}
   \item {produceProduct}
@@ -359,18 +378,22 @@
     \subitem {Duck}, \hyperpage{19}
     \subitem {FarmAnimal}, \hyperpage{26}
     \subitem {Horse}, \hyperpage{29}
-    \subitem {Ostrich}, \hyperpage{43}
-    \subitem {Sheep}, \hyperpage{50}
-  \item {Product}, \hyperpage{48}
-    \subitem {getCategory}, \hyperpage{48}
-    \subitem {getPrice}, \hyperpage{49}
-    \subitem {operator!=}, \hyperpage{49}
-    \subitem {operator==}, \hyperpage{49}
+    \subitem {Ostrich}, \hyperpage{44}
+    \subitem {Sheep}, \hyperpage{52}
+  \item {Product}, \hyperpage{49}
+    \subitem {Category}, \hyperpage{49}
+    \subitem {getCategory}, \hyperpage{50}
+    \subitem {getPrice}, \hyperpage{50}
+    \subitem {operator!=}, \hyperpage{50}
+    \subitem {operator==}, \hyperpage{50}
 
   \indexspace
 
   \item {remove}
-    \subitem {LinkedList$<$ T $>$}, \hyperpage{34}
+    \subitem {LinkedList$<$ T $>$}, \hyperpage{35}
+  \item {removeGrass}
+    \subitem {Cell}, \hyperpage{11}
+    \subitem {Land}, \hyperpage{32}
   \item {removeIdx}
     \subitem {LinkedList$<$ T $>$}, \hyperpage{35}
   \item {render}
@@ -379,9 +402,9 @@
     \subitem {Duck}, \hyperpage{19}
     \subitem {Horse}, \hyperpage{29}
     \subitem {LivingThing}, \hyperpage{37}
-    \subitem {Ostrich}, \hyperpage{43}
-    \subitem {Player}, \hyperpage{46}
-    \subitem {Sheep}, \hyperpage{50}
+    \subitem {Ostrich}, \hyperpage{44}
+    \subitem {Player}, \hyperpage{47}
+    \subitem {Sheep}, \hyperpage{52}
 
   \indexspace
 
@@ -389,21 +412,22 @@
     \subitem {Player}, \hyperpage{47}
   \item {setIsOcupied}
     \subitem {Cell}, \hyperpage{11}
-  \item {Sheep}, \hyperpage{49}
-    \subitem {makeNoise}, \hyperpage{50}
-    \subitem {produceProduct}, \hyperpage{50}
-    \subitem {render}, \hyperpage{50}
-    \subitem {Sheep}, \hyperpage{50}
-  \item {SheepMeat}, \hyperpage{51}
-    \subitem {getCategory}, \hyperpage{51}
-    \subitem {getPrice}, \hyperpage{51}
-  \item {SideProduct}, \hyperpage{52}
-    \subitem {getRecipe}, \hyperpage{52}
-  \item {SuperSecretSpecialProduct}, \hyperpage{53}
+  \item {Sheep}, \hyperpage{51}
+    \subitem {makeNoise}, \hyperpage{51}
+    \subitem {produceProduct}, \hyperpage{52}
+    \subitem {render}, \hyperpage{52}
+    \subitem {Sheep}, \hyperpage{51}
+  \item {SheepMeat}, \hyperpage{52}
     \subitem {getCategory}, \hyperpage{53}
-    \subitem {getPrice}, \hyperpage{54}
+    \subitem {getPrice}, \hyperpage{53}
+  \item {SideProduct}, \hyperpage{53}
+    \subitem {$\sim$SideProduct}, \hyperpage{54}
     \subitem {getRecipe}, \hyperpage{54}
-    \subitem {SuperSecretSpecialProduct}, \hyperpage{53}
+  \item {SuperSecretSpecialProduct}, \hyperpage{54}
+    \subitem {getCategory}, \hyperpage{55}
+    \subitem {getPrice}, \hyperpage{55}
+    \subitem {getRecipe}, \hyperpage{55}
+    \subitem {SuperSecretSpecialProduct}, \hyperpage{55}
 
   \indexspace
 
@@ -415,25 +439,35 @@
     \subitem {FarmAnimal}, \hyperpage{26}
   \item {timeToGetHungry}
     \subitem {FarmAnimal}, \hyperpage{26}
-  \item {Truck}, \hyperpage{54}
-    \subitem {getCategory}, \hyperpage{55}
+  \item {Truck}, \hyperpage{56}
+    \subitem {getCategory}, \hyperpage{56}
 
   \indexspace
 
   \item {Update}
-    \subitem {World}, \hyperpage{57}
+    \subitem {World}, \hyperpage{58}
 
   \indexspace
 
-  \item {Well}, \hyperpage{55}
-    \subitem {getCategory}, \hyperpage{56}
-  \item {World}, \hyperpage{56}
-    \subitem {$\sim$World}, \hyperpage{57}
-    \subitem {Draw}, \hyperpage{57}
-    \subitem {Input}, \hyperpage{57}
-    \subitem {Update}, \hyperpage{57}
-    \subitem {World}, \hyperpage{57}
+  \item {Well}, \hyperpage{57}
+    \subitem {getCategory}, \hyperpage{57}
+  \item {World}, \hyperpage{58}
+    \subitem {$\sim$World}, \hyperpage{58}
+    \subitem {Draw}, \hyperpage{58}
+    \subitem {Input}, \hyperpage{58}
+    \subitem {Update}, \hyperpage{58}
+    \subitem {World}, \hyperpage{58}
   \item {worldMap}
     \subitem {LivingThing}, \hyperpage{38}
+
+  \indexspace
+
+  \item {x}
+    \subitem {Point}, \hyperpage{48}
+
+  \indexspace
+
+  \item {y}
+    \subitem {Point}, \hyperpage{48}
 
 \end{theindex}
