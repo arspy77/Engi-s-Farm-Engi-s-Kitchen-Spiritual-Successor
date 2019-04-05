@@ -1,0 +1,74 @@
+\hypertarget{classHorse}{}\doxysection{Horse Class Reference}
+\label{classHorse}\index{Horse@{Horse}}
+
+
+{\ttfamily \#include $<$Horse.\+h$>$}
+
+Inheritance diagram for Horse\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classHorse}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHorse_a6f25b2862280c969f7a1d420baa3a3ab}{Horse}} (\mbox{\hyperlink{structPoint}{Point}} position, \mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\&\mbox{\hyperlink{classLivingThing_a98d81bf2866f4c5f20da4ec991fa3ad8}{world\+Map}}, int \mbox{\hyperlink{classLivingThing_a9bd85c97cefc60bf4dde7d46f58ce314}{n\+Row\+Cell}}, int \mbox{\hyperlink{classLivingThing_ab55191dc49dadfa2ac3e0dfcb25158b5}{n\+Collumn\+Cell}})
+\item 
+\mbox{\hyperlink{classFarmProduct}{Farm\+Product}} $\ast$ \mbox{\hyperlink{classHorse_a3650fd3fa164a375009f94b7e95dd560}{produce\+Product}} (\mbox{\hyperlink{classFarmAnimal_a5bdf1de6d6148629b39fcf0e1f38b352}{Action}})
+\item 
+std\+::string \mbox{\hyperlink{classHorse_a789c132039ed329df5930232fcbeeb19}{make\+Noise}} () const
+\item 
+char \mbox{\hyperlink{classHorse_a40abd65ce7f30c72bd420267149543d3}{render}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classHorse}{Horse}} merupakan kelas turunan dari \mbox{\hyperlink{classMilkProducer}{Milk\+Producer}} yang menghasilkan \mbox{\hyperlink{classHorseMilk}{Horse\+Milk}} saat diinteract 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHorse_a6f25b2862280c969f7a1d420baa3a3ab}\label{classHorse_a6f25b2862280c969f7a1d420baa3a3ab}} 
+\index{Horse@{Horse}!Horse@{Horse}}
+\index{Horse@{Horse}!Horse@{Horse}}
+\doxysubsubsection{\texorpdfstring{Horse()}{Horse()}}
+{\footnotesize\ttfamily Horse\+::\+Horse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoint}{Point}}}]{position,  }\item[{\mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\&}]{world\+Map,  }\item[{int}]{n\+Row\+Cell,  }\item[{int}]{n\+Collumn\+Cell }\end{DoxyParamCaption})}
+
+Constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHorse_a789c132039ed329df5930232fcbeeb19}\label{classHorse_a789c132039ed329df5930232fcbeeb19}} 
+\index{Horse@{Horse}!makeNoise@{makeNoise}}
+\index{makeNoise@{makeNoise}!Horse@{Horse}}
+\doxysubsubsection{\texorpdfstring{makeNoise()}{makeNoise()}}
+{\footnotesize\ttfamily std\+::string Horse\+::make\+Noise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan suara dari \mbox{\hyperlink{classHorse}{Horse}} 
+
+Implements \mbox{\hyperlink{classFarmAnimal_aada587407c155511ab0afa338b84d020}{Farm\+Animal}}.
+
+\mbox{\Hypertarget{classHorse_a3650fd3fa164a375009f94b7e95dd560}\label{classHorse_a3650fd3fa164a375009f94b7e95dd560}} 
+\index{Horse@{Horse}!produceProduct@{produceProduct}}
+\index{produceProduct@{produceProduct}!Horse@{Horse}}
+\doxysubsubsection{\texorpdfstring{produceProduct()}{produceProduct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFarmProduct}{Farm\+Product}}$\ast$ Horse\+::produce\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFarmAnimal_a5bdf1de6d6148629b39fcf0e1f38b352}{Action}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan Farm\+Produk yang akan dihasilkan \mbox{\hyperlink{classHorse}{Horse}} bila \mbox{\hyperlink{classHorse}{Horse}} di interact 
+
+Implements \mbox{\hyperlink{classFarmAnimal_a6d3eff1935a33dcfa299c02c2601257e}{Farm\+Animal}}.
+
+\mbox{\Hypertarget{classHorse_a40abd65ce7f30c72bd420267149543d3}\label{classHorse_a40abd65ce7f30c72bd420267149543d3}} 
+\index{Horse@{Horse}!render@{render}}
+\index{render@{render}!Horse@{Horse}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily char Horse\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan karakter yang merepresentasikan \mbox{\hyperlink{classHorse}{Horse}} saat Hungry dan tidak Hungry 
+
+Implements \mbox{\hyperlink{classLivingThing_ad4904c4ed7951fda21ae1900badf4929}{Living\+Thing}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Engi\+Farm/\+Farm\+Animal/Horse.\+h\end{DoxyCompactItemize}

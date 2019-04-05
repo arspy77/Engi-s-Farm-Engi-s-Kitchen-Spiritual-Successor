@@ -1,0 +1,63 @@
+\hypertarget{classWorld}{}\doxysection{World Class Reference}
+\label{classWorld}\index{World@{World}}
+
+
+{\ttfamily \#include $<$World.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWorld_afa39d4e6f714a7a3691ac0c656f5e8a8}{World}} ()
+\item 
+\mbox{\hyperlink{classWorld_a8c73fba541a5817fff65147ba47cd827}{$\sim$\+World}} ()
+\item 
+void \mbox{\hyperlink{classWorld_a343998ddea2d906633aeaabe473b53e1}{Input}} ()
+\item 
+void \mbox{\hyperlink{classWorld_aec4c79eb3becec1110cc910bf1555181}{Update}} ()
+\item 
+void \mbox{\hyperlink{classWorld_a9b69dbbd736dfe1725f9facec1254a68}{Draw}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classWorld}{World}} adalah kelas yang merepresentasikan dunia yang menyimpan semua \mbox{\hyperlink{classCell}{Cell}} dan \mbox{\hyperlink{classLivingThing}{Living\+Thing}} di dalamnya 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWorld_afa39d4e6f714a7a3691ac0c656f5e8a8}\label{classWorld_afa39d4e6f714a7a3691ac0c656f5e8a8}} 
+\index{World@{World}!World@{World}}
+\index{World@{World}!World@{World}}
+\doxysubsubsection{\texorpdfstring{World()}{World()}}
+{\footnotesize\ttfamily World\+::\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor \mbox{\hyperlink{classWorld}{World}}. Memanggil ctor dan menginisialisasi semua atribut world; Pertama, map diinisialisasi sesuai dengan spesifikasi, saat penginisialisasian map, ctor untuk object riil dari cell seperti coop, barn, dan well dipanggil Kedua, ctor \mbox{\hyperlink{classPlayer}{Player}} dipanggil dengan argumen \mbox{\hyperlink{structPoint}{Point}} lokasi awal player dan reference ke map yang sudah didefinisikan pada tahap pertama Terakhir, animal\+List diinisialisasi dengan beberapa \mbox{\hyperlink{classFarmAnimal}{Farm\+Animal}} secara random \mbox{\Hypertarget{classWorld_a8c73fba541a5817fff65147ba47cd827}\label{classWorld_a8c73fba541a5817fff65147ba47cd827}} 
+\index{World@{World}!````~World@{$\sim$World}}
+\index{````~World@{$\sim$World}!World@{World}}
+\doxysubsubsection{\texorpdfstring{$\sim$World()}{~World()}}
+{\footnotesize\ttfamily World\+::$\sim$\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor \mbox{\hyperlink{classWorld}{World}}. Dealokasi seluruh \mbox{\hyperlink{classCell}{Cell}} dan \mbox{\hyperlink{classFarmAnimal}{Farm\+Animal}}, termasuk seluruh pointer yang berhubungan. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWorld_a9b69dbbd736dfe1725f9facec1254a68}\label{classWorld_a9b69dbbd736dfe1725f9facec1254a68}} 
+\index{World@{World}!Draw@{Draw}}
+\index{Draw@{Draw}!World@{World}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void World\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Megambarkar representasi state program (\mbox{\hyperlink{classWorld}{World}}) seperti lokasi setiap objek, money, water, dan Inventory \mbox{\hyperlink{classPlayer}{Player}}, dsb ke layar. \mbox{\Hypertarget{classWorld_a343998ddea2d906633aeaabe473b53e1}\label{classWorld_a343998ddea2d906633aeaabe473b53e1}} 
+\index{World@{World}!Input@{Input}}
+\index{Input@{Input}!World@{World}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void World\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Membaca input user dari stdin lalu melakukan aksi sesuai degan spesifikasi, misal, input == M\+O\+V\+E\+L\+E\+FT, maka akan dipanggil pl.\+move(\+L\+E\+F\+T). Bila input == I\+N\+T\+E\+R\+A\+CT, maka akan dipanggil pl.\+interact(animal\+List), dsb. \mbox{\Hypertarget{classWorld_aec4c79eb3becec1110cc910bf1555181}\label{classWorld_aec4c79eb3becec1110cc910bf1555181}} 
+\index{World@{World}!Update@{Update}}
+\index{Update@{Update}!World@{World}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void World\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Pada \mbox{\hyperlink{classWorld_aec4c79eb3becec1110cc910bf1555181}{World\+::\+Update()}}, setiap fungsi yang dipanggil secara berkala seperti \mbox{\hyperlink{classFarmAnimal_a1e28340d22e27c4213cdfb39800072af}{Farm\+Animal\+::tick()}} akan dipanggil. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Engi\+Farm/World.\+h\end{DoxyCompactItemize}

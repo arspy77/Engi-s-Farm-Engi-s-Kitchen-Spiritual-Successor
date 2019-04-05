@@ -1,0 +1,140 @@
+\hypertarget{classCell}{}\doxysection{Cell Class Reference}
+\label{classCell}\index{Cell@{Cell}}
+
+
+{\ttfamily \#include $<$Cell.\+h$>$}
+
+Inheritance diagram for Cell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCell}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classCell_a496e49fee3586107cc8f60229d1e943e}{Category}} \{ \newline
+{\bfseries W\+E\+LL}, 
+{\bfseries M\+I\+X\+ER}, 
+{\bfseries T\+R\+U\+CK}, 
+{\bfseries C\+O\+OP}, 
+\newline
+{\bfseries G\+R\+A\+S\+S\+L\+A\+ND}, 
+{\bfseries B\+A\+RN}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classCell_a3b989453308e0b3b78fbd5f587c600b3}{$\sim$\+Cell}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classCell_ae21e3f60b040d7a49fe2c11c2ad2bdc6}{is\+Facility}} () const =0
+\item 
+virtual \mbox{\hyperlink{classCell_a496e49fee3586107cc8f60229d1e943e}{Category}} \mbox{\hyperlink{classCell_a8d559d5dc57503ee263767b990bd58b4}{get\+Category}} () const =0
+\item 
+bool \mbox{\hyperlink{classCell_a7fc22d7e819b74687a2413d532dd7b4d}{get\+Is\+Ocupied}} ()
+\item 
+void \mbox{\hyperlink{classCell_add7fa436236dcb54569f1ac2b6fb35c0}{set\+Is\+Ocupied}} (bool)
+\item 
+virtual void \mbox{\hyperlink{classCell_ae4b73236e18d13424808a3bca6a5104f}{grow\+Grass}} ()
+\item 
+\mbox{\Hypertarget{classCell_aa5705030709094de275d79203dc98dfc}\label{classCell_aa5705030709094de275d79203dc98dfc}} 
+virtual void {\bfseries remove\+Grass} ()
+\item 
+virtual bool \mbox{\hyperlink{classCell_a491dc502764a4215e12a8e9c0792bf33}{is\+Grass\+Exist}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classCell_accb53db13c513893657e5f9dbc4cbcfb}{is\+Ocupied}} \{false\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCell}{Cell}} adalah kelas abstrak yang merepresentasikan petak pada Engi\textquotesingle{}s farm 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classCell_a496e49fee3586107cc8f60229d1e943e}\label{classCell_a496e49fee3586107cc8f60229d1e943e}} 
+\index{Cell@{Cell}!Category@{Category}}
+\index{Category@{Category}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Category}{Category}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classCell_a496e49fee3586107cc8f60229d1e943e}{Cell\+::\+Category}}}
+
+Jenis kategori \mbox{\hyperlink{classCell}{Cell}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCell_a3b989453308e0b3b78fbd5f587c600b3}\label{classCell_a3b989453308e0b3b78fbd5f587c600b3}} 
+\index{Cell@{Cell}!````~Cell@{$\sim$Cell}}
+\index{````~Cell@{$\sim$Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{$\sim$Cell()}{~Cell()}}
+{\footnotesize\ttfamily virtual Cell\+::$\sim$\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+dtor untuk \mbox{\hyperlink{classCell}{Cell}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCell_a8d559d5dc57503ee263767b990bd58b4}\label{classCell_a8d559d5dc57503ee263767b990bd58b4}} 
+\index{Cell@{Cell}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classCell_a496e49fee3586107cc8f60229d1e943e}{Category}} Cell\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return categori dari objek kategori 
+
+Implemented in \mbox{\hyperlink{classTruck_a1d97971e0cef58a1c83f557b18a91b07}{Truck}}, \mbox{\hyperlink{classBarn_adcbc5e6f63b0c66568be9c6e242eb1da}{Barn}}, \mbox{\hyperlink{classCoop_ab74cc7fa976640390d925e8f1255dc6c}{Coop}}, \mbox{\hyperlink{classGrassLand_a0b203cbab040a5943dc6f7495388b823}{Grass\+Land}}, \mbox{\hyperlink{classMixer_a230693426ea331ca0fd0812335f08a42}{Mixer}}, and \mbox{\hyperlink{classWell_ad0836fd132a28ab80e3a2629c8a1859a}{Well}}.
+
+\mbox{\Hypertarget{classCell_a7fc22d7e819b74687a2413d532dd7b4d}\label{classCell_a7fc22d7e819b74687a2413d532dd7b4d}} 
+\index{Cell@{Cell}!getIsOcupied@{getIsOcupied}}
+\index{getIsOcupied@{getIsOcupied}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getIsOcupied()}{getIsOcupied()}}
+{\footnotesize\ttfamily bool Cell\+::get\+Is\+Ocupied (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Mengambil nilai boolean is\+Ocupied \mbox{\Hypertarget{classCell_ae4b73236e18d13424808a3bca6a5104f}\label{classCell_ae4b73236e18d13424808a3bca6a5104f}} 
+\index{Cell@{Cell}!growGrass@{growGrass}}
+\index{growGrass@{growGrass}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{growGrass()}{growGrass()}}
+{\footnotesize\ttfamily virtual void Cell\+::grow\+Grass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Menambah air pada cell. Jika bertipe \mbox{\hyperlink{classLand}{Land}} akan menumbuhkan rumput. Jika tidak, tidak akan berefek apa-\/apa. 
+
+Reimplemented in \mbox{\hyperlink{classLand_a8324641dc1cfdf2500a345441998c18d}{Land}}.
+
+\mbox{\Hypertarget{classCell_ae21e3f60b040d7a49fe2c11c2ad2bdc6}\label{classCell_ae21e3f60b040d7a49fe2c11c2ad2bdc6}} 
+\index{Cell@{Cell}!isFacility@{isFacility}}
+\index{isFacility@{isFacility}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isFacility()}{isFacility()}}
+{\footnotesize\ttfamily virtual bool Cell\+::is\+Facility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return true jika objek adalah \mbox{\hyperlink{classFacility}{Facility}} 
+
+Implemented in \mbox{\hyperlink{classFacility_aec97ecb79c7603116afc4112ee33e4f9}{Facility}}, and \mbox{\hyperlink{classLand_a1cbcc7cbb448dab4d34e7d051ad2607f}{Land}}.
+
+\mbox{\Hypertarget{classCell_a491dc502764a4215e12a8e9c0792bf33}\label{classCell_a491dc502764a4215e12a8e9c0792bf33}} 
+\index{Cell@{Cell}!isGrassExist@{isGrassExist}}
+\index{isGrassExist@{isGrassExist}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isGrassExist()}{isGrassExist()}}
+{\footnotesize\ttfamily virtual bool Cell\+::is\+Grass\+Exist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Mengembalikan keberadaan grass jika \mbox{\hyperlink{classCell}{Cell}} bertipe \mbox{\hyperlink{classLand}{Land}} 
+
+Implemented in \mbox{\hyperlink{classFacility_a33dbacc180930790a426d8295d475360}{Facility}}, and \mbox{\hyperlink{classLand_a7e269684966bc26f0f82348b69ad582d}{Land}}.
+
+\mbox{\Hypertarget{classCell_add7fa436236dcb54569f1ac2b6fb35c0}\label{classCell_add7fa436236dcb54569f1ac2b6fb35c0}} 
+\index{Cell@{Cell}!setIsOcupied@{setIsOcupied}}
+\index{setIsOcupied@{setIsOcupied}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setIsOcupied()}{setIsOcupied()}}
+{\footnotesize\ttfamily void Cell\+::set\+Is\+Ocupied (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})}
+
+Mengganti nilai boolean is\+Ocupied 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCell_accb53db13c513893657e5f9dbc4cbcfb}\label{classCell_accb53db13c513893657e5f9dbc4cbcfb}} 
+\index{Cell@{Cell}!isOcupied@{isOcupied}}
+\index{isOcupied@{isOcupied}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isOcupied}{isOcupied}}
+{\footnotesize\ttfamily bool Cell\+::is\+Ocupied \{false\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Flag yang menandakan cell ditempati oleh sesuatu (Player/\+Farm\+Animal/\+Facility) atau tidak. True bila cell sedang ditempati oleh sesuatu. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Engi\+Farm/\+Cell/Cell.\+h\end{DoxyCompactItemize}

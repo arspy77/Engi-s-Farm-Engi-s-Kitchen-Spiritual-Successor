@@ -1,1 +1,0 @@
-cara compile : g++ World.cpp Cell/Cell.cpp Cell/Land.cpp Cell/GrassLand.cpp Player.cpp LivingThing.cpp main.cpp -o MAIN

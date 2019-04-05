@@ -1,0 +1,77 @@
+\hypertarget{classLand}{}\doxysection{Land Class Reference}
+\label{classLand}\index{Land@{Land}}
+
+
+{\ttfamily \#include $<$Land.\+h$>$}
+
+Inheritance diagram for Land\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classLand}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classLand_ab94bc038d5c4f9976d5790681e832ce8}{$\sim$\+Land}} ()=0
+\item 
+bool \mbox{\hyperlink{classLand_a1cbcc7cbb448dab4d34e7d051ad2607f}{is\+Facility}} () const
+\item 
+void \mbox{\hyperlink{classLand_a8324641dc1cfdf2500a345441998c18d}{grow\+Grass}} ()
+\item 
+\mbox{\Hypertarget{classLand_afcc13a96a158ca17a37d48373101fe1a}\label{classLand_afcc13a96a158ca17a37d48373101fe1a}} 
+void {\bfseries remove\+Grass} ()
+\item 
+bool \mbox{\hyperlink{classLand_a7e269684966bc26f0f82348b69ad582d}{is\+Grass\+Exist}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classLand}{Land}} merupakan kelas turunan dari \mbox{\hyperlink{classCell}{Cell}} yang merepresentasikan petak-\/petak yang bisa ditempati oleh \mbox{\hyperlink{classLivingThing}{Living\+Thing}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLand_ab94bc038d5c4f9976d5790681e832ce8}\label{classLand_ab94bc038d5c4f9976d5790681e832ce8}} 
+\index{Land@{Land}!````~Land@{$\sim$Land}}
+\index{````~Land@{$\sim$Land}!Land@{Land}}
+\doxysubsubsection{\texorpdfstring{$\sim$Land()}{~Land()}}
+{\footnotesize\ttfamily virtual Land\+::$\sim$\+Land (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Destructor \mbox{\hyperlink{classLand}{Land}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLand_a8324641dc1cfdf2500a345441998c18d}\label{classLand_a8324641dc1cfdf2500a345441998c18d}} 
+\index{Land@{Land}!growGrass@{growGrass}}
+\index{growGrass@{growGrass}!Land@{Land}}
+\doxysubsubsection{\texorpdfstring{growGrass()}{growGrass()}}
+{\footnotesize\ttfamily void Land\+::grow\+Grass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Membuat exist\+Grass menjadi true 
+
+Reimplemented from \mbox{\hyperlink{classCell_ae4b73236e18d13424808a3bca6a5104f}{Cell}}.
+
+\mbox{\Hypertarget{classLand_a1cbcc7cbb448dab4d34e7d051ad2607f}\label{classLand_a1cbcc7cbb448dab4d34e7d051ad2607f}} 
+\index{Land@{Land}!isFacility@{isFacility}}
+\index{isFacility@{isFacility}!Land@{Land}}
+\doxysubsubsection{\texorpdfstring{isFacility()}{isFacility()}}
+{\footnotesize\ttfamily bool Land\+::is\+Facility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return true bila \mbox{\hyperlink{classLand}{Land}} adalah sebuah facility 
+
+Implements \mbox{\hyperlink{classCell_ae21e3f60b040d7a49fe2c11c2ad2bdc6}{Cell}}.
+
+\mbox{\Hypertarget{classLand_a7e269684966bc26f0f82348b69ad582d}\label{classLand_a7e269684966bc26f0f82348b69ad582d}} 
+\index{Land@{Land}!isGrassExist@{isGrassExist}}
+\index{isGrassExist@{isGrassExist}!Land@{Land}}
+\doxysubsubsection{\texorpdfstring{isGrassExist()}{isGrassExist()}}
+{\footnotesize\ttfamily bool Land\+::is\+Grass\+Exist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan keberadaan grass 
+
+Implements \mbox{\hyperlink{classCell_a491dc502764a4215e12a8e9c0792bf33}{Cell}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Engi\+Farm/\+Cell/Land.\+h\end{DoxyCompactItemize}

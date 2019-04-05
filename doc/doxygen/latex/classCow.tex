@@ -1,0 +1,74 @@
+\hypertarget{classCow}{}\doxysection{Cow Class Reference}
+\label{classCow}\index{Cow@{Cow}}
+
+
+{\ttfamily \#include $<$Cow.\+h$>$}
+
+Inheritance diagram for Cow\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classCow}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCow_a1a4ad89720cf9fb1f4e69f515a957a4f}{Cow}} (\mbox{\hyperlink{structPoint}{Point}} position, \mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\&\mbox{\hyperlink{classLivingThing_a98d81bf2866f4c5f20da4ec991fa3ad8}{world\+Map}}, int \mbox{\hyperlink{classLivingThing_a9bd85c97cefc60bf4dde7d46f58ce314}{n\+Row\+Cell}}, int \mbox{\hyperlink{classLivingThing_ab55191dc49dadfa2ac3e0dfcb25158b5}{n\+Collumn\+Cell}})
+\item 
+\mbox{\hyperlink{classFarmProduct}{Farm\+Product}} $\ast$ \mbox{\hyperlink{classCow_ae624ead83f94eb43e8567f1280cc6a86}{produce\+Product}} (\mbox{\hyperlink{classFarmAnimal_a5bdf1de6d6148629b39fcf0e1f38b352}{Action}})
+\item 
+std\+::string \mbox{\hyperlink{classCow_aedca4e23334f89147404f796b69be3e6}{make\+Noise}} () const
+\item 
+char \mbox{\hyperlink{classCow_a3d1e7ab6e78229968e177705d06667b8}{render}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCow}{Cow}} merupakan kelas turunan dari \mbox{\hyperlink{classMeatProducer}{Meat\+Producer}} yang menghasilkan \mbox{\hyperlink{classCowMeat}{Cow\+Meat}} saat dikill 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCow_a1a4ad89720cf9fb1f4e69f515a957a4f}\label{classCow_a1a4ad89720cf9fb1f4e69f515a957a4f}} 
+\index{Cow@{Cow}!Cow@{Cow}}
+\index{Cow@{Cow}!Cow@{Cow}}
+\doxysubsubsection{\texorpdfstring{Cow()}{Cow()}}
+{\footnotesize\ttfamily Cow\+::\+Cow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoint}{Point}}}]{position,  }\item[{\mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\&}]{world\+Map,  }\item[{int}]{n\+Row\+Cell,  }\item[{int}]{n\+Collumn\+Cell }\end{DoxyParamCaption})}
+
+Constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCow_aedca4e23334f89147404f796b69be3e6}\label{classCow_aedca4e23334f89147404f796b69be3e6}} 
+\index{Cow@{Cow}!makeNoise@{makeNoise}}
+\index{makeNoise@{makeNoise}!Cow@{Cow}}
+\doxysubsubsection{\texorpdfstring{makeNoise()}{makeNoise()}}
+{\footnotesize\ttfamily std\+::string Cow\+::make\+Noise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan suara dari \mbox{\hyperlink{classCow}{Cow}} 
+
+Implements \mbox{\hyperlink{classFarmAnimal_aada587407c155511ab0afa338b84d020}{Farm\+Animal}}.
+
+\mbox{\Hypertarget{classCow_ae624ead83f94eb43e8567f1280cc6a86}\label{classCow_ae624ead83f94eb43e8567f1280cc6a86}} 
+\index{Cow@{Cow}!produceProduct@{produceProduct}}
+\index{produceProduct@{produceProduct}!Cow@{Cow}}
+\doxysubsubsection{\texorpdfstring{produceProduct()}{produceProduct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFarmProduct}{Farm\+Product}}$\ast$ Cow\+::produce\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFarmAnimal_a5bdf1de6d6148629b39fcf0e1f38b352}{Action}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan Farm\+Produk yang akan dihasilkan \mbox{\hyperlink{classCow}{Cow}} bila \mbox{\hyperlink{classCow}{Cow}} di kill 
+
+Implements \mbox{\hyperlink{classFarmAnimal_a6d3eff1935a33dcfa299c02c2601257e}{Farm\+Animal}}.
+
+\mbox{\Hypertarget{classCow_a3d1e7ab6e78229968e177705d06667b8}\label{classCow_a3d1e7ab6e78229968e177705d06667b8}} 
+\index{Cow@{Cow}!render@{render}}
+\index{render@{render}!Cow@{Cow}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily char Cow\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan karakter yang merepresentasikan \mbox{\hyperlink{classCow}{Cow}} saat Hungry dan tidak Hungry 
+
+Implements \mbox{\hyperlink{classLivingThing_ad4904c4ed7951fda21ae1900badf4929}{Living\+Thing}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Engi\+Farm/\+Farm\+Animal/Cow.\+h\end{DoxyCompactItemize}

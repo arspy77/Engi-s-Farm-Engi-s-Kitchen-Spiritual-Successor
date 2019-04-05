@@ -1,0 +1,155 @@
+\hypertarget{classLinkedList}{}\doxysection{Linked\+List$<$ T $>$ Class Template Reference}
+\label{classLinkedList}\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Linked\+List.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLinkedList_a3c20fcfec867e867f541061a09fc640c}{Linked\+List}} ()
+\item 
+\mbox{\hyperlink{classLinkedList_a3aceb354723c8fb333d2370426cb0c85}{Linked\+List}} (std\+::initializer\+\_\+list$<$ T $>$ args)
+\item 
+\mbox{\hyperlink{classLinkedList_ad3453dda2fa333d42cd5b162f2691eae}{Linked\+List}} (const \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$ \&l)
+\item 
+\mbox{\hyperlink{classLinkedList_a7c37609df3b83bc4eb0281b852f93fd7}{$\sim$\+Linked\+List}} ()
+\item 
+\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$ \& \mbox{\hyperlink{classLinkedList_a190a8f2141f22a110e1a60420d1c0e92}{operator=}} (const \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$ \&l)
+\item 
+int \mbox{\hyperlink{classLinkedList_a13b1edd49053651844ff314ce1298a4e}{find}} (T elm)
+\item 
+\mbox{\Hypertarget{classLinkedList_aadab93e39aaf9f3ecfefd7e0d0d674b6}\label{classLinkedList_aadab93e39aaf9f3ecfefd7e0d0d674b6}} 
+int {\bfseries find\+Pointer} (T elm)
+\item 
+bool \mbox{\hyperlink{classLinkedList_a0001a22886e83acd372f089b34797aa2}{is\+Empty}} () const
+\item 
+void \mbox{\hyperlink{classLinkedList_aa6566d195d67a1feca60ba7295336e27}{add}} (T elm)
+\item 
+void \mbox{\hyperlink{classLinkedList_a4f193718b675010de86ee05f880bdb35}{remove}} (T elm)
+\item 
+void \mbox{\hyperlink{classLinkedList_ae29be3b0370e65723166f1b8fb48f742}{remove\+Idx}} (int idx)
+\item 
+T \& \mbox{\hyperlink{classLinkedList_ad3ce74ced9aefecfe71b9dc99472aea7}{get}} (int idx)
+\item 
+T \& \mbox{\hyperlink{classLinkedList_a0c5e5d148143c529583acdf37296fdec}{operator\mbox{[}$\,$\mbox{]}}} (int idx)
+\item 
+void \mbox{\hyperlink{classLinkedList_a9675767b81fb9f1d8799444e4ee7f43b}{print}} ()
+\item 
+int \mbox{\hyperlink{classLinkedList_ab5265798835d80cf63ff49d8f6bc67e9}{len}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Linked\+List$<$ T $>$}
+
+Tipe data \mbox{\hyperlink{classLinkedList}{Linked\+List}}, diimplementasi secara rekursif dengan \mbox{\hyperlink{classLinkedListNode}{Linked\+List\+Node}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLinkedList_a3c20fcfec867e867f541061a09fc640c}\label{classLinkedList_a3c20fcfec867e867f541061a09fc640c}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!LinkedList@{LinkedList}}
+\index{LinkedList@{LinkedList}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LinkedList()}{LinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::\mbox{\hyperlink{classLinkedList}{Linked\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Konstruktor default \mbox{\hyperlink{classLinkedList}{Linked\+List}}, membuat empty list \mbox{\Hypertarget{classLinkedList_a3aceb354723c8fb333d2370426cb0c85}\label{classLinkedList_a3aceb354723c8fb333d2370426cb0c85}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!LinkedList@{LinkedList}}
+\index{LinkedList@{LinkedList}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LinkedList()}{LinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::\mbox{\hyperlink{classLinkedList}{Linked\+List}} (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ T $>$}]{args }\end{DoxyParamCaption})}
+
+Konstruktor dengan initializer list \mbox{\Hypertarget{classLinkedList_ad3453dda2fa333d42cd5b162f2691eae}\label{classLinkedList_ad3453dda2fa333d42cd5b162f2691eae}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!LinkedList@{LinkedList}}
+\index{LinkedList@{LinkedList}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LinkedList()}{LinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::\mbox{\hyperlink{classLinkedList}{Linked\+List}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$ \&}]{l }\end{DoxyParamCaption})}
+
+Copy constructor \mbox{\hyperlink{classLinkedList}{Linked\+List}} \mbox{\Hypertarget{classLinkedList_a7c37609df3b83bc4eb0281b852f93fd7}\label{classLinkedList_a7c37609df3b83bc4eb0281b852f93fd7}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!````~LinkedList@{$\sim$LinkedList}}
+\index{````~LinkedList@{$\sim$LinkedList}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$LinkedList()}{~LinkedList()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classLinkedList}{Linked\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor \mbox{\hyperlink{classLinkedList}{Linked\+List}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLinkedList_aa6566d195d67a1feca60ba7295336e27}\label{classLinkedList_aa6566d195d67a1feca60ba7295336e27}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!add@{add}}
+\index{add@{add}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::add (\begin{DoxyParamCaption}\item[{T}]{elm }\end{DoxyParamCaption})}
+
+Menambah elm sebagai elemen terakhir \mbox{\Hypertarget{classLinkedList_a13b1edd49053651844ff314ce1298a4e}\label{classLinkedList_a13b1edd49053651844ff314ce1298a4e}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!find@{find}}
+\index{find@{find}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+int \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::find (\begin{DoxyParamCaption}\item[{T}]{elm }\end{DoxyParamCaption})}
+
+Mencari indeks pertama dari elm dari \mbox{\hyperlink{classLinkedList}{Linked\+List}}. Jika tidak ada, bernilai -\/1. \mbox{\Hypertarget{classLinkedList_ad3ce74ced9aefecfe71b9dc99472aea7}\label{classLinkedList_ad3ce74ced9aefecfe71b9dc99472aea7}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!get@{get}}
+\index{get@{get}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \& \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::get (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})}
+
+Mengembalikan elemen berindeks idx. Jika diluar range, melempar \char`\"{}\+Index out of range\char`\"{}. \mbox{\Hypertarget{classLinkedList_a0001a22886e83acd372f089b34797aa2}\label{classLinkedList_a0001a22886e83acd372f089b34797aa2}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Mengembalikan apakah list empty atau tidak \mbox{\Hypertarget{classLinkedList_ab5265798835d80cf63ff49d8f6bc67e9}\label{classLinkedList_ab5265798835d80cf63ff49d8f6bc67e9}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!len@{len}}
+\index{len@{len}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{len()}{len()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::len (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Mengembalikan panjang dari list \mbox{\Hypertarget{classLinkedList_a190a8f2141f22a110e1a60420d1c0e92}\label{classLinkedList_a190a8f2141f22a110e1a60420d1c0e92}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$ \& \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$ \&}]{l }\end{DoxyParamCaption})}
+
+Operator= \mbox{\hyperlink{classLinkedList}{Linked\+List}} \mbox{\Hypertarget{classLinkedList_a0c5e5d148143c529583acdf37296fdec}\label{classLinkedList_a0c5e5d148143c529583acdf37296fdec}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \& \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})}
+
+Mengembalikan reference ke elemen berindeks idx. Jika diluar range, melempar \char`\"{}\+Index out of range\char`\"{}. \mbox{\Hypertarget{classLinkedList_a9675767b81fb9f1d8799444e4ee7f43b}\label{classLinkedList_a9675767b81fb9f1d8799444e4ee7f43b}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!print@{print}}
+\index{print@{print}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Menampilkan isi dar list ke layar \mbox{\Hypertarget{classLinkedList_a4f193718b675010de86ee05f880bdb35}\label{classLinkedList_a4f193718b675010de86ee05f880bdb35}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!remove@{remove}}
+\index{remove@{remove}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::remove (\begin{DoxyParamCaption}\item[{T}]{elm }\end{DoxyParamCaption})}
+
+Menghapus keberadaan pertama elm \mbox{\Hypertarget{classLinkedList_ae29be3b0370e65723166f1b8fb48f742}\label{classLinkedList_ae29be3b0370e65723166f1b8fb48f742}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!removeIdx@{removeIdx}}
+\index{removeIdx@{removeIdx}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeIdx()}{removeIdx()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::remove\+Idx (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})}
+
+Menghapus elemen berindeks idx. Jika diluar range, melempar \char`\"{}\+Index out of range\char`\"{}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Engi\+Farm/Linked\+List.\+h\end{DoxyCompactItemize}

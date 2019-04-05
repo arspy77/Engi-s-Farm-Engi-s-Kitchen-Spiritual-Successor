@@ -1,0 +1,166 @@
+\hypertarget{classFarmAnimal}{}\doxysection{Farm\+Animal Class Reference}
+\label{classFarmAnimal}\index{FarmAnimal@{FarmAnimal}}
+
+
+{\ttfamily \#include $<$Farm\+Animal.\+h$>$}
+
+Inheritance diagram for Farm\+Animal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.696370cm]{classFarmAnimal}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classFarmAnimal_a5bdf1de6d6148629b39fcf0e1f38b352}{Action}} \{ {\bfseries I\+N\+T\+E\+R\+A\+CT}, 
+{\bfseries K\+I\+LL}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFarmAnimal_a480fb2f8941c3532f2e9967c84bd8857}{Farm\+Animal}} (int \+\_\+max\+Time\+To\+Get\+Hungry, \mbox{\hyperlink{structPoint}{Point}} position, \mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\&\mbox{\hyperlink{classLivingThing_a98d81bf2866f4c5f20da4ec991fa3ad8}{world\+Map}}, int \mbox{\hyperlink{classLivingThing_a9bd85c97cefc60bf4dde7d46f58ce314}{n\+Row\+Cell}}, int \mbox{\hyperlink{classLivingThing_ab55191dc49dadfa2ac3e0dfcb25158b5}{n\+Collumn\+Cell}})
+\item 
+virtual \mbox{\hyperlink{classFarmAnimal_a4eaedf1216aaef064e2147830facbcf2}{$\sim$\+Farm\+Animal}} ()=0
+\item 
+void \mbox{\hyperlink{classFarmAnimal_a1e28340d22e27c4213cdfb39800072af}{tick}} ()
+\item 
+virtual \mbox{\hyperlink{classFarmProduct}{Farm\+Product}} $\ast$ \mbox{\hyperlink{classFarmAnimal_a6d3eff1935a33dcfa299c02c2601257e}{produce\+Product}} (\mbox{\hyperlink{classFarmAnimal_a5bdf1de6d6148629b39fcf0e1f38b352}{Action}})=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classFarmAnimal_aada587407c155511ab0afa338b84d020}{make\+Noise}} () const =0
+\item 
+bool \mbox{\hyperlink{classFarmAnimal_acde870c3eddbeac770578571d7699407}{is\+Dead}} () const
+\item 
+virtual bool \mbox{\hyperlink{classFarmAnimal_a1d91b97ec238913a858ed076834087f9}{get\+Produce}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classFarmAnimal_a7b5b05e92accf9ff1ac046e8f07b9799}{get\+Killable}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classFarmAnimal_a3001c202bb332d164ec41dc49270ef9e}{eat}} ()
+\item 
+bool \mbox{\hyperlink{classFarmAnimal_a60e61a526c4586c4a2597ef6369b98a4}{is\+Hungry}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classFarmAnimal_a4841a3d4e57e5a09a82647bd0abaff90}{time\+To\+Get\+Hungry}}
+\item 
+const int \mbox{\hyperlink{classFarmAnimal_ab67c5f5e5ea9a445a46b1c3e041118e4}{max\+Time\+To\+Get\+Hungry}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+kelas \mbox{\hyperlink{classFarmAnimal}{Farm\+Animal}} merupakan kelas turunan dari living thing yang dapat berupa \mbox{\hyperlink{classEggProducer}{Egg\+Producer}},\mbox{\hyperlink{classMilkProducer}{Milk\+Producer}},dan \mbox{\hyperlink{classMeatProducer}{Meat\+Producer}} 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classFarmAnimal_a5bdf1de6d6148629b39fcf0e1f38b352}\label{classFarmAnimal_a5bdf1de6d6148629b39fcf0e1f38b352}} 
+\index{FarmAnimal@{FarmAnimal}!Action@{Action}}
+\index{Action@{Action}!FarmAnimal@{FarmAnimal}}
+\doxysubsubsection{\texorpdfstring{Action}{Action}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classFarmAnimal_a5bdf1de6d6148629b39fcf0e1f38b352}{Farm\+Animal\+::\+Action}}}
+
+Jenis aksi yang dapat dilakukan ke \mbox{\hyperlink{classFarmAnimal}{Farm\+Animal}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFarmAnimal_a480fb2f8941c3532f2e9967c84bd8857}\label{classFarmAnimal_a480fb2f8941c3532f2e9967c84bd8857}} 
+\index{FarmAnimal@{FarmAnimal}!FarmAnimal@{FarmAnimal}}
+\index{FarmAnimal@{FarmAnimal}!FarmAnimal@{FarmAnimal}}
+\doxysubsubsection{\texorpdfstring{FarmAnimal()}{FarmAnimal()}}
+{\footnotesize\ttfamily Farm\+Animal\+::\+Farm\+Animal (\begin{DoxyParamCaption}\item[{int}]{\+\_\+max\+Time\+To\+Get\+Hungry,  }\item[{\mbox{\hyperlink{structPoint}{Point}}}]{position,  }\item[{\mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\&}]{world\+Map,  }\item[{int}]{n\+Row\+Cell,  }\item[{int}]{n\+Collumn\+Cell }\end{DoxyParamCaption})}
+
+Constructor max\+Time\+To\+Get\+Hungry dengan nilai H \mbox{\Hypertarget{classFarmAnimal_a4eaedf1216aaef064e2147830facbcf2}\label{classFarmAnimal_a4eaedf1216aaef064e2147830facbcf2}} 
+\index{FarmAnimal@{FarmAnimal}!````~FarmAnimal@{$\sim$FarmAnimal}}
+\index{````~FarmAnimal@{$\sim$FarmAnimal}!FarmAnimal@{FarmAnimal}}
+\doxysubsubsection{\texorpdfstring{$\sim$FarmAnimal()}{~FarmAnimal()}}
+{\footnotesize\ttfamily virtual Farm\+Animal\+::$\sim$\+Farm\+Animal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Destructor \mbox{\hyperlink{classFarmAnimal}{Farm\+Animal}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFarmAnimal_a3001c202bb332d164ec41dc49270ef9e}\label{classFarmAnimal_a3001c202bb332d164ec41dc49270ef9e}} 
+\index{FarmAnimal@{FarmAnimal}!eat@{eat}}
+\index{eat@{eat}!FarmAnimal@{FarmAnimal}}
+\doxysubsubsection{\texorpdfstring{eat()}{eat()}}
+{\footnotesize\ttfamily virtual void Farm\+Animal\+::eat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Jika \mbox{\hyperlink{classFarmAnimal}{Farm\+Animal}} sedang berdiri pada land dengan rumput, maka time\+To\+Death di set nilai semula dan time\+To\+Gdengan nilai sesuai dengan derived classnya, lalu grass di land dihapus \mbox{\Hypertarget{classFarmAnimal_a7b5b05e92accf9ff1ac046e8f07b9799}\label{classFarmAnimal_a7b5b05e92accf9ff1ac046e8f07b9799}} 
+\index{FarmAnimal@{FarmAnimal}!getKillable@{getKillable}}
+\index{getKillable@{getKillable}!FarmAnimal@{FarmAnimal}}
+\doxysubsubsection{\texorpdfstring{getKillable()}{getKillable()}}
+{\footnotesize\ttfamily virtual bool Farm\+Animal\+::get\+Killable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Mengembalikan true jika \mbox{\hyperlink{classFarmAnimal}{Farm\+Animal}} bisa di Kill untuk menghasilkan \mbox{\hyperlink{classProduct}{Product}} 
+
+Implemented in \mbox{\hyperlink{classMilkProducer_a128c736f7a044eb921849443b599adeb}{Milk\+Producer}}, \mbox{\hyperlink{classEggProducer_ad09bae69283e87ab034d102f0c5cec43}{Egg\+Producer}}, and \mbox{\hyperlink{classMeatProducer_afdac214356d798fed1203f6f2f7e373a}{Meat\+Producer}}.
+
+\mbox{\Hypertarget{classFarmAnimal_a1d91b97ec238913a858ed076834087f9}\label{classFarmAnimal_a1d91b97ec238913a858ed076834087f9}} 
+\index{FarmAnimal@{FarmAnimal}!getProduce@{getProduce}}
+\index{getProduce@{getProduce}!FarmAnimal@{FarmAnimal}}
+\doxysubsubsection{\texorpdfstring{getProduce()}{getProduce()}}
+{\footnotesize\ttfamily virtual bool Farm\+Animal\+::get\+Produce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Mengembalikan true jika \mbox{\hyperlink{classFarmAnimal}{Farm\+Animal}} bisa di Interact untuk menghasilkan \mbox{\hyperlink{classProduct}{Product}} 
+
+Implemented in \mbox{\hyperlink{classMeatProducer_a479bfd990c03a094af600c347cd54f15}{Meat\+Producer}}, \mbox{\hyperlink{classMilkProducer_aef88b0ae665cf5c07bbf0ae74d11ab40}{Milk\+Producer}}, and \mbox{\hyperlink{classEggProducer_aa6385ab910d4e13c81255b7650706cc1}{Egg\+Producer}}.
+
+\mbox{\Hypertarget{classFarmAnimal_acde870c3eddbeac770578571d7699407}\label{classFarmAnimal_acde870c3eddbeac770578571d7699407}} 
+\index{FarmAnimal@{FarmAnimal}!isDead@{isDead}}
+\index{isDead@{isDead}!FarmAnimal@{FarmAnimal}}
+\doxysubsubsection{\texorpdfstring{isDead()}{isDead()}}
+{\footnotesize\ttfamily bool Farm\+Animal\+::is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Mengembalikan true jika time\+To\+Death == 0, lalu di destruct di main atau di class world \mbox{\Hypertarget{classFarmAnimal_a60e61a526c4586c4a2597ef6369b98a4}\label{classFarmAnimal_a60e61a526c4586c4a2597ef6369b98a4}} 
+\index{FarmAnimal@{FarmAnimal}!isHungry@{isHungry}}
+\index{isHungry@{isHungry}!FarmAnimal@{FarmAnimal}}
+\doxysubsubsection{\texorpdfstring{isHungry()}{isHungry()}}
+{\footnotesize\ttfamily bool Farm\+Animal\+::is\+Hungry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+return true apabila time\+To\+Get\+Hungry $<$= 0 \mbox{\Hypertarget{classFarmAnimal_aada587407c155511ab0afa338b84d020}\label{classFarmAnimal_aada587407c155511ab0afa338b84d020}} 
+\index{FarmAnimal@{FarmAnimal}!makeNoise@{makeNoise}}
+\index{makeNoise@{makeNoise}!FarmAnimal@{FarmAnimal}}
+\doxysubsubsection{\texorpdfstring{makeNoise()}{makeNoise()}}
+{\footnotesize\ttfamily virtual std\+::string Farm\+Animal\+::make\+Noise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Mengembalikan suara dari \mbox{\hyperlink{classFarmAnimal}{Farm\+Animal}} 
+
+Implemented in \mbox{\hyperlink{classChicken_a4ded5c0e5e14a61ce3ef251318d8e0da}{Chicken}}, \mbox{\hyperlink{classCow_aedca4e23334f89147404f796b69be3e6}{Cow}}, \mbox{\hyperlink{classDuck_ab29bd04c443175576d354210f4dc3da1}{Duck}}, \mbox{\hyperlink{classHorse_a789c132039ed329df5930232fcbeeb19}{Horse}}, \mbox{\hyperlink{classOstrich_ae8437a3a5af65735183feaf05cde72c0}{Ostrich}}, and \mbox{\hyperlink{classSheep_aa1bcf67338813403e5ed5e1e91bc2084}{Sheep}}.
+
+\mbox{\Hypertarget{classFarmAnimal_a6d3eff1935a33dcfa299c02c2601257e}\label{classFarmAnimal_a6d3eff1935a33dcfa299c02c2601257e}} 
+\index{FarmAnimal@{FarmAnimal}!produceProduct@{produceProduct}}
+\index{produceProduct@{produceProduct}!FarmAnimal@{FarmAnimal}}
+\doxysubsubsection{\texorpdfstring{produceProduct()}{produceProduct()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classFarmProduct}{Farm\+Product}}$\ast$ Farm\+Animal\+::produce\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFarmAnimal_a5bdf1de6d6148629b39fcf0e1f38b352}{Action}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Mengembalikan produk yang dihasilkan \mbox{\hyperlink{classFarmAnimal}{Farm\+Animal}} apabila diinteract/dikill 
+
+Implemented in \mbox{\hyperlink{classChicken_a2e022d02eb445afcc854a34182547a1d}{Chicken}}, \mbox{\hyperlink{classCow_ae624ead83f94eb43e8567f1280cc6a86}{Cow}}, \mbox{\hyperlink{classDuck_ad79e38c527beb6fe7c0da42ea9378941}{Duck}}, \mbox{\hyperlink{classHorse_a3650fd3fa164a375009f94b7e95dd560}{Horse}}, \mbox{\hyperlink{classOstrich_a4fb14f6c3475d276ec3bb5082bc3c14e}{Ostrich}}, and \mbox{\hyperlink{classSheep_ad9bba6e82076071ef58f0444fb890ab7}{Sheep}}.
+
+\mbox{\Hypertarget{classFarmAnimal_a1e28340d22e27c4213cdfb39800072af}\label{classFarmAnimal_a1e28340d22e27c4213cdfb39800072af}} 
+\index{FarmAnimal@{FarmAnimal}!tick@{tick}}
+\index{tick@{tick}!FarmAnimal@{FarmAnimal}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Farm\+Animal\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Melakukan aksi yang dilakukan \mbox{\hyperlink{classFarmAnimal}{Farm\+Animal}} setiap satuan waktu 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFarmAnimal_ab67c5f5e5ea9a445a46b1c3e041118e4}\label{classFarmAnimal_ab67c5f5e5ea9a445a46b1c3e041118e4}} 
+\index{FarmAnimal@{FarmAnimal}!maxTimeToGetHungry@{maxTimeToGetHungry}}
+\index{maxTimeToGetHungry@{maxTimeToGetHungry}!FarmAnimal@{FarmAnimal}}
+\doxysubsubsection{\texorpdfstring{maxTimeToGetHungry}{maxTimeToGetHungry}}
+{\footnotesize\ttfamily const int Farm\+Animal\+::max\+Time\+To\+Get\+Hungry\hspace{0.3cm}{\ttfamily [protected]}}
+
+Nilai max dari time\+To\+Get\+Hungry \mbox{\Hypertarget{classFarmAnimal_a4841a3d4e57e5a09a82647bd0abaff90}\label{classFarmAnimal_a4841a3d4e57e5a09a82647bd0abaff90}} 
+\index{FarmAnimal@{FarmAnimal}!timeToGetHungry@{timeToGetHungry}}
+\index{timeToGetHungry@{timeToGetHungry}!FarmAnimal@{FarmAnimal}}
+\doxysubsubsection{\texorpdfstring{timeToGetHungry}{timeToGetHungry}}
+{\footnotesize\ttfamily int Farm\+Animal\+::time\+To\+Get\+Hungry\hspace{0.3cm}{\ttfamily [protected]}}
+
+Waktu \mbox{\hyperlink{classFarmAnimal}{Farm\+Animal}} sampai menjadi lapar 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Engi\+Farm/\+Farm\+Animal/Farm\+Animal.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,360 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}% 
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}% 
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Barn Class Reference}{5}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}*}{5}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}*}{5}{subsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.1.3}Detailed Description}{5}{subsection.3.1.3}% 
+\contentsline {subsection}{\numberline {3.1.4}Member Function Documentation}{5}{subsection.3.1.4}% 
+\contentsline {subsubsection}{\numberline {3.1.4.1}getCategory()}{5}{subsubsection.3.1.4.1}% 
+\contentsline {section}{\numberline {3.2}Beef\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Chicken\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Omelette Class Reference}{6}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}*}{6}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}*}{6}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}Detailed Description}{6}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.4}Constructor \& Destructor Documentation}{6}{subsection.3.2.4}% 
+\contentsline {subsubsection}{\numberline {3.2.4.1}BeefChickenOmelette()}{6}{subsubsection.3.2.4.1}% 
+\contentsline {subsubsection}{\numberline {3.2.4.2}$\sim $BeefChickenOmelette()}{6}{subsubsection.3.2.4.2}% 
+\contentsline {subsection}{\numberline {3.2.5}Member Function Documentation}{7}{subsection.3.2.5}% 
+\contentsline {subsubsection}{\numberline {3.2.5.1}getCategory()}{7}{subsubsection.3.2.5.1}% 
+\contentsline {subsubsection}{\numberline {3.2.5.2}getPrice()}{7}{subsubsection.3.2.5.2}% 
+\contentsline {subsubsection}{\numberline {3.2.5.3}getRecipe()}{7}{subsubsection.3.2.5.3}% 
+\contentsline {section}{\numberline {3.3}Beef\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mutton\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sate Class Reference}{7}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}*}{7}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}*}{8}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}Detailed Description}{8}{subsection.3.3.3}% 
+\contentsline {subsection}{\numberline {3.3.4}Constructor \& Destructor Documentation}{8}{subsection.3.3.4}% 
+\contentsline {subsubsection}{\numberline {3.3.4.1}BeefMuttonSate()}{8}{subsubsection.3.3.4.1}% 
+\contentsline {subsubsection}{\numberline {3.3.4.2}$\sim $BeefMuttonSate()}{8}{subsubsection.3.3.4.2}% 
+\contentsline {subsection}{\numberline {3.3.5}Member Function Documentation}{8}{subsection.3.3.5}% 
+\contentsline {subsubsection}{\numberline {3.3.5.1}getCategory()}{8}{subsubsection.3.3.5.1}% 
+\contentsline {subsubsection}{\numberline {3.3.5.2}getPrice()}{8}{subsubsection.3.3.5.2}% 
+\contentsline {subsubsection}{\numberline {3.3.5.3}getRecipe()}{8}{subsubsection.3.3.5.3}% 
+\contentsline {section}{\numberline {3.4}Cell Class Reference}{9}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}*}{9}{subsection.3.4.1}% 
+\contentsline {subsection}{\numberline {3.4.2}*}{9}{subsection.3.4.2}% 
+\contentsline {subsection}{\numberline {3.4.3}*}{9}{subsection.3.4.3}% 
+\contentsline {subsection}{\numberline {3.4.4}Detailed Description}{10}{subsection.3.4.4}% 
+\contentsline {subsection}{\numberline {3.4.5}Member Enumeration Documentation}{10}{subsection.3.4.5}% 
+\contentsline {subsubsection}{\numberline {3.4.5.1}Category}{10}{subsubsection.3.4.5.1}% 
+\contentsline {subsection}{\numberline {3.4.6}Constructor \& Destructor Documentation}{10}{subsection.3.4.6}% 
+\contentsline {subsubsection}{\numberline {3.4.6.1}$\sim $Cell()}{10}{subsubsection.3.4.6.1}% 
+\contentsline {subsection}{\numberline {3.4.7}Member Function Documentation}{10}{subsection.3.4.7}% 
+\contentsline {subsubsection}{\numberline {3.4.7.1}getCategory()}{10}{subsubsection.3.4.7.1}% 
+\contentsline {subsubsection}{\numberline {3.4.7.2}getIsOcupied()}{10}{subsubsection.3.4.7.2}% 
+\contentsline {subsubsection}{\numberline {3.4.7.3}growGrass()}{10}{subsubsection.3.4.7.3}% 
+\contentsline {subsubsection}{\numberline {3.4.7.4}isFacility()}{11}{subsubsection.3.4.7.4}% 
+\contentsline {subsubsection}{\numberline {3.4.7.5}isGrassExist()}{11}{subsubsection.3.4.7.5}% 
+\contentsline {subsubsection}{\numberline {3.4.7.6}setIsOcupied()}{11}{subsubsection.3.4.7.6}% 
+\contentsline {subsection}{\numberline {3.4.8}Member Data Documentation}{11}{subsection.3.4.8}% 
+\contentsline {subsubsection}{\numberline {3.4.8.1}isOcupied}{11}{subsubsection.3.4.8.1}% 
+\contentsline {section}{\numberline {3.5}Chicken Class Reference}{12}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.5.1}*}{12}{subsection.3.5.1}% 
+\contentsline {subsection}{\numberline {3.5.2}*}{12}{subsection.3.5.2}% 
+\contentsline {subsection}{\numberline {3.5.3}Detailed Description}{12}{subsection.3.5.3}% 
+\contentsline {subsection}{\numberline {3.5.4}Constructor \& Destructor Documentation}{12}{subsection.3.5.4}% 
+\contentsline {subsubsection}{\numberline {3.5.4.1}Chicken()}{12}{subsubsection.3.5.4.1}% 
+\contentsline {subsection}{\numberline {3.5.5}Member Function Documentation}{12}{subsection.3.5.5}% 
+\contentsline {subsubsection}{\numberline {3.5.5.1}makeNoise()}{13}{subsubsection.3.5.5.1}% 
+\contentsline {subsubsection}{\numberline {3.5.5.2}produceProduct()}{13}{subsubsection.3.5.5.2}% 
+\contentsline {subsubsection}{\numberline {3.5.5.3}render()}{13}{subsubsection.3.5.5.3}% 
+\contentsline {section}{\numberline {3.6}Chicken\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Egg Class Reference}{13}{section.3.6}% 
+\contentsline {subsection}{\numberline {3.6.1}*}{13}{subsection.3.6.1}% 
+\contentsline {subsection}{\numberline {3.6.2}*}{14}{subsection.3.6.2}% 
+\contentsline {subsection}{\numberline {3.6.3}Detailed Description}{14}{subsection.3.6.3}% 
+\contentsline {subsection}{\numberline {3.6.4}Member Function Documentation}{14}{subsection.3.6.4}% 
+\contentsline {subsubsection}{\numberline {3.6.4.1}getCategory()}{14}{subsubsection.3.6.4.1}% 
+\contentsline {subsubsection}{\numberline {3.6.4.2}getPrice()}{14}{subsubsection.3.6.4.2}% 
+\contentsline {section}{\numberline {3.7}Coop Class Reference}{14}{section.3.7}% 
+\contentsline {subsection}{\numberline {3.7.1}*}{14}{subsection.3.7.1}% 
+\contentsline {subsection}{\numberline {3.7.2}*}{15}{subsection.3.7.2}% 
+\contentsline {subsection}{\numberline {3.7.3}Detailed Description}{15}{subsection.3.7.3}% 
+\contentsline {subsection}{\numberline {3.7.4}Member Function Documentation}{15}{subsection.3.7.4}% 
+\contentsline {subsubsection}{\numberline {3.7.4.1}getCategory()}{15}{subsubsection.3.7.4.1}% 
+\contentsline {section}{\numberline {3.8}Cow Class Reference}{15}{section.3.8}% 
+\contentsline {subsection}{\numberline {3.8.1}*}{15}{subsection.3.8.1}% 
+\contentsline {subsection}{\numberline {3.8.2}*}{16}{subsection.3.8.2}% 
+\contentsline {subsection}{\numberline {3.8.3}Detailed Description}{16}{subsection.3.8.3}% 
+\contentsline {subsection}{\numberline {3.8.4}Constructor \& Destructor Documentation}{16}{subsection.3.8.4}% 
+\contentsline {subsubsection}{\numberline {3.8.4.1}Cow()}{16}{subsubsection.3.8.4.1}% 
+\contentsline {subsection}{\numberline {3.8.5}Member Function Documentation}{16}{subsection.3.8.5}% 
+\contentsline {subsubsection}{\numberline {3.8.5.1}makeNoise()}{16}{subsubsection.3.8.5.1}% 
+\contentsline {subsubsection}{\numberline {3.8.5.2}produceProduct()}{16}{subsubsection.3.8.5.2}% 
+\contentsline {subsubsection}{\numberline {3.8.5.3}render()}{16}{subsubsection.3.8.5.3}% 
+\contentsline {section}{\numberline {3.9}Cow\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Meat Class Reference}{17}{section.3.9}% 
+\contentsline {subsection}{\numberline {3.9.1}*}{17}{subsection.3.9.1}% 
+\contentsline {subsection}{\numberline {3.9.2}*}{17}{subsection.3.9.2}% 
+\contentsline {subsection}{\numberline {3.9.3}Detailed Description}{17}{subsection.3.9.3}% 
+\contentsline {subsection}{\numberline {3.9.4}Member Function Documentation}{17}{subsection.3.9.4}% 
+\contentsline {subsubsection}{\numberline {3.9.4.1}getCategory()}{17}{subsubsection.3.9.4.1}% 
+\contentsline {subsubsection}{\numberline {3.9.4.2}getPrice()}{17}{subsubsection.3.9.4.2}% 
+\contentsline {section}{\numberline {3.10}Duck Class Reference}{18}{section.3.10}% 
+\contentsline {subsection}{\numberline {3.10.1}*}{18}{subsection.3.10.1}% 
+\contentsline {subsection}{\numberline {3.10.2}*}{18}{subsection.3.10.2}% 
+\contentsline {subsection}{\numberline {3.10.3}Detailed Description}{18}{subsection.3.10.3}% 
+\contentsline {subsection}{\numberline {3.10.4}Constructor \& Destructor Documentation}{18}{subsection.3.10.4}% 
+\contentsline {subsubsection}{\numberline {3.10.4.1}Duck()}{18}{subsubsection.3.10.4.1}% 
+\contentsline {subsection}{\numberline {3.10.5}Member Function Documentation}{18}{subsection.3.10.5}% 
+\contentsline {subsubsection}{\numberline {3.10.5.1}makeNoise()}{19}{subsubsection.3.10.5.1}% 
+\contentsline {subsubsection}{\numberline {3.10.5.2}produceProduct()}{19}{subsubsection.3.10.5.2}% 
+\contentsline {subsubsection}{\numberline {3.10.5.3}render()}{19}{subsubsection.3.10.5.3}% 
+\contentsline {section}{\numberline {3.11}Duck\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Meat Class Reference}{19}{section.3.11}% 
+\contentsline {subsection}{\numberline {3.11.1}*}{19}{subsection.3.11.1}% 
+\contentsline {subsection}{\numberline {3.11.2}*}{20}{subsection.3.11.2}% 
+\contentsline {subsection}{\numberline {3.11.3}Member Function Documentation}{20}{subsection.3.11.3}% 
+\contentsline {subsubsection}{\numberline {3.11.3.1}getCategory()}{20}{subsubsection.3.11.3.1}% 
+\contentsline {subsubsection}{\numberline {3.11.3.2}getPrice()}{20}{subsubsection.3.11.3.2}% 
+\contentsline {section}{\numberline {3.12}Egg\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Producer Class Reference}{20}{section.3.12}% 
+\contentsline {subsection}{\numberline {3.12.1}*}{20}{subsection.3.12.1}% 
+\contentsline {subsection}{\numberline {3.12.2}*}{21}{subsection.3.12.2}% 
+\contentsline {subsection}{\numberline {3.12.3}*}{21}{subsection.3.12.3}% 
+\contentsline {subsection}{\numberline {3.12.4}Detailed Description}{21}{subsection.3.12.4}% 
+\contentsline {subsection}{\numberline {3.12.5}Constructor \& Destructor Documentation}{21}{subsection.3.12.5}% 
+\contentsline {subsubsection}{\numberline {3.12.5.1}EggProducer()}{21}{subsubsection.3.12.5.1}% 
+\contentsline {subsubsection}{\numberline {3.12.5.2}$\sim $EggProducer()}{21}{subsubsection.3.12.5.2}% 
+\contentsline {subsection}{\numberline {3.12.6}Member Function Documentation}{21}{subsection.3.12.6}% 
+\contentsline {subsubsection}{\numberline {3.12.6.1}getKillable()}{21}{subsubsection.3.12.6.1}% 
+\contentsline {subsubsection}{\numberline {3.12.6.2}getProduce()}{22}{subsubsection.3.12.6.2}% 
+\contentsline {subsection}{\numberline {3.12.7}Member Data Documentation}{22}{subsection.3.12.7}% 
+\contentsline {subsubsection}{\numberline {3.12.7.1}canProduce}{22}{subsubsection.3.12.7.1}% 
+\contentsline {section}{\numberline {3.13}Facility Class Reference}{22}{section.3.13}% 
+\contentsline {subsection}{\numberline {3.13.1}*}{22}{subsection.3.13.1}% 
+\contentsline {subsection}{\numberline {3.13.2}*}{23}{subsection.3.13.2}% 
+\contentsline {subsection}{\numberline {3.13.3}Detailed Description}{23}{subsection.3.13.3}% 
+\contentsline {subsection}{\numberline {3.13.4}Constructor \& Destructor Documentation}{23}{subsection.3.13.4}% 
+\contentsline {subsubsection}{\numberline {3.13.4.1}Facility()}{23}{subsubsection.3.13.4.1}% 
+\contentsline {subsubsection}{\numberline {3.13.4.2}$\sim $Facility()}{23}{subsubsection.3.13.4.2}% 
+\contentsline {subsection}{\numberline {3.13.5}Member Function Documentation}{23}{subsection.3.13.5}% 
+\contentsline {subsubsection}{\numberline {3.13.5.1}isFacility()}{23}{subsubsection.3.13.5.1}% 
+\contentsline {subsubsection}{\numberline {3.13.5.2}isGrassExist()}{23}{subsubsection.3.13.5.2}% 
+\contentsline {section}{\numberline {3.14}Farm\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Animal Class Reference}{24}{section.3.14}% 
+\contentsline {subsection}{\numberline {3.14.1}*}{24}{subsection.3.14.1}% 
+\contentsline {subsection}{\numberline {3.14.2}*}{24}{subsection.3.14.2}% 
+\contentsline {subsection}{\numberline {3.14.3}*}{24}{subsection.3.14.3}% 
+\contentsline {subsection}{\numberline {3.14.4}*}{24}{subsection.3.14.4}% 
+\contentsline {subsection}{\numberline {3.14.5}Detailed Description}{25}{subsection.3.14.5}% 
+\contentsline {subsection}{\numberline {3.14.6}Member Enumeration Documentation}{25}{subsection.3.14.6}% 
+\contentsline {subsubsection}{\numberline {3.14.6.1}Action}{25}{subsubsection.3.14.6.1}% 
+\contentsline {subsection}{\numberline {3.14.7}Constructor \& Destructor Documentation}{25}{subsection.3.14.7}% 
+\contentsline {subsubsection}{\numberline {3.14.7.1}FarmAnimal()}{25}{subsubsection.3.14.7.1}% 
+\contentsline {subsubsection}{\numberline {3.14.7.2}$\sim $FarmAnimal()}{25}{subsubsection.3.14.7.2}% 
+\contentsline {subsection}{\numberline {3.14.8}Member Function Documentation}{25}{subsection.3.14.8}% 
+\contentsline {subsubsection}{\numberline {3.14.8.1}eat()}{25}{subsubsection.3.14.8.1}% 
+\contentsline {subsubsection}{\numberline {3.14.8.2}getKillable()}{25}{subsubsection.3.14.8.2}% 
+\contentsline {subsubsection}{\numberline {3.14.8.3}getProduce()}{26}{subsubsection.3.14.8.3}% 
+\contentsline {subsubsection}{\numberline {3.14.8.4}isDead()}{26}{subsubsection.3.14.8.4}% 
+\contentsline {subsubsection}{\numberline {3.14.8.5}isHungry()}{26}{subsubsection.3.14.8.5}% 
+\contentsline {subsubsection}{\numberline {3.14.8.6}makeNoise()}{26}{subsubsection.3.14.8.6}% 
+\contentsline {subsubsection}{\numberline {3.14.8.7}produceProduct()}{26}{subsubsection.3.14.8.7}% 
+\contentsline {subsubsection}{\numberline {3.14.8.8}tick()}{26}{subsubsection.3.14.8.8}% 
+\contentsline {subsection}{\numberline {3.14.9}Member Data Documentation}{26}{subsection.3.14.9}% 
+\contentsline {subsubsection}{\numberline {3.14.9.1}maxTimeToGetHungry}{26}{subsubsection.3.14.9.1}% 
+\contentsline {subsubsection}{\numberline {3.14.9.2}timeToGetHungry}{26}{subsubsection.3.14.9.2}% 
+\contentsline {section}{\numberline {3.15}Farm\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Product Class Reference}{27}{section.3.15}% 
+\contentsline {subsection}{\numberline {3.15.1}*}{27}{subsection.3.15.1}% 
+\contentsline {subsection}{\numberline {3.15.2}Detailed Description}{27}{subsection.3.15.2}% 
+\contentsline {section}{\numberline {3.16}Grass\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Land Class Reference}{27}{section.3.16}% 
+\contentsline {subsection}{\numberline {3.16.1}*}{27}{subsection.3.16.1}% 
+\contentsline {subsection}{\numberline {3.16.2}*}{28}{subsection.3.16.2}% 
+\contentsline {subsection}{\numberline {3.16.3}Detailed Description}{28}{subsection.3.16.3}% 
+\contentsline {subsection}{\numberline {3.16.4}Member Function Documentation}{28}{subsection.3.16.4}% 
+\contentsline {subsubsection}{\numberline {3.16.4.1}getCategory()}{28}{subsubsection.3.16.4.1}% 
+\contentsline {section}{\numberline {3.17}Horse Class Reference}{28}{section.3.17}% 
+\contentsline {subsection}{\numberline {3.17.1}*}{28}{subsection.3.17.1}% 
+\contentsline {subsection}{\numberline {3.17.2}*}{29}{subsection.3.17.2}% 
+\contentsline {subsection}{\numberline {3.17.3}Detailed Description}{29}{subsection.3.17.3}% 
+\contentsline {subsection}{\numberline {3.17.4}Constructor \& Destructor Documentation}{29}{subsection.3.17.4}% 
+\contentsline {subsubsection}{\numberline {3.17.4.1}Horse()}{29}{subsubsection.3.17.4.1}% 
+\contentsline {subsection}{\numberline {3.17.5}Member Function Documentation}{29}{subsection.3.17.5}% 
+\contentsline {subsubsection}{\numberline {3.17.5.1}makeNoise()}{29}{subsubsection.3.17.5.1}% 
+\contentsline {subsubsection}{\numberline {3.17.5.2}produceProduct()}{29}{subsubsection.3.17.5.2}% 
+\contentsline {subsubsection}{\numberline {3.17.5.3}render()}{29}{subsubsection.3.17.5.3}% 
+\contentsline {section}{\numberline {3.18}Horse\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Milk Class Reference}{30}{section.3.18}% 
+\contentsline {subsection}{\numberline {3.18.1}*}{30}{subsection.3.18.1}% 
+\contentsline {subsection}{\numberline {3.18.2}*}{30}{subsection.3.18.2}% 
+\contentsline {subsection}{\numberline {3.18.3}Detailed Description}{30}{subsection.3.18.3}% 
+\contentsline {subsection}{\numberline {3.18.4}Member Function Documentation}{30}{subsection.3.18.4}% 
+\contentsline {subsubsection}{\numberline {3.18.4.1}getCategory()}{30}{subsubsection.3.18.4.1}% 
+\contentsline {subsubsection}{\numberline {3.18.4.2}getPrice()}{30}{subsubsection.3.18.4.2}% 
+\contentsline {section}{\numberline {3.19}Land Class Reference}{31}{section.3.19}% 
+\contentsline {subsection}{\numberline {3.19.1}*}{31}{subsection.3.19.1}% 
+\contentsline {subsection}{\numberline {3.19.2}*}{31}{subsection.3.19.2}% 
+\contentsline {subsection}{\numberline {3.19.3}Detailed Description}{31}{subsection.3.19.3}% 
+\contentsline {subsection}{\numberline {3.19.4}Constructor \& Destructor Documentation}{31}{subsection.3.19.4}% 
+\contentsline {subsubsection}{\numberline {3.19.4.1}$\sim $Land()}{31}{subsubsection.3.19.4.1}% 
+\contentsline {subsection}{\numberline {3.19.5}Member Function Documentation}{31}{subsection.3.19.5}% 
+\contentsline {subsubsection}{\numberline {3.19.5.1}growGrass()}{31}{subsubsection.3.19.5.1}% 
+\contentsline {subsubsection}{\numberline {3.19.5.2}isFacility()}{32}{subsubsection.3.19.5.2}% 
+\contentsline {subsubsection}{\numberline {3.19.5.3}isGrassExist()}{32}{subsubsection.3.19.5.3}% 
+\contentsline {section}{\numberline {3.20}Linked\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}List$<$ T $>$ Class Template Reference}{32}{section.3.20}% 
+\contentsline {subsection}{\numberline {3.20.1}*}{32}{subsection.3.20.1}% 
+\contentsline {subsection}{\numberline {3.20.2}Detailed Description}{33}{subsection.3.20.2}% 
+\contentsline {subsection}{\numberline {3.20.3}Constructor \& Destructor Documentation}{33}{subsection.3.20.3}% 
+\contentsline {subsubsection}{\numberline {3.20.3.1}LinkedList()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/3]}}{33}{subsubsection.3.20.3.1}% 
+\contentsline {subsubsection}{\numberline {3.20.3.2}LinkedList()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/3]}}{33}{subsubsection.3.20.3.2}% 
+\contentsline {subsubsection}{\numberline {3.20.3.3}LinkedList()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [3/3]}}{33}{subsubsection.3.20.3.3}% 
+\contentsline {subsubsection}{\numberline {3.20.3.4}$\sim $LinkedList()}{33}{subsubsection.3.20.3.4}% 
+\contentsline {subsection}{\numberline {3.20.4}Member Function Documentation}{33}{subsection.3.20.4}% 
+\contentsline {subsubsection}{\numberline {3.20.4.1}add()}{33}{subsubsection.3.20.4.1}% 
+\contentsline {subsubsection}{\numberline {3.20.4.2}find()}{34}{subsubsection.3.20.4.2}% 
+\contentsline {subsubsection}{\numberline {3.20.4.3}get()}{34}{subsubsection.3.20.4.3}% 
+\contentsline {subsubsection}{\numberline {3.20.4.4}isEmpty()}{34}{subsubsection.3.20.4.4}% 
+\contentsline {subsubsection}{\numberline {3.20.4.5}len()}{34}{subsubsection.3.20.4.5}% 
+\contentsline {subsubsection}{\numberline {3.20.4.6}operator=()}{34}{subsubsection.3.20.4.6}% 
+\contentsline {subsubsection}{\numberline {3.20.4.7}operator[]()}{34}{subsubsection.3.20.4.7}% 
+\contentsline {subsubsection}{\numberline {3.20.4.8}print()}{34}{subsubsection.3.20.4.8}% 
+\contentsline {subsubsection}{\numberline {3.20.4.9}remove()}{35}{subsubsection.3.20.4.9}% 
+\contentsline {subsubsection}{\numberline {3.20.4.10}removeIdx()}{35}{subsubsection.3.20.4.10}% 
+\contentsline {section}{\numberline {3.21}Linked\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}List\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Node$<$ T $>$ Class Template Reference}{35}{section.3.21}% 
+\contentsline {subsection}{\numberline {3.21.1}*}{35}{subsection.3.21.1}% 
+\contentsline {subsection}{\numberline {3.21.2}*}{35}{subsection.3.21.2}% 
+\contentsline {subsection}{\numberline {3.21.3}Detailed Description}{35}{subsection.3.21.3}% 
+\contentsline {subsection}{\numberline {3.21.4}Constructor \& Destructor Documentation}{36}{subsection.3.21.4}% 
+\contentsline {subsubsection}{\numberline {3.21.4.1}LinkedListNode()}{36}{subsubsection.3.21.4.1}% 
+\contentsline {subsubsection}{\numberline {3.21.4.2}$\sim $LinkedListNode()}{36}{subsubsection.3.21.4.2}% 
+\contentsline {subsection}{\numberline {3.21.5}Member Data Documentation}{36}{subsection.3.21.5}% 
+\contentsline {subsubsection}{\numberline {3.21.5.1}LinkedList$<$ T $>$}{36}{subsubsection.3.21.5.1}% 
+\contentsline {section}{\numberline {3.22}Living\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Thing Class Reference}{36}{section.3.22}% 
+\contentsline {subsection}{\numberline {3.22.1}*}{36}{subsection.3.22.1}% 
+\contentsline {subsection}{\numberline {3.22.2}*}{37}{subsection.3.22.2}% 
+\contentsline {subsection}{\numberline {3.22.3}Constructor \& Destructor Documentation}{37}{subsection.3.22.3}% 
+\contentsline {subsubsection}{\numberline {3.22.3.1}LivingThing()}{37}{subsubsection.3.22.3.1}% 
+\contentsline {subsubsection}{\numberline {3.22.3.2}$\sim $LivingThing()}{37}{subsubsection.3.22.3.2}% 
+\contentsline {subsection}{\numberline {3.22.4}Member Function Documentation}{37}{subsection.3.22.4}% 
+\contentsline {subsubsection}{\numberline {3.22.4.1}getPosition()}{37}{subsubsection.3.22.4.1}% 
+\contentsline {subsubsection}{\numberline {3.22.4.2}move()}{37}{subsubsection.3.22.4.2}% 
+\contentsline {subsubsection}{\numberline {3.22.4.3}render()}{37}{subsubsection.3.22.4.3}% 
+\contentsline {subsection}{\numberline {3.22.5}Member Data Documentation}{38}{subsection.3.22.5}% 
+\contentsline {subsubsection}{\numberline {3.22.5.1}nCollumnCell}{38}{subsubsection.3.22.5.1}% 
+\contentsline {subsubsection}{\numberline {3.22.5.2}nRowCell}{38}{subsubsection.3.22.5.2}% 
+\contentsline {subsubsection}{\numberline {3.22.5.3}worldMap}{38}{subsubsection.3.22.5.3}% 
+\contentsline {section}{\numberline {3.23}Meat\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Producer Class Reference}{38}{section.3.23}% 
+\contentsline {subsection}{\numberline {3.23.1}*}{38}{subsection.3.23.1}% 
+\contentsline {subsection}{\numberline {3.23.2}*}{39}{subsection.3.23.2}% 
+\contentsline {subsection}{\numberline {3.23.3}Constructor \& Destructor Documentation}{39}{subsection.3.23.3}% 
+\contentsline {subsubsection}{\numberline {3.23.3.1}MeatProducer()}{39}{subsubsection.3.23.3.1}% 
+\contentsline {subsubsection}{\numberline {3.23.3.2}$\sim $MeatProducer()}{39}{subsubsection.3.23.3.2}% 
+\contentsline {subsection}{\numberline {3.23.4}Member Function Documentation}{39}{subsection.3.23.4}% 
+\contentsline {subsubsection}{\numberline {3.23.4.1}getKillable()}{39}{subsubsection.3.23.4.1}% 
+\contentsline {subsubsection}{\numberline {3.23.4.2}getProduce()}{39}{subsubsection.3.23.4.2}% 
+\contentsline {section}{\numberline {3.24}Milk\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Producer Class Reference}{40}{section.3.24}% 
+\contentsline {subsection}{\numberline {3.24.1}*}{40}{subsection.3.24.1}% 
+\contentsline {subsection}{\numberline {3.24.2}*}{40}{subsection.3.24.2}% 
+\contentsline {subsection}{\numberline {3.24.3}*}{40}{subsection.3.24.3}% 
+\contentsline {subsection}{\numberline {3.24.4}Constructor \& Destructor Documentation}{40}{subsection.3.24.4}% 
+\contentsline {subsubsection}{\numberline {3.24.4.1}MilkProducer()}{40}{subsubsection.3.24.4.1}% 
+\contentsline {subsubsection}{\numberline {3.24.4.2}$\sim $MilkProducer()}{41}{subsubsection.3.24.4.2}% 
+\contentsline {subsection}{\numberline {3.24.5}Member Function Documentation}{41}{subsection.3.24.5}% 
+\contentsline {subsubsection}{\numberline {3.24.5.1}getKillable()}{41}{subsubsection.3.24.5.1}% 
+\contentsline {subsubsection}{\numberline {3.24.5.2}getProduce()}{41}{subsubsection.3.24.5.2}% 
+\contentsline {subsection}{\numberline {3.24.6}Member Data Documentation}{41}{subsection.3.24.6}% 
+\contentsline {subsubsection}{\numberline {3.24.6.1}canProduce}{41}{subsubsection.3.24.6.1}% 
+\contentsline {section}{\numberline {3.25}Mixer Class Reference}{41}{section.3.25}% 
+\contentsline {subsection}{\numberline {3.25.1}*}{41}{subsection.3.25.1}% 
+\contentsline {subsection}{\numberline {3.25.2}*}{42}{subsection.3.25.2}% 
+\contentsline {subsection}{\numberline {3.25.3}Detailed Description}{42}{subsection.3.25.3}% 
+\contentsline {subsection}{\numberline {3.25.4}Member Function Documentation}{42}{subsection.3.25.4}% 
+\contentsline {subsubsection}{\numberline {3.25.4.1}getCategory()}{42}{subsubsection.3.25.4.1}% 
+\contentsline {section}{\numberline {3.26}Ostrich Class Reference}{42}{section.3.26}% 
+\contentsline {subsection}{\numberline {3.26.1}*}{42}{subsection.3.26.1}% 
+\contentsline {subsection}{\numberline {3.26.2}*}{43}{subsection.3.26.2}% 
+\contentsline {subsection}{\numberline {3.26.3}Detailed Description}{43}{subsection.3.26.3}% 
+\contentsline {subsection}{\numberline {3.26.4}Constructor \& Destructor Documentation}{43}{subsection.3.26.4}% 
+\contentsline {subsubsection}{\numberline {3.26.4.1}Ostrich()}{43}{subsubsection.3.26.4.1}% 
+\contentsline {subsection}{\numberline {3.26.5}Member Function Documentation}{43}{subsection.3.26.5}% 
+\contentsline {subsubsection}{\numberline {3.26.5.1}makeNoise()}{43}{subsubsection.3.26.5.1}% 
+\contentsline {subsubsection}{\numberline {3.26.5.2}produceProduct()}{43}{subsubsection.3.26.5.2}% 
+\contentsline {subsubsection}{\numberline {3.26.5.3}render()}{43}{subsubsection.3.26.5.3}% 
+\contentsline {section}{\numberline {3.27}Ostrich\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Egg Class Reference}{44}{section.3.27}% 
+\contentsline {subsection}{\numberline {3.27.1}*}{44}{subsection.3.27.1}% 
+\contentsline {subsection}{\numberline {3.27.2}*}{44}{subsection.3.27.2}% 
+\contentsline {subsection}{\numberline {3.27.3}Detailed Description}{44}{subsection.3.27.3}% 
+\contentsline {subsection}{\numberline {3.27.4}Member Function Documentation}{44}{subsection.3.27.4}% 
+\contentsline {subsubsection}{\numberline {3.27.4.1}getCategory()}{44}{subsubsection.3.27.4.1}% 
+\contentsline {subsubsection}{\numberline {3.27.4.2}getPrice()}{44}{subsubsection.3.27.4.2}% 
+\contentsline {section}{\numberline {3.28}Player Class Reference}{45}{section.3.28}% 
+\contentsline {subsection}{\numberline {3.28.1}*}{45}{subsection.3.28.1}% 
+\contentsline {subsection}{\numberline {3.28.2}*}{45}{subsection.3.28.2}% 
+\contentsline {subsection}{\numberline {3.28.3}Detailed Description}{45}{subsection.3.28.3}% 
+\contentsline {subsection}{\numberline {3.28.4}Constructor \& Destructor Documentation}{45}{subsection.3.28.4}% 
+\contentsline {subsubsection}{\numberline {3.28.4.1}Player()}{45}{subsubsection.3.28.4.1}% 
+\contentsline {subsubsection}{\numberline {3.28.4.2}$\sim $Player()}{46}{subsubsection.3.28.4.2}% 
+\contentsline {subsection}{\numberline {3.28.5}Member Function Documentation}{46}{subsection.3.28.5}% 
+\contentsline {subsubsection}{\numberline {3.28.5.1}getMoney()}{46}{subsubsection.3.28.5.1}% 
+\contentsline {subsubsection}{\numberline {3.28.5.2}grow()}{46}{subsubsection.3.28.5.2}% 
+\contentsline {subsubsection}{\numberline {3.28.5.3}interact()}{46}{subsubsection.3.28.5.3}% 
+\contentsline {subsubsection}{\numberline {3.28.5.4}kill()}{46}{subsubsection.3.28.5.4}% 
+\contentsline {subsubsection}{\numberline {3.28.5.5}mix()}{46}{subsubsection.3.28.5.5}% 
+\contentsline {subsubsection}{\numberline {3.28.5.6}render()}{46}{subsubsection.3.28.5.6}% 
+\contentsline {subsubsection}{\numberline {3.28.5.7}sellAll()}{47}{subsubsection.3.28.5.7}% 
+\contentsline {subsubsection}{\numberline {3.28.5.8}takeWater()}{47}{subsubsection.3.28.5.8}% 
+\contentsline {subsubsection}{\numberline {3.28.5.9}talk()}{47}{subsubsection.3.28.5.9}% 
+\contentsline {section}{\numberline {3.29}Point Struct Reference}{47}{section.3.29}% 
+\contentsline {subsection}{\numberline {3.29.1}*}{47}{subsection.3.29.1}% 
+\contentsline {subsection}{\numberline {3.29.2}Detailed Description}{47}{subsection.3.29.2}% 
+\contentsline {section}{\numberline {3.30}Product Class Reference}{48}{section.3.30}% 
+\contentsline {subsection}{\numberline {3.30.1}*}{48}{subsection.3.30.1}% 
+\contentsline {subsection}{\numberline {3.30.2}*}{48}{subsection.3.30.2}% 
+\contentsline {subsection}{\numberline {3.30.3}Detailed Description}{48}{subsection.3.30.3}% 
+\contentsline {subsection}{\numberline {3.30.4}Member Function Documentation}{48}{subsection.3.30.4}% 
+\contentsline {subsubsection}{\numberline {3.30.4.1}getCategory()}{49}{subsubsection.3.30.4.1}% 
+\contentsline {subsubsection}{\numberline {3.30.4.2}getPrice()}{49}{subsubsection.3.30.4.2}% 
+\contentsline {subsubsection}{\numberline {3.30.4.3}operator"!=()}{49}{subsubsection.3.30.4.3}% 
+\contentsline {subsubsection}{\numberline {3.30.4.4}operator==()}{49}{subsubsection.3.30.4.4}% 
+\contentsline {section}{\numberline {3.31}Sheep Class Reference}{49}{section.3.31}% 
+\contentsline {subsection}{\numberline {3.31.1}*}{49}{subsection.3.31.1}% 
+\contentsline {subsection}{\numberline {3.31.2}*}{50}{subsection.3.31.2}% 
+\contentsline {subsection}{\numberline {3.31.3}Detailed Description}{50}{subsection.3.31.3}% 
+\contentsline {subsection}{\numberline {3.31.4}Constructor \& Destructor Documentation}{50}{subsection.3.31.4}% 
+\contentsline {subsubsection}{\numberline {3.31.4.1}Sheep()}{50}{subsubsection.3.31.4.1}% 
+\contentsline {subsection}{\numberline {3.31.5}Member Function Documentation}{50}{subsection.3.31.5}% 
+\contentsline {subsubsection}{\numberline {3.31.5.1}makeNoise()}{50}{subsubsection.3.31.5.1}% 
+\contentsline {subsubsection}{\numberline {3.31.5.2}produceProduct()}{50}{subsubsection.3.31.5.2}% 
+\contentsline {subsubsection}{\numberline {3.31.5.3}render()}{50}{subsubsection.3.31.5.3}% 
+\contentsline {section}{\numberline {3.32}Sheep\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Meat Class Reference}{51}{section.3.32}% 
+\contentsline {subsection}{\numberline {3.32.1}*}{51}{subsection.3.32.1}% 
+\contentsline {subsection}{\numberline {3.32.2}*}{51}{subsection.3.32.2}% 
+\contentsline {subsection}{\numberline {3.32.3}Detailed Description}{51}{subsection.3.32.3}% 
+\contentsline {subsection}{\numberline {3.32.4}Member Function Documentation}{51}{subsection.3.32.4}% 
+\contentsline {subsubsection}{\numberline {3.32.4.1}getCategory()}{51}{subsubsection.3.32.4.1}% 
+\contentsline {subsubsection}{\numberline {3.32.4.2}getPrice()}{51}{subsubsection.3.32.4.2}% 
+\contentsline {section}{\numberline {3.33}Side\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Product Class Reference}{52}{section.3.33}% 
+\contentsline {subsection}{\numberline {3.33.1}*}{52}{subsection.3.33.1}% 
+\contentsline {subsection}{\numberline {3.33.2}*}{52}{subsection.3.33.2}% 
+\contentsline {subsection}{\numberline {3.33.3}Member Function Documentation}{52}{subsection.3.33.3}% 
+\contentsline {subsubsection}{\numberline {3.33.3.1}getRecipe()}{52}{subsubsection.3.33.3.1}% 
+\contentsline {section}{\numberline {3.34}Super\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Secret\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Special\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Product Class Reference}{53}{section.3.34}% 
+\contentsline {subsection}{\numberline {3.34.1}*}{53}{subsection.3.34.1}% 
+\contentsline {subsection}{\numberline {3.34.2}*}{53}{subsection.3.34.2}% 
+\contentsline {subsection}{\numberline {3.34.3}Detailed Description}{53}{subsection.3.34.3}% 
+\contentsline {subsection}{\numberline {3.34.4}Constructor \& Destructor Documentation}{53}{subsection.3.34.4}% 
+\contentsline {subsubsection}{\numberline {3.34.4.1}SuperSecretSpecialProduct()}{53}{subsubsection.3.34.4.1}% 
+\contentsline {subsection}{\numberline {3.34.5}Member Function Documentation}{53}{subsection.3.34.5}% 
+\contentsline {subsubsection}{\numberline {3.34.5.1}getCategory()}{53}{subsubsection.3.34.5.1}% 
+\contentsline {subsubsection}{\numberline {3.34.5.2}getPrice()}{54}{subsubsection.3.34.5.2}% 
+\contentsline {subsubsection}{\numberline {3.34.5.3}getRecipe()}{54}{subsubsection.3.34.5.3}% 
+\contentsline {section}{\numberline {3.35}Truck Class Reference}{54}{section.3.35}% 
+\contentsline {subsection}{\numberline {3.35.1}*}{54}{subsection.3.35.1}% 
+\contentsline {subsection}{\numberline {3.35.2}*}{55}{subsection.3.35.2}% 
+\contentsline {subsection}{\numberline {3.35.3}Detailed Description}{55}{subsection.3.35.3}% 
+\contentsline {subsection}{\numberline {3.35.4}Member Function Documentation}{55}{subsection.3.35.4}% 
+\contentsline {subsubsection}{\numberline {3.35.4.1}getCategory()}{55}{subsubsection.3.35.4.1}% 
+\contentsline {section}{\numberline {3.36}Well Class Reference}{55}{section.3.36}% 
+\contentsline {subsection}{\numberline {3.36.1}*}{55}{subsection.3.36.1}% 
+\contentsline {subsection}{\numberline {3.36.2}*}{56}{subsection.3.36.2}% 
+\contentsline {subsection}{\numberline {3.36.3}Detailed Description}{56}{subsection.3.36.3}% 
+\contentsline {subsection}{\numberline {3.36.4}Member Function Documentation}{56}{subsection.3.36.4}% 
+\contentsline {subsubsection}{\numberline {3.36.4.1}getCategory()}{56}{subsubsection.3.36.4.1}% 
+\contentsline {section}{\numberline {3.37}World Class Reference}{56}{section.3.37}% 
+\contentsline {subsection}{\numberline {3.37.1}*}{56}{subsection.3.37.1}% 
+\contentsline {subsection}{\numberline {3.37.2}Detailed Description}{57}{subsection.3.37.2}% 
+\contentsline {subsection}{\numberline {3.37.3}Constructor \& Destructor Documentation}{57}{subsection.3.37.3}% 
+\contentsline {subsubsection}{\numberline {3.37.3.1}World()}{57}{subsubsection.3.37.3.1}% 
+\contentsline {subsubsection}{\numberline {3.37.3.2}$\sim $World()}{57}{subsubsection.3.37.3.2}% 
+\contentsline {subsection}{\numberline {3.37.4}Member Function Documentation}{57}{subsection.3.37.4}% 
+\contentsline {subsubsection}{\numberline {3.37.4.1}Draw()}{57}{subsubsection.3.37.4.1}% 
+\contentsline {subsubsection}{\numberline {3.37.4.2}Input()}{57}{subsubsection.3.37.4.2}% 
+\contentsline {subsubsection}{\numberline {3.37.4.3}Update()}{57}{subsubsection.3.37.4.3}% 
+\contentsline {chapter}{Index}{59}{section*.36}% 

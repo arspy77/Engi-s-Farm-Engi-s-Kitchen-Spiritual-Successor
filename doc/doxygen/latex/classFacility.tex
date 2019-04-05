@@ -1,0 +1,70 @@
+\hypertarget{classFacility}{}\doxysection{Facility Class Reference}
+\label{classFacility}\index{Facility@{Facility}}
+
+
+{\ttfamily \#include $<$Facility.\+h$>$}
+
+Inheritance diagram for Facility\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classFacility}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFacility_aea57fdf380a334f24c6861cf272b4a98}{Facility}} ()
+\item 
+virtual \mbox{\hyperlink{classFacility_a8e1476f3de778a68d28a84ae65a9abfd}{$\sim$\+Facility}} ()=0
+\item 
+bool \mbox{\hyperlink{classFacility_aec97ecb79c7603116afc4112ee33e4f9}{is\+Facility}} () const
+\item 
+bool \mbox{\hyperlink{classFacility_a33dbacc180930790a426d8295d475360}{is\+Grass\+Exist}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classFacility}{Facility}} merupakan kelas turunan dari \mbox{\hyperlink{classCell}{Cell}} yang menampung utilitas untuk \mbox{\hyperlink{classPlayer}{Player}} yaitu \mbox{\hyperlink{classTruck}{Truck}}, \mbox{\hyperlink{classMixer}{Mixer}}, dan \mbox{\hyperlink{classWell}{Well}} dan tidak bisa ditempati oleh \mbox{\hyperlink{classLivingThing}{Living\+Thing}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFacility_aea57fdf380a334f24c6861cf272b4a98}\label{classFacility_aea57fdf380a334f24c6861cf272b4a98}} 
+\index{Facility@{Facility}!Facility@{Facility}}
+\index{Facility@{Facility}!Facility@{Facility}}
+\doxysubsubsection{\texorpdfstring{Facility()}{Facility()}}
+{\footnotesize\ttfamily Facility\+::\+Facility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor untuk set is\+Ocupied jadi true \mbox{\Hypertarget{classFacility_a8e1476f3de778a68d28a84ae65a9abfd}\label{classFacility_a8e1476f3de778a68d28a84ae65a9abfd}} 
+\index{Facility@{Facility}!````~Facility@{$\sim$Facility}}
+\index{````~Facility@{$\sim$Facility}!Facility@{Facility}}
+\doxysubsubsection{\texorpdfstring{$\sim$Facility()}{~Facility()}}
+{\footnotesize\ttfamily virtual Facility\+::$\sim$\+Facility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Destructor \mbox{\hyperlink{classLand}{Land}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFacility_aec97ecb79c7603116afc4112ee33e4f9}\label{classFacility_aec97ecb79c7603116afc4112ee33e4f9}} 
+\index{Facility@{Facility}!isFacility@{isFacility}}
+\index{isFacility@{isFacility}!Facility@{Facility}}
+\doxysubsubsection{\texorpdfstring{isFacility()}{isFacility()}}
+{\footnotesize\ttfamily bool Facility\+::is\+Facility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return true bila \mbox{\hyperlink{classLand}{Land}} adalah sebuah facility 
+
+Implements \mbox{\hyperlink{classCell_ae21e3f60b040d7a49fe2c11c2ad2bdc6}{Cell}}.
+
+\mbox{\Hypertarget{classFacility_a33dbacc180930790a426d8295d475360}\label{classFacility_a33dbacc180930790a426d8295d475360}} 
+\index{Facility@{Facility}!isGrassExist@{isGrassExist}}
+\index{isGrassExist@{isGrassExist}!Facility@{Facility}}
+\doxysubsubsection{\texorpdfstring{isGrassExist()}{isGrassExist()}}
+{\footnotesize\ttfamily bool Facility\+::is\+Grass\+Exist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan false 
+
+Implements \mbox{\hyperlink{classCell_a491dc502764a4215e12a8e9c0792bf33}{Cell}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Engi\+Farm/\+Cell/Facility.\+h\end{DoxyCompactItemize}

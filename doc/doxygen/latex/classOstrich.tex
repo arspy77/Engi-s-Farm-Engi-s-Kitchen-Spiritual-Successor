@@ -1,0 +1,74 @@
+\hypertarget{classOstrich}{}\doxysection{Ostrich Class Reference}
+\label{classOstrich}\index{Ostrich@{Ostrich}}
+
+
+{\ttfamily \#include $<$Ostrich.\+h$>$}
+
+Inheritance diagram for Ostrich\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classOstrich}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classOstrich_a2551ee03fb4778428efdd413d6036ba7}{Ostrich}} (\mbox{\hyperlink{structPoint}{Point}} position, \mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\&\mbox{\hyperlink{classLivingThing_a98d81bf2866f4c5f20da4ec991fa3ad8}{world\+Map}}, int \mbox{\hyperlink{classLivingThing_a9bd85c97cefc60bf4dde7d46f58ce314}{n\+Row\+Cell}}, int \mbox{\hyperlink{classLivingThing_ab55191dc49dadfa2ac3e0dfcb25158b5}{n\+Collumn\+Cell}})
+\item 
+\mbox{\hyperlink{classFarmProduct}{Farm\+Product}} $\ast$ \mbox{\hyperlink{classOstrich_a4fb14f6c3475d276ec3bb5082bc3c14e}{produce\+Product}} (\mbox{\hyperlink{classFarmAnimal_a5bdf1de6d6148629b39fcf0e1f38b352}{Action}})
+\item 
+std\+::string \mbox{\hyperlink{classOstrich_ae8437a3a5af65735183feaf05cde72c0}{make\+Noise}} () const
+\item 
+char \mbox{\hyperlink{classOstrich_af6f8770fa43c42bf24a2d55c9a1b5ea0}{render}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classOstrich}{Ostrich}} merupakan kelas turunan dari \mbox{\hyperlink{classEggProducer}{Egg\+Producer}} yang menghasilkan \mbox{\hyperlink{classOstrichEgg}{Ostrich\+Egg}} saat diinteract 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOstrich_a2551ee03fb4778428efdd413d6036ba7}\label{classOstrich_a2551ee03fb4778428efdd413d6036ba7}} 
+\index{Ostrich@{Ostrich}!Ostrich@{Ostrich}}
+\index{Ostrich@{Ostrich}!Ostrich@{Ostrich}}
+\doxysubsubsection{\texorpdfstring{Ostrich()}{Ostrich()}}
+{\footnotesize\ttfamily Ostrich\+::\+Ostrich (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoint}{Point}}}]{position,  }\item[{\mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\&}]{world\+Map,  }\item[{int}]{n\+Row\+Cell,  }\item[{int}]{n\+Collumn\+Cell }\end{DoxyParamCaption})}
+
+Constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOstrich_ae8437a3a5af65735183feaf05cde72c0}\label{classOstrich_ae8437a3a5af65735183feaf05cde72c0}} 
+\index{Ostrich@{Ostrich}!makeNoise@{makeNoise}}
+\index{makeNoise@{makeNoise}!Ostrich@{Ostrich}}
+\doxysubsubsection{\texorpdfstring{makeNoise()}{makeNoise()}}
+{\footnotesize\ttfamily std\+::string Ostrich\+::make\+Noise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan suara dari \mbox{\hyperlink{classChicken}{Chicken}} 
+
+Implements \mbox{\hyperlink{classFarmAnimal_aada587407c155511ab0afa338b84d020}{Farm\+Animal}}.
+
+\mbox{\Hypertarget{classOstrich_a4fb14f6c3475d276ec3bb5082bc3c14e}\label{classOstrich_a4fb14f6c3475d276ec3bb5082bc3c14e}} 
+\index{Ostrich@{Ostrich}!produceProduct@{produceProduct}}
+\index{produceProduct@{produceProduct}!Ostrich@{Ostrich}}
+\doxysubsubsection{\texorpdfstring{produceProduct()}{produceProduct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFarmProduct}{Farm\+Product}}$\ast$ Ostrich\+::produce\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFarmAnimal_a5bdf1de6d6148629b39fcf0e1f38b352}{Action}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan Farm\+Produk yang akan dihasilkan \mbox{\hyperlink{classOstrich}{Ostrich}} bila \mbox{\hyperlink{classOstrich}{Ostrich}} di interact 
+
+Implements \mbox{\hyperlink{classFarmAnimal_a6d3eff1935a33dcfa299c02c2601257e}{Farm\+Animal}}.
+
+\mbox{\Hypertarget{classOstrich_af6f8770fa43c42bf24a2d55c9a1b5ea0}\label{classOstrich_af6f8770fa43c42bf24a2d55c9a1b5ea0}} 
+\index{Ostrich@{Ostrich}!render@{render}}
+\index{render@{render}!Ostrich@{Ostrich}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily char Ostrich\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan karakter yang merepresentasikan \mbox{\hyperlink{classOstrich}{Ostrich}} saat Hungry dan tidak Hungry 
+
+Implements \mbox{\hyperlink{classLivingThing_ad4904c4ed7951fda21ae1900badf4929}{Living\+Thing}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Engi\+Farm/\+Farm\+Animal/Ostrich.\+h\end{DoxyCompactItemize}

@@ -135,6 +135,19 @@ EngiFarm/fast:
 .PHONY : EngiFarm/fast
 
 #=============================================================================
+# Target rules for targets named doc_doxygen
+
+# Build rule for target.
+doc_doxygen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 doc_doxygen
+.PHONY : doc_doxygen
+
+# fast build rule for target.
+doc_doxygen/fast:
+	$(MAKE) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
+.PHONY : doc_doxygen/fast
+
+#=============================================================================
 # Target rules for targets named EngiFarmTest
 
 # Build rule for target.
@@ -1336,6 +1349,7 @@ help:
 	@echo "... test"
 	@echo "... EngiFarm"
 	@echo "... rebuild_cache"
+	@echo "... doc_doxygen"
 	@echo "... EngiFarmTest"
 	@echo "... src/Cell/Barn.o"
 	@echo "... src/Cell/Barn.i"

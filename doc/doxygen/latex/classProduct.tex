@@ -1,0 +1,84 @@
+\hypertarget{classProduct}{}\doxysection{Product Class Reference}
+\label{classProduct}\index{Product@{Product}}
+
+
+{\ttfamily \#include $<$Product.\+h$>$}
+
+Inheritance diagram for Product\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.327683cm]{classProduct}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classProduct_a4be8926067abd593e348b753eedb9c6c}\label{classProduct_a4be8926067abd593e348b753eedb9c6c}} 
+enum {\bfseries Category} \{ \newline
+{\bfseries C\+H\+I\+C\+K\+E\+N\+E\+GG}, 
+{\bfseries B\+E\+E\+F\+C\+H\+I\+C\+K\+E\+N\+O\+M\+E\+L\+E\+T\+TE}, 
+{\bfseries B\+E\+E\+F\+M\+U\+T\+O\+N\+S\+A\+TE}, 
+{\bfseries C\+O\+W\+M\+E\+AT}, 
+\newline
+{\bfseries D\+U\+C\+K\+M\+E\+AT}, 
+{\bfseries H\+O\+R\+S\+E\+M\+I\+LK}, 
+{\bfseries O\+S\+T\+R\+I\+C\+H\+E\+GG}, 
+{\bfseries S\+H\+E\+E\+P\+M\+E\+AT}, 
+\newline
+{\bfseries S\+U\+P\+E\+R\+S\+E\+C\+R\+E\+T\+S\+P\+E\+C\+I\+A\+L\+P\+R\+O\+D\+U\+CT}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classProduct_a865b39f7e47f1ba5f8275f82a893cd7a}{get\+Price}} () const =0
+\item 
+virtual Category \mbox{\hyperlink{classProduct_abb5ca0e6b503b6b8ca614791535420ff}{get\+Category}} () const =0
+\item 
+bool \mbox{\hyperlink{classProduct_a6d15b276d030e3e0da6e2f4fae74dc94}{operator==}} (\mbox{\hyperlink{classProduct}{Product}} \&P)
+\item 
+bool \mbox{\hyperlink{classProduct_a435c3271fe6788fdee1a639ed168ccf0}{operator!=}} (\mbox{\hyperlink{classProduct}{Product}} \&P)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classProduct}{Product}} adalah kelas abstrak yang merepresentasikan produk yang bisa dibuat dan dijual player 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classProduct_abb5ca0e6b503b6b8ca614791535420ff}\label{classProduct_abb5ca0e6b503b6b8ca614791535420ff}} 
+\index{Product@{Product}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily virtual Category Product\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+mengembalikan kategori dari produk ini 
+
+Implemented in \mbox{\hyperlink{classBeefChickenOmelette_acdeb0c53a240fb1df207e5e3a27cc7b1}{Beef\+Chicken\+Omelette}}, \mbox{\hyperlink{classBeefMuttonSate_ae2fff442fa6686fceb3697876c7c1b04}{Beef\+Mutton\+Sate}}, \mbox{\hyperlink{classSuperSecretSpecialProduct_aeee6a6b718a15d1b5ddd0617bd10921e}{Super\+Secret\+Special\+Product}}, \mbox{\hyperlink{classChickenEgg_a782b6538368df7a0eb538ee5b71f0019}{Chicken\+Egg}}, \mbox{\hyperlink{classCowMeat_a937a3a125f05de9163914d9be0c71f89}{Cow\+Meat}}, \mbox{\hyperlink{classHorseMilk_ac52fb067d9ac130c0800933adba187c8}{Horse\+Milk}}, \mbox{\hyperlink{classOstrichEgg_a7da192134bed2d942ce0fe2e8f2b421c}{Ostrich\+Egg}}, \mbox{\hyperlink{classSheepMeat_a8b7bb69367d5688972fc13a381ed535e}{Sheep\+Meat}}, and \mbox{\hyperlink{classDuckMeat_a88bbba93555b64666f62da57ef29d4e4}{Duck\+Meat}}.
+
+\mbox{\Hypertarget{classProduct_a865b39f7e47f1ba5f8275f82a893cd7a}\label{classProduct_a865b39f7e47f1ba5f8275f82a893cd7a}} 
+\index{Product@{Product}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily virtual int Product\+::get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+get\+Price mengembalikan harga yang didefinisikan 
+
+Implemented in \mbox{\hyperlink{classBeefChickenOmelette_accf86182e26e813ff6ece78023d5f125}{Beef\+Chicken\+Omelette}}, \mbox{\hyperlink{classBeefMuttonSate_ac5135f81384350d2887fc6af9cce1599}{Beef\+Mutton\+Sate}}, \mbox{\hyperlink{classSuperSecretSpecialProduct_a659a476db3340535e88f244f1462d702}{Super\+Secret\+Special\+Product}}, \mbox{\hyperlink{classChickenEgg_aeb97d5b0091a62319a1367e0f0312b5f}{Chicken\+Egg}}, \mbox{\hyperlink{classCowMeat_ac0c528517f2b5f4ff4ab0ff9cdc2bec4}{Cow\+Meat}}, \mbox{\hyperlink{classHorseMilk_a789186a052c605570b60c9d4cf139632}{Horse\+Milk}}, \mbox{\hyperlink{classOstrichEgg_a57111a22bb7cf208b621617af365a984}{Ostrich\+Egg}}, \mbox{\hyperlink{classSheepMeat_a4cb28ea36775e2f3598df1eab5f86fed}{Sheep\+Meat}}, and \mbox{\hyperlink{classDuckMeat_ae21a66021d89d6e70f617de56d4a6847}{Duck\+Meat}}.
+
+\mbox{\Hypertarget{classProduct_a435c3271fe6788fdee1a639ed168ccf0}\label{classProduct_a435c3271fe6788fdee1a639ed168ccf0}} 
+\index{Product@{Product}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Product\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProduct}{Product}} \&}]{P }\end{DoxyParamCaption})}
+
+Mengembalikan hasil perbandingan dereference \mbox{\Hypertarget{classProduct_a6d15b276d030e3e0da6e2f4fae74dc94}\label{classProduct_a6d15b276d030e3e0da6e2f4fae74dc94}} 
+\index{Product@{Product}!operator==@{operator==}}
+\index{operator==@{operator==}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Product\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProduct}{Product}} \&}]{P }\end{DoxyParamCaption})}
+
+Mengembalikan hasil perbandingan dereference 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Engi\+Farm/\+Product/Product.\+h\end{DoxyCompactItemize}

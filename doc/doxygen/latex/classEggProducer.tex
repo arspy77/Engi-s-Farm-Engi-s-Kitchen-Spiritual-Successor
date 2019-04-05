@@ -1,0 +1,84 @@
+\hypertarget{classEggProducer}{}\doxysection{Egg\+Producer Class Reference}
+\label{classEggProducer}\index{EggProducer@{EggProducer}}
+
+
+{\ttfamily \#include $<$Egg\+Producer.\+h$>$}
+
+Inheritance diagram for Egg\+Producer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classEggProducer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEggProducer_a3dbde29047e73f3bc0cd333651c7f607}{Egg\+Producer}} (int \+\_\+max\+Time\+To\+Get\+Hungry, \mbox{\hyperlink{structPoint}{Point}} position, \mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\&\mbox{\hyperlink{classLivingThing_a98d81bf2866f4c5f20da4ec991fa3ad8}{world\+Map}}, int \mbox{\hyperlink{classLivingThing_a9bd85c97cefc60bf4dde7d46f58ce314}{n\+Row\+Cell}}, int \mbox{\hyperlink{classLivingThing_ab55191dc49dadfa2ac3e0dfcb25158b5}{n\+Collumn\+Cell}})
+\item 
+virtual \mbox{\hyperlink{classEggProducer_a8a5506bbde104077416f66d17e19bd82}{$\sim$\+Egg\+Producer}} ()=0
+\item 
+bool \mbox{\hyperlink{classEggProducer_aa6385ab910d4e13c81255b7650706cc1}{get\+Produce}} ()
+\item 
+bool \mbox{\hyperlink{classEggProducer_ad09bae69283e87ab034d102f0c5cec43}{get\+Killable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classEggProducer_a47e34caed947589b4630e8d38f3b9a84}{can\+Produce}} \{false\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classEggProducer}{Egg\+Producer}} merupakan kelas abstrak turunan dari \mbox{\hyperlink{classFarmAnimal}{Farm\+Animal}} yang tinggal di \mbox{\hyperlink{classCoop}{Coop}} dan menghasilkan Egg saat diinteract 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEggProducer_a3dbde29047e73f3bc0cd333651c7f607}\label{classEggProducer_a3dbde29047e73f3bc0cd333651c7f607}} 
+\index{EggProducer@{EggProducer}!EggProducer@{EggProducer}}
+\index{EggProducer@{EggProducer}!EggProducer@{EggProducer}}
+\doxysubsubsection{\texorpdfstring{EggProducer()}{EggProducer()}}
+{\footnotesize\ttfamily Egg\+Producer\+::\+Egg\+Producer (\begin{DoxyParamCaption}\item[{int}]{\+\_\+max\+Time\+To\+Get\+Hungry,  }\item[{\mbox{\hyperlink{structPoint}{Point}}}]{position,  }\item[{\mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\&}]{world\+Map,  }\item[{int}]{n\+Row\+Cell,  }\item[{int}]{n\+Collumn\+Cell }\end{DoxyParamCaption})}
+
+Constructor max\+Time\+To\+Get\+Hungry dengan nilai H \mbox{\Hypertarget{classEggProducer_a8a5506bbde104077416f66d17e19bd82}\label{classEggProducer_a8a5506bbde104077416f66d17e19bd82}} 
+\index{EggProducer@{EggProducer}!````~EggProducer@{$\sim$EggProducer}}
+\index{````~EggProducer@{$\sim$EggProducer}!EggProducer@{EggProducer}}
+\doxysubsubsection{\texorpdfstring{$\sim$EggProducer()}{~EggProducer()}}
+{\footnotesize\ttfamily virtual Egg\+Producer\+::$\sim$\+Egg\+Producer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Penerusan overloading (virtual) destruktor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEggProducer_ad09bae69283e87ab034d102f0c5cec43}\label{classEggProducer_ad09bae69283e87ab034d102f0c5cec43}} 
+\index{EggProducer@{EggProducer}!getKillable@{getKillable}}
+\index{getKillable@{getKillable}!EggProducer@{EggProducer}}
+\doxysubsubsection{\texorpdfstring{getKillable()}{getKillable()}}
+{\footnotesize\ttfamily bool Egg\+Producer\+::get\+Killable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan false karena \mbox{\hyperlink{classEggProducer}{Egg\+Producer}} tidak bisa di kill 
+
+Implements \mbox{\hyperlink{classFarmAnimal_a7b5b05e92accf9ff1ac046e8f07b9799}{Farm\+Animal}}.
+
+\mbox{\Hypertarget{classEggProducer_aa6385ab910d4e13c81255b7650706cc1}\label{classEggProducer_aa6385ab910d4e13c81255b7650706cc1}} 
+\index{EggProducer@{EggProducer}!getProduce@{getProduce}}
+\index{getProduce@{getProduce}!EggProducer@{EggProducer}}
+\doxysubsubsection{\texorpdfstring{getProduce()}{getProduce()}}
+{\footnotesize\ttfamily bool Egg\+Producer\+::get\+Produce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan nilai dari can\+Produce 
+
+Implements \mbox{\hyperlink{classFarmAnimal_a1d91b97ec238913a858ed076834087f9}{Farm\+Animal}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classEggProducer_a47e34caed947589b4630e8d38f3b9a84}\label{classEggProducer_a47e34caed947589b4630e8d38f3b9a84}} 
+\index{EggProducer@{EggProducer}!canProduce@{canProduce}}
+\index{canProduce@{canProduce}!EggProducer@{EggProducer}}
+\doxysubsubsection{\texorpdfstring{canProduce}{canProduce}}
+{\footnotesize\ttfamily bool Egg\+Producer\+::can\+Produce \{false\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Menentukan apakah \mbox{\hyperlink{classFarmAnimal}{Farm\+Animal}} dapat menghasilkan produk apabila diinteract 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Engi\+Farm/\+Farm\+Animal/Egg\+Producer.\+h\end{DoxyCompactItemize}

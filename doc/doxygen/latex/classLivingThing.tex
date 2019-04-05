@@ -1,0 +1,96 @@
+\hypertarget{classLivingThing}{}\doxysection{Living\+Thing Class Reference}
+\label{classLivingThing}\index{LivingThing@{LivingThing}}
+Inheritance diagram for Living\+Thing\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.696370cm]{classLivingThing}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLivingThing_a337f14f246de5528b1d80a9f286046ee}{Living\+Thing}} (\mbox{\hyperlink{structPoint}{Point}} position, \mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\&\mbox{\hyperlink{classLivingThing_a98d81bf2866f4c5f20da4ec991fa3ad8}{world\+Map}}, int \mbox{\hyperlink{classLivingThing_a9bd85c97cefc60bf4dde7d46f58ce314}{n\+Row\+Cell}}, int \mbox{\hyperlink{classLivingThing_ab55191dc49dadfa2ac3e0dfcb25158b5}{n\+Collumn\+Cell}})
+\item 
+virtual \mbox{\hyperlink{classLivingThing_a445c009568d4993d8cfa87b558f100b6}{$\sim$\+Living\+Thing}} ()=0
+\item 
+\mbox{\hyperlink{structPoint}{Point}} \mbox{\hyperlink{classLivingThing_a15729d0c054d998b2aaefb0e108c4da7}{get\+Position}} () const
+\item 
+void \mbox{\hyperlink{classLivingThing_af37464adaf56be1f3342857861762f71}{move}} (Direction to\+Where)
+\item 
+virtual char \mbox{\hyperlink{classLivingThing_ad4904c4ed7951fda21ae1900badf4929}{render}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\& \mbox{\hyperlink{classLivingThing_a98d81bf2866f4c5f20da4ec991fa3ad8}{world\+Map}}
+\item 
+int \mbox{\hyperlink{classLivingThing_a9bd85c97cefc60bf4dde7d46f58ce314}{n\+Row\+Cell}}
+\item 
+int \mbox{\hyperlink{classLivingThing_ab55191dc49dadfa2ac3e0dfcb25158b5}{n\+Collumn\+Cell}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLivingThing_a337f14f246de5528b1d80a9f286046ee}\label{classLivingThing_a337f14f246de5528b1d80a9f286046ee}} 
+\index{LivingThing@{LivingThing}!LivingThing@{LivingThing}}
+\index{LivingThing@{LivingThing}!LivingThing@{LivingThing}}
+\doxysubsubsection{\texorpdfstring{LivingThing()}{LivingThing()}}
+{\footnotesize\ttfamily Living\+Thing\+::\+Living\+Thing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoint}{Point}}}]{position,  }\item[{\mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\&}]{world\+Map,  }\item[{int}]{n\+Row\+Cell,  }\item[{int}]{n\+Collumn\+Cell }\end{DoxyParamCaption})}
+
+Constructor \mbox{\hyperlink{classLivingThing}{Living\+Thing}} \mbox{\Hypertarget{classLivingThing_a445c009568d4993d8cfa87b558f100b6}\label{classLivingThing_a445c009568d4993d8cfa87b558f100b6}} 
+\index{LivingThing@{LivingThing}!````~LivingThing@{$\sim$LivingThing}}
+\index{````~LivingThing@{$\sim$LivingThing}!LivingThing@{LivingThing}}
+\doxysubsubsection{\texorpdfstring{$\sim$LivingThing()}{~LivingThing()}}
+{\footnotesize\ttfamily virtual Living\+Thing\+::$\sim$\+Living\+Thing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Destructor dari \mbox{\hyperlink{classLivingThing}{Living\+Thing}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLivingThing_a15729d0c054d998b2aaefb0e108c4da7}\label{classLivingThing_a15729d0c054d998b2aaefb0e108c4da7}} 
+\index{LivingThing@{LivingThing}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!LivingThing@{LivingThing}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPoint}{Point}} Living\+Thing\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Mengembalikan position \mbox{\Hypertarget{classLivingThing_af37464adaf56be1f3342857861762f71}\label{classLivingThing_af37464adaf56be1f3342857861762f71}} 
+\index{LivingThing@{LivingThing}!move@{move}}
+\index{move@{move}!LivingThing@{LivingThing}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Living\+Thing\+::move (\begin{DoxyParamCaption}\item[{Direction}]{to\+Where }\end{DoxyParamCaption})}
+
+Berpindah ke suatu lokasi. Apabila tidak bisa (!can\+Move\+To), throw \char`\"{}\+Cannot move to the direction\char`\"{}. \mbox{\Hypertarget{classLivingThing_ad4904c4ed7951fda21ae1900badf4929}\label{classLivingThing_ad4904c4ed7951fda21ae1900badf4929}} 
+\index{LivingThing@{LivingThing}!render@{render}}
+\index{render@{render}!LivingThing@{LivingThing}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily virtual char Living\+Thing\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Mengembalikan char untuk dirender ke layar 
+
+Implemented in \mbox{\hyperlink{classPlayer_a29a1206a28a033fb0536848c7002b446}{Player}}, \mbox{\hyperlink{classChicken_a0f3537589ee4822186aad3c8cf105db3}{Chicken}}, \mbox{\hyperlink{classCow_a3d1e7ab6e78229968e177705d06667b8}{Cow}}, \mbox{\hyperlink{classDuck_aab09de20800285320ab614bafcab392d}{Duck}}, \mbox{\hyperlink{classHorse_a40abd65ce7f30c72bd420267149543d3}{Horse}}, \mbox{\hyperlink{classOstrich_af6f8770fa43c42bf24a2d55c9a1b5ea0}{Ostrich}}, and \mbox{\hyperlink{classSheep_aaa042d77446783ddde5434eb7e2eeda4}{Sheep}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classLivingThing_ab55191dc49dadfa2ac3e0dfcb25158b5}\label{classLivingThing_ab55191dc49dadfa2ac3e0dfcb25158b5}} 
+\index{LivingThing@{LivingThing}!nCollumnCell@{nCollumnCell}}
+\index{nCollumnCell@{nCollumnCell}!LivingThing@{LivingThing}}
+\doxysubsubsection{\texorpdfstring{nCollumnCell}{nCollumnCell}}
+{\footnotesize\ttfamily int Living\+Thing\+::n\+Collumn\+Cell\hspace{0.3cm}{\ttfamily [protected]}}
+
+Nilai efektif kolom untuk Matriks \mbox{\hyperlink{classCell}{Cell}} \mbox{\Hypertarget{classLivingThing_a9bd85c97cefc60bf4dde7d46f58ce314}\label{classLivingThing_a9bd85c97cefc60bf4dde7d46f58ce314}} 
+\index{LivingThing@{LivingThing}!nRowCell@{nRowCell}}
+\index{nRowCell@{nRowCell}!LivingThing@{LivingThing}}
+\doxysubsubsection{\texorpdfstring{nRowCell}{nRowCell}}
+{\footnotesize\ttfamily int Living\+Thing\+::n\+Row\+Cell\hspace{0.3cm}{\ttfamily [protected]}}
+
+Nilai efektif baris untuk Matriks \mbox{\hyperlink{classCell}{Cell}} \mbox{\Hypertarget{classLivingThing_a98d81bf2866f4c5f20da4ec991fa3ad8}\label{classLivingThing_a98d81bf2866f4c5f20da4ec991fa3ad8}} 
+\index{LivingThing@{LivingThing}!worldMap@{worldMap}}
+\index{worldMap@{worldMap}!LivingThing@{LivingThing}}
+\doxysubsubsection{\texorpdfstring{worldMap}{worldMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCell}{Cell}}$\ast$$\ast$$\ast$\& Living\+Thing\+::world\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+Representasi dunia tempat \mbox{\hyperlink{classLivingThing}{Living\+Thing}} tinggal 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Engi\+Farm/Living\+Thing.\+h\end{DoxyCompactItemize}

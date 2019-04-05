@@ -1,0 +1,74 @@
+\hypertarget{classDuck}{}\doxysection{Duck Class Reference}
+\label{classDuck}\index{Duck@{Duck}}
+
+
+{\ttfamily \#include $<$Duck.\+h$>$}
+
+Inheritance diagram for Duck\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classDuck}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDuck_a8a17fc5929fe3305392d34ba4636c7dd}{Duck}} (\mbox{\hyperlink{structPoint}{Point}} position, \mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\&\mbox{\hyperlink{classLivingThing_a98d81bf2866f4c5f20da4ec991fa3ad8}{world\+Map}}, int \mbox{\hyperlink{classLivingThing_a9bd85c97cefc60bf4dde7d46f58ce314}{n\+Row\+Cell}}, int \mbox{\hyperlink{classLivingThing_ab55191dc49dadfa2ac3e0dfcb25158b5}{n\+Collumn\+Cell}})
+\item 
+\mbox{\hyperlink{classFarmProduct}{Farm\+Product}} $\ast$ \mbox{\hyperlink{classDuck_ad79e38c527beb6fe7c0da42ea9378941}{produce\+Product}} (\mbox{\hyperlink{classFarmAnimal_a5bdf1de6d6148629b39fcf0e1f38b352}{Action}})
+\item 
+std\+::string \mbox{\hyperlink{classDuck_ab29bd04c443175576d354210f4dc3da1}{make\+Noise}} () const
+\item 
+char \mbox{\hyperlink{classDuck_aab09de20800285320ab614bafcab392d}{render}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classDuck}{Duck}} merupakan kelas turunan dari \mbox{\hyperlink{classMeatProducer}{Meat\+Producer}} yang menghasilkan \mbox{\hyperlink{classDuckMeat}{Duck\+Meat}} saat diinteract 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDuck_a8a17fc5929fe3305392d34ba4636c7dd}\label{classDuck_a8a17fc5929fe3305392d34ba4636c7dd}} 
+\index{Duck@{Duck}!Duck@{Duck}}
+\index{Duck@{Duck}!Duck@{Duck}}
+\doxysubsubsection{\texorpdfstring{Duck()}{Duck()}}
+{\footnotesize\ttfamily Duck\+::\+Duck (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoint}{Point}}}]{position,  }\item[{\mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$$\ast$\&}]{world\+Map,  }\item[{int}]{n\+Row\+Cell,  }\item[{int}]{n\+Collumn\+Cell }\end{DoxyParamCaption})}
+
+Constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDuck_ab29bd04c443175576d354210f4dc3da1}\label{classDuck_ab29bd04c443175576d354210f4dc3da1}} 
+\index{Duck@{Duck}!makeNoise@{makeNoise}}
+\index{makeNoise@{makeNoise}!Duck@{Duck}}
+\doxysubsubsection{\texorpdfstring{makeNoise()}{makeNoise()}}
+{\footnotesize\ttfamily std\+::string Duck\+::make\+Noise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan suara dari \mbox{\hyperlink{classDuck}{Duck}} 
+
+Implements \mbox{\hyperlink{classFarmAnimal_aada587407c155511ab0afa338b84d020}{Farm\+Animal}}.
+
+\mbox{\Hypertarget{classDuck_ad79e38c527beb6fe7c0da42ea9378941}\label{classDuck_ad79e38c527beb6fe7c0da42ea9378941}} 
+\index{Duck@{Duck}!produceProduct@{produceProduct}}
+\index{produceProduct@{produceProduct}!Duck@{Duck}}
+\doxysubsubsection{\texorpdfstring{produceProduct()}{produceProduct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFarmProduct}{Farm\+Product}}$\ast$ Duck\+::produce\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFarmAnimal_a5bdf1de6d6148629b39fcf0e1f38b352}{Action}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan Farm\+Produk yang akan dihasilkan \mbox{\hyperlink{classDuck}{Duck}} bila \mbox{\hyperlink{classDuck}{Duck}} di kill 
+
+Implements \mbox{\hyperlink{classFarmAnimal_a6d3eff1935a33dcfa299c02c2601257e}{Farm\+Animal}}.
+
+\mbox{\Hypertarget{classDuck_aab09de20800285320ab614bafcab392d}\label{classDuck_aab09de20800285320ab614bafcab392d}} 
+\index{Duck@{Duck}!render@{render}}
+\index{render@{render}!Duck@{Duck}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily char Duck\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Mengembalikan karakter yang merepresentasikan \mbox{\hyperlink{classDuck}{Duck}} saat Hungry dan tidak Hungry 
+
+Implements \mbox{\hyperlink{classLivingThing_ad4904c4ed7951fda21ae1900badf4929}{Living\+Thing}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Engi\+Farm/\+Farm\+Animal/Duck.\+h\end{DoxyCompactItemize}

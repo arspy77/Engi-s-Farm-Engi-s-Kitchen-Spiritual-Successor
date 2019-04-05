@@ -9,6 +9,7 @@
  *  */
 class Facility : public Cell { 
     public:
+        /** Constructor untuk set isOcupied jadi true */
         Facility();
 
         /** Destructor Land */
