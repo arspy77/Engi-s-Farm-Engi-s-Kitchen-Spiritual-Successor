@@ -7,7 +7,7 @@ Duck::Duck(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)
 
 /** Mengembalikan FarmProduk yang akan dihasilkan Duck bila Duck di kill*/
 FarmProduct* Duck::produceProduct(Action act){
-    FarmProduct* fp;
+    FarmProduct* fp = nullptr;
     if (act == Action::KILL){
         fp = new DuckMeat();
     }

@@ -1,6 +1,6 @@
 #ifndef CELL_H
 #define CELL_H
-
+/** Cell adalah kelas abstrak yang merepresentasikan petak pada Engi's farm*/
 class Cell{
     public:
         /** Jenis kategori Cell */

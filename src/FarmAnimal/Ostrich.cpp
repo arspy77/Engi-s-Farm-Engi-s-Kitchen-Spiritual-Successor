@@ -7,7 +7,7 @@ Ostrich::Ostrich(Point position, Cell***& worldMap, int nRowCell, int nCollumnCe
 
 /** Mengembalikan FarmProduk yang akan dihasilkan Ostrich bila Ostrich di interact */
 FarmProduct* Ostrich::produceProduct(Action act){
-    FarmProduct* fp;
+    FarmProduct* fp = nullptr;
     if (act == Action::INTERACT){
         fp = new OstrichEgg();
         canProduce = false;

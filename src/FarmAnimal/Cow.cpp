@@ -7,7 +7,7 @@ Cow::Cow(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)
 
 /** Mengembalikan FarmProduk yang akan dihasilkan Cow bila Cow di kill atau di interact*/
 FarmProduct* Cow::produceProduct(Action act){
-    FarmProduct* fp;
+    FarmProduct* fp = nullptr;
     if (act == Action::KILL){
         fp = new CowMeat();
     }

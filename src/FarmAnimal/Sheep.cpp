@@ -7,7 +7,7 @@ Sheep::Sheep(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)
 
 /** Mengembalikan FarmProduk yang akan dihasilkan Sheep bila Sheep di kill */
 FarmProduct* Sheep::produceProduct(Action act){
-    FarmProduct* fp;
+    FarmProduct* fp = nullptr;
     if (act == Action::KILL){
         fp = new SheepMeat();
     }

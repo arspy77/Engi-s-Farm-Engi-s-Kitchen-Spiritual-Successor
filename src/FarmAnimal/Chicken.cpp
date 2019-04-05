@@ -7,7 +7,7 @@ Chicken::Chicken(Point position, Cell***& worldMap, int nRowCell, int nCollumnCe
 
 /** Mengembalikan FarmProduk yang akan dihasilkan Chicken bila Chicken di kill atau di interact */
 FarmProduct* Chicken::produceProduct(Action act){
-    FarmProduct* fp;
+    FarmProduct* fp = nullptr;
     if (act == Action::INTERACT){
         fp = new ChickenEgg();
         this->canProduce = false;
