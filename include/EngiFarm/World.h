@@ -3,19 +3,21 @@
 
 #include "Player.h"
 #include "LinkedList.h"
-#include "Cell/GrassLand.h"
-#include "Cell/Coop.h"
-#include "Cell/Barn.h"
-#include "Cell/Truck.h"
-#include "Cell/Mixer.h"
-#include "Cell/Well.h"
-#include "FarmAnimal/Horse.h"
-#include "FarmAnimal/Chicken.h"
-#include "FarmAnimal/Cow.h"
-#include "FarmAnimal/Duck.h"
-#include "FarmAnimal/Ostrich.h"
-#include "FarmAnimal/Sheep.h"
+#include "GrassLand.h"
+#include "Coop.h"
+#include "Barn.h"
+#include "Truck.h"
+#include "Mixer.h"
+#include "Well.h"
+#include "Horse.h"
+#include "Chicken.h"
+#include "Cow.h"
+#include "Duck.h"
+#include "Ostrich.h"
+#include "Sheep.h"
 
+
+/** World adalah kelas yang merepresentasikan dunia yang menyimpan semua Cell dan LivingThing di dalamnya */
 class World{
      public :
         /** 

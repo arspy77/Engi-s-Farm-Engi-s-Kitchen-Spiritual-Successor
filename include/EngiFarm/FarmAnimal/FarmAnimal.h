@@ -2,11 +2,13 @@
 #define FARM_ANIMAL_H
 
 #include "Point.h"
-#include "Cell/Cell.h"
+#include "Cell.h"
 #include "LivingThing.h"
-#include "Product/FarmProduct.h"
+#include "FarmProduct.h"
 #include <string>
 
+/** kelas FarmAnimal merupakan kelas turunan dari living thing yang dapat berupa
+ * EggProducer,MilkProducer,dan MeatProducer*/
 class FarmAnimal : public LivingThing {                               
     public: 
         /** Jenis aksi yang dapat dilakukan ke FarmAnimal */
@@ -29,15 +31,16 @@ class FarmAnimal : public LivingThing {
         /** Mengembalikan suara dari FarmAnimal */
         virtual std::string makeNoise() const = 0;
 
-        // awalnya private
         /** Mengembalikan true jika timeToDeath == 0, lalu di destruct di main atau di class world */
         bool isDead() const;
 
+        /** Mengembalikan true jika FarmAnimal bisa di Interact untuk menghasilkan Product */
         virtual bool getProduce() = 0;
+
+        /** Mengembalikan true jika FarmAnimal bisa di Kill untuk menghasilkan Product */
         virtual bool getKillable() = 0;
 
     protected:
-        // awalnya private
         /**
          *  Jika FarmAnimal sedang berdiri pada land dengan rumput,
          *  maka timeToDeath di set nilai semula dan timeToGdengan nilai sesuai dengan derived
@@ -55,15 +58,12 @@ class FarmAnimal : public LivingThing {
         const int maxTimeToGetHungry;
 
     private:
-        
-
         /** 
          *  Waktu FarmAnimal yang lapar sampai mati
          *  Jika tidak lapar, timeToDeath maksimum
          */
         int timeToDeath;
 
-        
         /** Nilai max dari timeToDeath */
         static constexpr int maxTimeToDeath{5};
         
@@ -76,7 +76,6 @@ class FarmAnimal : public LivingThing {
         /** Menggerakan FarmAnimal secara random ke posisi yang mungkin ditempati */
         virtual void moveHeuristically();
 
-        // Ini awalnya gaada
         /** Apakah bisa masuk suatu area (cek out of bound, jenis Cell, kekosongan Cell) */
         virtual bool canMoveTo(Cell& toWhere) const = 0;
 };

@@ -3,6 +3,10 @@
 
 #include "Cell.h"
 
+/** 
+ * Facility merupakan kelas turunan dari Cell yang menampung utilitas untuk Player yaitu Truck, Mixer, dan Well
+ * dan tidak bisa ditempati oleh LivingThing
+ *  */
 class Facility : public Cell { 
     public:
         Facility();

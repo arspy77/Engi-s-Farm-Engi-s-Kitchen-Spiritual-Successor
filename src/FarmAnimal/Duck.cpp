@@ -1,5 +1,5 @@
 #include "Duck.h"
-#include "../Product/DuckMeat.h"
+#include "DuckMeat.h"
 
 /** Constructor */
 Duck::Duck(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)

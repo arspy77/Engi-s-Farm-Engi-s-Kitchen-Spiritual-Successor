@@ -3,6 +3,7 @@
 
 #include "FarmProduct.h"
 
+/** ChickenEgg adalah kelas turunan dari FarmProduct yang dihasilkan dengan interact dengan Chicken */
 class ChickenEgg : public FarmProduct {
     public:
         /** getPrice mengembalikan harga yang didefinisikan */  

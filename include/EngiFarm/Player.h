@@ -12,6 +12,7 @@
 #include "Product/SuperSecretSpecialProduct.h"
 #include "Point.h"
 
+/** Player adalah kelas yang merepresentasikan pemain dengan semua aksinya di dunia */
 class Player : public LivingThing {
     public :
         /** Constructor Player di position, recipeBook diinisalisasi dengan semua SideProduct yang terdefinisi */
@@ -57,7 +58,7 @@ class Player : public LivingThing {
         int getMoney();
         int getWater();
         LinkedList<Product*>& getInventory();
-        static LinkedList<SideProduct*> getrecipeBook();
+        LinkedList<SideProduct*> getrecipeBook();
 
     private :
         /** Product yang dipegang Player */
@@ -77,7 +78,7 @@ class Player : public LivingThing {
          * tersebut.
          * recipeBook diinisalisasi di implementasi
          */
-        static LinkedList<SideProduct*> recipeBook;
+        LinkedList<SideProduct*> recipeBook;
         
         /** Apakah bisa masuk suatu area (cek out of bound, jenis Cell, kekosongan Cell) */
         bool canMoveTo(Cell& toWhere) const;

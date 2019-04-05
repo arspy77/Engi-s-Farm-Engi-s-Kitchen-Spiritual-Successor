@@ -3,6 +3,7 @@
 
 #include "Land.h"
 
+/** Coop merupakan kelas turunan dari Land yang hanya bisa ditempati oleh Player dan EggProducer */
 class Coop : public Land {
     public:
         /** Return kategori dari objek ini */

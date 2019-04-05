@@ -6,6 +6,7 @@
 #include "EggProducer.h"
 #include <string>
 
+/** Chicken merupakan kelas turunan dari EggProducer yang menghasilkan ChickenEgg saat diinteract */
 class Chicken: public EggProducer { 
     public:
         /** Constructor */
@@ -17,7 +18,7 @@ class Chicken: public EggProducer {
         /** Mengembalikan suara dari Chicken */
         std::string makeNoise() const;
 
-        //Awalnya gaada
+        /** Mengembalikan karakter yang merepresentasikan Chicken saat Hungry dan tidak Hungry */
         char render();
 
     private:

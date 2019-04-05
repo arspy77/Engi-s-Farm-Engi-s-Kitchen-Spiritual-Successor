@@ -36,7 +36,7 @@ class Cell{
         /** Mengembalikan keberadaan grass jika Cell bertipe Land */
         virtual bool isGrassExist() const = 0;
 
-    protected: //gantinya gimana kalo private
+    protected:
         /** 
          * Flag yang menandakan cell ditempati oleh sesuatu (Player/FarmAnimal/Facility) atau tidak. 
          * True bila cell sedang ditempati oleh sesuatu.

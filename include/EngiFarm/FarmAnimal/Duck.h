@@ -1,11 +1,12 @@
 #ifndef DUCK_H
 #define DUCK_H
 
-#include "../Point.h"
-#include "../Cell/Cell.h"
+#include "Point.h"
+#include "Cell.h"
 #include "MeatProducer.h"
 #include <string>
 
+/** Duck merupakan kelas turunan dari MeatProducer yang menghasilkan DuckMeat saat diinteract */
 class Duck: public MeatProducer { 
     public:
         /** Constructor */
@@ -17,7 +18,7 @@ class Duck: public MeatProducer {
         /** Mengembalikan suara dari Duck */
         std::string makeNoise() const;
 
-        //Awalnya gaada
+        /** Mengembalikan karakter yang merepresentasikan Duck saat Hungry dan tidak Hungry */
         char render();
 
     private:

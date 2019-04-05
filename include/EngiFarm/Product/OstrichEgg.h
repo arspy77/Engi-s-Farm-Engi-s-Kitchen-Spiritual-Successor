@@ -3,6 +3,7 @@
 
 #include "FarmProduct.h"
 
+/** OstrichEgg adalah kelas turunan dari FarmProduct yang dihasilkan dengan interact dengan Ostrich */
 class OstrichEgg : public FarmProduct {
     public:
         /** getPrice mengembalikan harga yang didefinisikan */  

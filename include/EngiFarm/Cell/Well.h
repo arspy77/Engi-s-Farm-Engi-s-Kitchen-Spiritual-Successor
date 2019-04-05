@@ -3,6 +3,7 @@
 
 #include "Facility.h"
 
+/** Well merupakan kelas turunan dari Facility yang digunakan untuk memberi Water untuk Player */
 class Well : public Facility {
     public:
         /** Return kategori dari objek ini */

@@ -1,5 +1,5 @@
 #include "Cow.h"
-#include "../Product/CowMeat.h"
+#include "CowMeat.h"
 
 /** Constructor */
 Cow::Cow(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)

@@ -47,6 +47,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "include/EngiFarm/Cell"
   "include/EngiFarm/FarmAnimal"
   "include/EngiFarm/Product"
+  "/include"
   )
 
 # Targets to which this target links.

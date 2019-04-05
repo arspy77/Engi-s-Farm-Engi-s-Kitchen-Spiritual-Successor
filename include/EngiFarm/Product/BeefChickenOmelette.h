@@ -1,15 +1,16 @@
 #ifndef BEEF_CHICKEN_OMELETTE_H
 #define BEEF_CHICKEN_OMELETTE_H
 
-#include "../LinkedList.h"
+#include "LinkedList.h"
 #include "SideProduct.h"
 
+/** BeefChickenOmelette adalah kelas turunan dari SideProduct yang dihasilkan dengan mix CowMeat dan ChickenEgg */
 class BeefChickenOmelette : public SideProduct {
     public:
         /** Constructor untuk inisialisasi recipe */
         BeefChickenOmelette();
 
-        /** Dtor */ //Awalnya tidak ada
+        /** Dtor */ 
         ~BeefChickenOmelette();
 
         /** getPrice mengembalikan harga yang didefinisikan */  

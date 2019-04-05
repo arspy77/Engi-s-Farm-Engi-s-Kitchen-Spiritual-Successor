@@ -1,11 +1,12 @@
 #ifndef HORSE_H
 #define HORSE_H
 
-#include "../Point.h"
-#include "../Cell/Cell.h"
+#include "Point.h"
+#include "Cell.h"
 #include "MilkProducer.h"
 #include <string>
 
+/** Horse merupakan kelas turunan dari MilkProducer yang menghasilkan HorseMilk saat diinteract */
 class Horse: public MilkProducer { 
     public:
         /** Constructor */
@@ -17,7 +18,7 @@ class Horse: public MilkProducer {
         /** Mengembalikan suara dari Horse */
         std::string makeNoise() const;
 
-        //Awalnya gaada
+        /** Mengembalikan karakter yang merepresentasikan Horse saat Hungry dan tidak Hungry */
         char render();
         
     private:

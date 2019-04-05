@@ -1,9 +1,10 @@
 #ifndef SUPER_SECRET_SPECIAL_PRODUCT_H
 #define SUPER_SECRET_SPECIAL_PRODUCT_H
 
-#include "../LinkedList.h"
+#include "LinkedList.h"
 #include "SideProduct.h"
 
+/** SuperSecretSpecialProduct adalah kelas turunan dari SideProduct yang dihasilkan dengan mix HorseMilk dan OstrichEgg */
 class SuperSecretSpecialProduct : public SideProduct {
     public:
         /** Constructor untuk inisialisasi recipe */

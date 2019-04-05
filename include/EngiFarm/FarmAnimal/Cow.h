@@ -1,11 +1,12 @@
 #ifndef COW_H
 #define COW_H
 
-#include "../Point.h"
-#include "../Cell/Cell.h"
+#include "Point.h"
+#include "Cell.h"
 #include "MeatProducer.h"
 #include <string>
 
+/** Cow merupakan kelas turunan dari MeatProducer yang menghasilkan CowMeat saat dikill */
 class Cow: public MeatProducer { 
     public:
         /** Constructor */
@@ -17,7 +18,7 @@ class Cow: public MeatProducer {
         /** Mengembalikan suara dari Cow */
         std::string makeNoise() const;
 
-        //Awalnya gaada
+        /** Mengembalikan karakter yang merepresentasikan Cow saat Hungry dan tidak Hungry */
         char render();
 
     private:

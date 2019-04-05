@@ -2,7 +2,7 @@
 #define LAND_H
 
 #include "Cell.h"
-
+/** Land merupakan kelas turunan dari Cell yang merepresentasikan petak-petak yang bisa ditempati oleh LivingThing */
 class Land : public Cell { 
     public:
         /** Destructor Land */

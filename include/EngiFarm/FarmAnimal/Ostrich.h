@@ -1,11 +1,12 @@
 #ifndef OSTRICH_H
 #define OSTRICH_H
 
-#include "../Point.h"
-#include "../Cell/Cell.h"
+#include "Point.h"
+#include "Cell.h"
 #include "EggProducer.h"
 #include <string>
 
+/** Ostrich merupakan kelas turunan dari EggProducer yang menghasilkan OstrichEgg saat diinteract */
 class Ostrich: public EggProducer { 
     public:
         /** Constructor */
@@ -17,7 +18,7 @@ class Ostrich: public EggProducer {
         /** Mengembalikan suara dari Chicken */
         std::string makeNoise() const;
 
-        //Awalnya gaada
+        /** Mengembalikan karakter yang merepresentasikan Ostrich saat Hungry dan tidak Hungry */
         char render();
 
     private:

@@ -23,12 +23,16 @@ void drawFrame(int n) {
 
 /** Mengembalikan banyak digit dari suatu bilangan positif */
 int intLen(int x) {
-	int len = 0;
-	while (x != 0) {
-		x /= 10;
-		len++;
+	if (x != 0) {	
+		int len = 0;
+		while (x != 0) {
+			x /= 10;
+			len++;
+		}
+		return len;
+	} else {
+		return 1;
 	}
-	return len;
 }
 
 World::World() {
@@ -197,6 +201,14 @@ void World::Input() {
 		pl->mix(mesQueue);
 	} else if (inp == "exit") {
 		throw "EXIT";
+	} else if(inp == "help"){
+		mesQueue.add("a,w,s,d	Move");
+		mesQueue.add("interact	Interaksi dengan hewan atau benda");
+		mesQueue.add("mix		Membuat side product pada mixer");
+		mesQueue.add("talk		Berbicara dengan hewan");
+		mesQueue.add("kill		Menyembelih hewan ternak");
+		mesQueue.add("grow		Menumbuhkan rumput pada cell");
+		mesQueue.add("exit		Keluar dari game");
 	}
 }
 

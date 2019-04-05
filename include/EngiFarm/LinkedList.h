@@ -4,6 +4,9 @@
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
 
+/** LinkedList adalah kelas generik yang merepresentasikan daftar suatu objek */
+
+
 /** Forward declaration dari kelas LinkedListNode */
 template<class T>
 class LinkedListNode;

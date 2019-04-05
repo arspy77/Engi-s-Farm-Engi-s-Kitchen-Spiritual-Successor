@@ -1,8 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/EngiFarm.dir/src/main.cpp.o"
-  "CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.o"
-  "CMakeFiles/EngiFarm.dir/src/Player.cpp.o"
-  "CMakeFiles/EngiFarm.dir/src/World.cpp.o"
   "CMakeFiles/EngiFarm.dir/src/Cell/Barn.cpp.o"
   "CMakeFiles/EngiFarm.dir/src/Cell/Cell.cpp.o"
   "CMakeFiles/EngiFarm.dir/src/Cell/Coop.cpp.o"
@@ -22,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/EngiFarm.dir/src/FarmAnimal/MilkProducer.cpp.o"
   "CMakeFiles/EngiFarm.dir/src/FarmAnimal/Ostrich.cpp.o"
   "CMakeFiles/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.o"
+  "CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.o"
+  "CMakeFiles/EngiFarm.dir/src/Player.cpp.o"
   "CMakeFiles/EngiFarm.dir/src/Product/BeefChickenOmelette.cpp.o"
   "CMakeFiles/EngiFarm.dir/src/Product/BeefMuttonSate.cpp.o"
   "CMakeFiles/EngiFarm.dir/src/Product/ChickenEgg.cpp.o"
@@ -33,6 +31,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/EngiFarm.dir/src/Product/SheepMeat.cpp.o"
   "CMakeFiles/EngiFarm.dir/src/Product/SideProduct.cpp.o"
   "CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.o"
+  "CMakeFiles/EngiFarm.dir/src/World.cpp.o"
+  "CMakeFiles/EngiFarm.dir/src/main.cpp.o"
   "bin/EngiFarm.pdb"
   "bin/EngiFarm"
 )

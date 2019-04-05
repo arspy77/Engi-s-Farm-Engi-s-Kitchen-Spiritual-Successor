@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Player.h"
 
-LinkedList<SideProduct*> Player::recipeBook;
 
 bool adjPosition(Point P1,Point P2) {
 	if(P1.x+1 == P2.x && P1.y == P2.y) {
@@ -23,15 +22,13 @@ Player::Player(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell
 	recipeBook.add(new BeefChickenOmelette());
 	recipeBook.add(new BeefMuttonSate());
 	recipeBook.add(new SuperSecretSpecialProduct());
-	inventory.add(new ChickenEgg());
-	inventory.add(new CowMeat());
 }
 
 Player::~Player() {
 	for (int i = 0; i < inventory.len(); i++) {
 		delete inventory[i];
-	}
-	for (int i = 0; i < recipeBook.len(); i++) {
+	}		
+	for (int i = (int)recipeBook.len()-1; i >= 0; i--) {
 		delete recipeBook[i];
 	}
 }
@@ -133,9 +130,10 @@ void Player::mix(LinkedList<std::string>& mesQueue) {
 			}
 			if (allExist) {
 				for (int i = 0; i < recipeBook[choice - 1]->getRecipe().len();i++) { //delete semua resep yg ada di dalem inventory
-					inventory.removeIdx(
-						inventory.findPointer(
-							recipeBook[choice - 1]->getRecipe()[i]));
+					int delIdx = inventory.findPointer(
+							recipeBook[choice - 1]->getRecipe()[i]);
+					delete inventory[delIdx];
+					inventory.removeIdx(delIdx);
 				}
 				if (recipeBook[choice - 1]->getCategory() == Product::Category::BEEFCHICKENOMELETTE) {
 					inventory.add(new BeefChickenOmelette());
@@ -157,7 +155,7 @@ void Player::takeWater() {
 	   ((getPosition().y >= 0 && getPosition().y < nRowCell && getPosition().x + 1 >= 0 && getPosition().x + 1 < nCollumnCell) && worldMap[getPosition().y][getPosition().x + 1]->getCategory() == Cell::WELL) ||
 	   ((getPosition().y - 1 >= 0 && getPosition().y - 1 < nRowCell && getPosition().x >= 0 && getPosition().x < nCollumnCell) && worldMap[getPosition().y - 1][getPosition().x]->getCategory() == Cell::WELL) ||
 	   ((getPosition().y >= 0 && getPosition().y < nRowCell && getPosition().x - 1 >= 0 && getPosition().x - 1 < nCollumnCell) && worldMap[getPosition().y][getPosition().x - 1]->getCategory() == Cell::WELL)) {
-		this->water += 5;
+		this->water = 20;
 	}
 }
 

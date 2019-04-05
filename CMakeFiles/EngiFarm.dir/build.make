@@ -57,62 +57,10 @@ include CMakeFiles/EngiFarm.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/EngiFarm.dir/flags.make
 
-CMakeFiles/EngiFarm.dir/src/main.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
-CMakeFiles/EngiFarm.dir/src/main.cpp.o: src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EngiFarm.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/main.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/main.cpp
-
-CMakeFiles/EngiFarm.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/sda1/Documents/University/OOP/EngiFarm/src/main.cpp > CMakeFiles/EngiFarm.dir/src/main.cpp.i
-
-CMakeFiles/EngiFarm.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EngiFarm.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/sda1/Documents/University/OOP/EngiFarm/src/main.cpp -o CMakeFiles/EngiFarm.dir/src/main.cpp.s
-
-CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
-CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.o: src/LivingThing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/LivingThing.cpp
-
-CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/sda1/Documents/University/OOP/EngiFarm/src/LivingThing.cpp > CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.i
-
-CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/sda1/Documents/University/OOP/EngiFarm/src/LivingThing.cpp -o CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.s
-
-CMakeFiles/EngiFarm.dir/src/Player.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
-CMakeFiles/EngiFarm.dir/src/Player.cpp.o: src/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EngiFarm.dir/src/Player.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Player.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Player.cpp
-
-CMakeFiles/EngiFarm.dir/src/Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/sda1/Documents/University/OOP/EngiFarm/src/Player.cpp > CMakeFiles/EngiFarm.dir/src/Player.cpp.i
-
-CMakeFiles/EngiFarm.dir/src/Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EngiFarm.dir/src/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/sda1/Documents/University/OOP/EngiFarm/src/Player.cpp -o CMakeFiles/EngiFarm.dir/src/Player.cpp.s
-
-CMakeFiles/EngiFarm.dir/src/World.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
-CMakeFiles/EngiFarm.dir/src/World.cpp.o: src/World.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/EngiFarm.dir/src/World.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/World.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/World.cpp
-
-CMakeFiles/EngiFarm.dir/src/World.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/World.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/sda1/Documents/University/OOP/EngiFarm/src/World.cpp > CMakeFiles/EngiFarm.dir/src/World.cpp.i
-
-CMakeFiles/EngiFarm.dir/src/World.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EngiFarm.dir/src/World.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/sda1/Documents/University/OOP/EngiFarm/src/World.cpp -o CMakeFiles/EngiFarm.dir/src/World.cpp.s
-
 CMakeFiles/EngiFarm.dir/src/Cell/Barn.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Cell/Barn.cpp.o: src/Cell/Barn.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Barn.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Barn.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Barn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Barn.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Barn.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Barn.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Barn.cpp
 
 CMakeFiles/EngiFarm.dir/src/Cell/Barn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Cell/Barn.cpp.i"
@@ -124,8 +72,8 @@ CMakeFiles/EngiFarm.dir/src/Cell/Barn.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Cell/Cell.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Cell/Cell.cpp.o: src/Cell/Cell.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Cell.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Cell.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Cell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Cell.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Cell.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Cell.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Cell.cpp
 
 CMakeFiles/EngiFarm.dir/src/Cell/Cell.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Cell/Cell.cpp.i"
@@ -137,8 +85,8 @@ CMakeFiles/EngiFarm.dir/src/Cell/Cell.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Cell/Coop.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Cell/Coop.cpp.o: src/Cell/Coop.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Coop.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Coop.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Coop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Coop.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Coop.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Coop.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Coop.cpp
 
 CMakeFiles/EngiFarm.dir/src/Cell/Coop.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Cell/Coop.cpp.i"
@@ -150,8 +98,8 @@ CMakeFiles/EngiFarm.dir/src/Cell/Coop.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Cell/Facility.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Cell/Facility.cpp.o: src/Cell/Facility.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Facility.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Facility.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Facility.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Facility.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Facility.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Facility.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Facility.cpp
 
 CMakeFiles/EngiFarm.dir/src/Cell/Facility.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Cell/Facility.cpp.i"
@@ -163,8 +111,8 @@ CMakeFiles/EngiFarm.dir/src/Cell/Facility.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Cell/GrassLand.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Cell/GrassLand.cpp.o: src/Cell/GrassLand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/GrassLand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/GrassLand.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/GrassLand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/GrassLand.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/GrassLand.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/GrassLand.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/GrassLand.cpp
 
 CMakeFiles/EngiFarm.dir/src/Cell/GrassLand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Cell/GrassLand.cpp.i"
@@ -176,8 +124,8 @@ CMakeFiles/EngiFarm.dir/src/Cell/GrassLand.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Cell/Land.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Cell/Land.cpp.o: src/Cell/Land.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Land.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Land.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Land.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Land.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Land.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Land.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Land.cpp
 
 CMakeFiles/EngiFarm.dir/src/Cell/Land.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Cell/Land.cpp.i"
@@ -189,8 +137,8 @@ CMakeFiles/EngiFarm.dir/src/Cell/Land.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Cell/Mixer.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Cell/Mixer.cpp.o: src/Cell/Mixer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Mixer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Mixer.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Mixer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Mixer.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Mixer.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Mixer.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Mixer.cpp
 
 CMakeFiles/EngiFarm.dir/src/Cell/Mixer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Cell/Mixer.cpp.i"
@@ -202,8 +150,8 @@ CMakeFiles/EngiFarm.dir/src/Cell/Mixer.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Cell/Truck.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Cell/Truck.cpp.o: src/Cell/Truck.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Truck.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Truck.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Truck.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Truck.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Truck.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Truck.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Truck.cpp
 
 CMakeFiles/EngiFarm.dir/src/Cell/Truck.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Cell/Truck.cpp.i"
@@ -215,8 +163,8 @@ CMakeFiles/EngiFarm.dir/src/Cell/Truck.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Cell/Well.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Cell/Well.cpp.o: src/Cell/Well.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Well.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Well.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Well.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/EngiFarm.dir/src/Cell/Well.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Well.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Cell/Well.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Cell/Well.cpp
 
 CMakeFiles/EngiFarm.dir/src/Cell/Well.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Cell/Well.cpp.i"
@@ -228,8 +176,8 @@ CMakeFiles/EngiFarm.dir/src/Cell/Well.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Chicken.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Chicken.cpp.o: src/FarmAnimal/Chicken.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/Chicken.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/Chicken.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Chicken.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/Chicken.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Chicken.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/Chicken.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Chicken.cpp
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Chicken.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/FarmAnimal/Chicken.cpp.i"
@@ -241,8 +189,8 @@ CMakeFiles/EngiFarm.dir/src/FarmAnimal/Chicken.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Cow.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Cow.cpp.o: src/FarmAnimal/Cow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/Cow.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/Cow.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Cow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/Cow.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Cow.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/Cow.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Cow.cpp
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Cow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/FarmAnimal/Cow.cpp.i"
@@ -254,8 +202,8 @@ CMakeFiles/EngiFarm.dir/src/FarmAnimal/Cow.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Duck.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Duck.cpp.o: src/FarmAnimal/Duck.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/Duck.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/Duck.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Duck.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/Duck.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Duck.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/Duck.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Duck.cpp
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Duck.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/FarmAnimal/Duck.cpp.i"
@@ -267,8 +215,8 @@ CMakeFiles/EngiFarm.dir/src/FarmAnimal/Duck.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/EggProducer.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/EggProducer.cpp.o: src/FarmAnimal/EggProducer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/EggProducer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/EggProducer.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/EggProducer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/EggProducer.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/EggProducer.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/EggProducer.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/EggProducer.cpp
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/EggProducer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/FarmAnimal/EggProducer.cpp.i"
@@ -280,8 +228,8 @@ CMakeFiles/EngiFarm.dir/src/FarmAnimal/EggProducer.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/FarmAnimal.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/FarmAnimal.cpp.o: src/FarmAnimal/FarmAnimal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/FarmAnimal.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/FarmAnimal.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/FarmAnimal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/FarmAnimal.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/FarmAnimal.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/FarmAnimal.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/FarmAnimal.cpp
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/FarmAnimal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/FarmAnimal/FarmAnimal.cpp.i"
@@ -293,8 +241,8 @@ CMakeFiles/EngiFarm.dir/src/FarmAnimal/FarmAnimal.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Horse.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Horse.cpp.o: src/FarmAnimal/Horse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/Horse.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/Horse.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Horse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/Horse.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Horse.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/Horse.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Horse.cpp
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Horse.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/FarmAnimal/Horse.cpp.i"
@@ -306,8 +254,8 @@ CMakeFiles/EngiFarm.dir/src/FarmAnimal/Horse.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/MeatProducer.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/MeatProducer.cpp.o: src/FarmAnimal/MeatProducer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/MeatProducer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/MeatProducer.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/MeatProducer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/MeatProducer.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/MeatProducer.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/MeatProducer.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/MeatProducer.cpp
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/MeatProducer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/FarmAnimal/MeatProducer.cpp.i"
@@ -319,8 +267,8 @@ CMakeFiles/EngiFarm.dir/src/FarmAnimal/MeatProducer.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/MilkProducer.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/MilkProducer.cpp.o: src/FarmAnimal/MilkProducer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/MilkProducer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/MilkProducer.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/MilkProducer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/MilkProducer.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/MilkProducer.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/MilkProducer.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/MilkProducer.cpp
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/MilkProducer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/FarmAnimal/MilkProducer.cpp.i"
@@ -332,8 +280,8 @@ CMakeFiles/EngiFarm.dir/src/FarmAnimal/MilkProducer.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Ostrich.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Ostrich.cpp.o: src/FarmAnimal/Ostrich.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/Ostrich.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/Ostrich.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Ostrich.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/Ostrich.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Ostrich.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/Ostrich.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Ostrich.cpp
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Ostrich.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/FarmAnimal/Ostrich.cpp.i"
@@ -345,8 +293,8 @@ CMakeFiles/EngiFarm.dir/src/FarmAnimal/Ostrich.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.o: src/FarmAnimal/Sheep.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Sheep.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Sheep.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Sheep.cpp
 
 CMakeFiles/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.i"
@@ -356,10 +304,36 @@ CMakeFiles/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/sda1/Documents/University/OOP/EngiFarm/src/FarmAnimal/Sheep.cpp -o CMakeFiles/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.s
 
+CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
+CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.o: src/LivingThing.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/LivingThing.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/LivingThing.cpp
+
+CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/sda1/Documents/University/OOP/EngiFarm/src/LivingThing.cpp > CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.i
+
+CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/sda1/Documents/University/OOP/EngiFarm/src/LivingThing.cpp -o CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.s
+
+CMakeFiles/EngiFarm.dir/src/Player.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
+CMakeFiles/EngiFarm.dir/src/Player.cpp.o: src/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/EngiFarm.dir/src/Player.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Player.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Player.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Player.cpp
+
+CMakeFiles/EngiFarm.dir/src/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/sda1/Documents/University/OOP/EngiFarm/src/Player.cpp > CMakeFiles/EngiFarm.dir/src/Player.cpp.i
+
+CMakeFiles/EngiFarm.dir/src/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EngiFarm.dir/src/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/sda1/Documents/University/OOP/EngiFarm/src/Player.cpp -o CMakeFiles/EngiFarm.dir/src/Player.cpp.s
+
 CMakeFiles/EngiFarm.dir/src/Product/BeefChickenOmelette.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Product/BeefChickenOmelette.cpp.o: src/Product/BeefChickenOmelette.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/BeefChickenOmelette.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/BeefChickenOmelette.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/BeefChickenOmelette.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/BeefChickenOmelette.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/BeefChickenOmelette.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/BeefChickenOmelette.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/BeefChickenOmelette.cpp
 
 CMakeFiles/EngiFarm.dir/src/Product/BeefChickenOmelette.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Product/BeefChickenOmelette.cpp.i"
@@ -371,8 +345,8 @@ CMakeFiles/EngiFarm.dir/src/Product/BeefChickenOmelette.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Product/BeefMuttonSate.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Product/BeefMuttonSate.cpp.o: src/Product/BeefMuttonSate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/BeefMuttonSate.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/BeefMuttonSate.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/BeefMuttonSate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/BeefMuttonSate.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/BeefMuttonSate.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/BeefMuttonSate.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/BeefMuttonSate.cpp
 
 CMakeFiles/EngiFarm.dir/src/Product/BeefMuttonSate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Product/BeefMuttonSate.cpp.i"
@@ -384,8 +358,8 @@ CMakeFiles/EngiFarm.dir/src/Product/BeefMuttonSate.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Product/ChickenEgg.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Product/ChickenEgg.cpp.o: src/Product/ChickenEgg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/ChickenEgg.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/ChickenEgg.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/ChickenEgg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/ChickenEgg.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/ChickenEgg.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/ChickenEgg.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/ChickenEgg.cpp
 
 CMakeFiles/EngiFarm.dir/src/Product/ChickenEgg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Product/ChickenEgg.cpp.i"
@@ -397,8 +371,8 @@ CMakeFiles/EngiFarm.dir/src/Product/ChickenEgg.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Product/CowMeat.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Product/CowMeat.cpp.o: src/Product/CowMeat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/CowMeat.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/CowMeat.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/CowMeat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/CowMeat.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/CowMeat.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/CowMeat.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/CowMeat.cpp
 
 CMakeFiles/EngiFarm.dir/src/Product/CowMeat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Product/CowMeat.cpp.i"
@@ -410,8 +384,8 @@ CMakeFiles/EngiFarm.dir/src/Product/CowMeat.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Product/DuckMeat.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Product/DuckMeat.cpp.o: src/Product/DuckMeat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/DuckMeat.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/DuckMeat.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/DuckMeat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/DuckMeat.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/DuckMeat.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/DuckMeat.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/DuckMeat.cpp
 
 CMakeFiles/EngiFarm.dir/src/Product/DuckMeat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Product/DuckMeat.cpp.i"
@@ -423,8 +397,8 @@ CMakeFiles/EngiFarm.dir/src/Product/DuckMeat.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Product/HorseMilk.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Product/HorseMilk.cpp.o: src/Product/HorseMilk.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/HorseMilk.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/HorseMilk.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/HorseMilk.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/HorseMilk.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/HorseMilk.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/HorseMilk.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/HorseMilk.cpp
 
 CMakeFiles/EngiFarm.dir/src/Product/HorseMilk.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Product/HorseMilk.cpp.i"
@@ -436,8 +410,8 @@ CMakeFiles/EngiFarm.dir/src/Product/HorseMilk.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Product/OstrichEgg.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Product/OstrichEgg.cpp.o: src/Product/OstrichEgg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/OstrichEgg.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/OstrichEgg.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/OstrichEgg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/OstrichEgg.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/OstrichEgg.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/OstrichEgg.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/OstrichEgg.cpp
 
 CMakeFiles/EngiFarm.dir/src/Product/OstrichEgg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Product/OstrichEgg.cpp.i"
@@ -449,8 +423,8 @@ CMakeFiles/EngiFarm.dir/src/Product/OstrichEgg.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Product/Product.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Product/Product.cpp.o: src/Product/Product.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/Product.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/Product.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/Product.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/Product.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/Product.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/Product.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/Product.cpp
 
 CMakeFiles/EngiFarm.dir/src/Product/Product.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Product/Product.cpp.i"
@@ -462,8 +436,8 @@ CMakeFiles/EngiFarm.dir/src/Product/Product.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Product/SheepMeat.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Product/SheepMeat.cpp.o: src/Product/SheepMeat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/SheepMeat.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/SheepMeat.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/SheepMeat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/SheepMeat.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/SheepMeat.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/SheepMeat.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/SheepMeat.cpp
 
 CMakeFiles/EngiFarm.dir/src/Product/SheepMeat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Product/SheepMeat.cpp.i"
@@ -475,8 +449,8 @@ CMakeFiles/EngiFarm.dir/src/Product/SheepMeat.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Product/SideProduct.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Product/SideProduct.cpp.o: src/Product/SideProduct.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/SideProduct.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/SideProduct.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/SideProduct.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/SideProduct.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/SideProduct.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/SideProduct.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/SideProduct.cpp
 
 CMakeFiles/EngiFarm.dir/src/Product/SideProduct.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Product/SideProduct.cpp.i"
@@ -488,8 +462,8 @@ CMakeFiles/EngiFarm.dir/src/Product/SideProduct.cpp.s: cmake_force
 
 CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
 CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.o: src/Product/SuperSecretSpecialProduct.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/SuperSecretSpecialProduct.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/SuperSecretSpecialProduct.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/SuperSecretSpecialProduct.cpp
 
 CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.i"
@@ -499,12 +473,34 @@ CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/sda1/Documents/University/OOP/EngiFarm/src/Product/SuperSecretSpecialProduct.cpp -o CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.s
 
+CMakeFiles/EngiFarm.dir/src/World.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
+CMakeFiles/EngiFarm.dir/src/World.cpp.o: src/World.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/EngiFarm.dir/src/World.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/World.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/World.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/World.cpp
+
+CMakeFiles/EngiFarm.dir/src/World.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/World.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/sda1/Documents/University/OOP/EngiFarm/src/World.cpp > CMakeFiles/EngiFarm.dir/src/World.cpp.i
+
+CMakeFiles/EngiFarm.dir/src/World.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EngiFarm.dir/src/World.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/sda1/Documents/University/OOP/EngiFarm/src/World.cpp -o CMakeFiles/EngiFarm.dir/src/World.cpp.s
+
+CMakeFiles/EngiFarm.dir/src/main.cpp.o: CMakeFiles/EngiFarm.dir/flags.make
+CMakeFiles/EngiFarm.dir/src/main.cpp.o: src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/EngiFarm.dir/src/main.cpp.o"
+	$(CMAKE_COMMAND) -E __run_co_compile --cppcheck=cppcheck --source=/mnt/sda1/Documents/University/OOP/EngiFarm/src/main.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EngiFarm.dir/src/main.cpp.o -c /mnt/sda1/Documents/University/OOP/EngiFarm/src/main.cpp
+
+CMakeFiles/EngiFarm.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngiFarm.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/sda1/Documents/University/OOP/EngiFarm/src/main.cpp > CMakeFiles/EngiFarm.dir/src/main.cpp.i
+
+CMakeFiles/EngiFarm.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EngiFarm.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/sda1/Documents/University/OOP/EngiFarm/src/main.cpp -o CMakeFiles/EngiFarm.dir/src/main.cpp.s
+
 # Object files for target EngiFarm
 EngiFarm_OBJECTS = \
-"CMakeFiles/EngiFarm.dir/src/main.cpp.o" \
-"CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.o" \
-"CMakeFiles/EngiFarm.dir/src/Player.cpp.o" \
-"CMakeFiles/EngiFarm.dir/src/World.cpp.o" \
 "CMakeFiles/EngiFarm.dir/src/Cell/Barn.cpp.o" \
 "CMakeFiles/EngiFarm.dir/src/Cell/Cell.cpp.o" \
 "CMakeFiles/EngiFarm.dir/src/Cell/Coop.cpp.o" \
@@ -524,6 +520,8 @@ EngiFarm_OBJECTS = \
 "CMakeFiles/EngiFarm.dir/src/FarmAnimal/MilkProducer.cpp.o" \
 "CMakeFiles/EngiFarm.dir/src/FarmAnimal/Ostrich.cpp.o" \
 "CMakeFiles/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.o" \
+"CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.o" \
+"CMakeFiles/EngiFarm.dir/src/Player.cpp.o" \
 "CMakeFiles/EngiFarm.dir/src/Product/BeefChickenOmelette.cpp.o" \
 "CMakeFiles/EngiFarm.dir/src/Product/BeefMuttonSate.cpp.o" \
 "CMakeFiles/EngiFarm.dir/src/Product/ChickenEgg.cpp.o" \
@@ -534,15 +532,13 @@ EngiFarm_OBJECTS = \
 "CMakeFiles/EngiFarm.dir/src/Product/Product.cpp.o" \
 "CMakeFiles/EngiFarm.dir/src/Product/SheepMeat.cpp.o" \
 "CMakeFiles/EngiFarm.dir/src/Product/SideProduct.cpp.o" \
-"CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.o"
+"CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.o" \
+"CMakeFiles/EngiFarm.dir/src/World.cpp.o" \
+"CMakeFiles/EngiFarm.dir/src/main.cpp.o"
 
 # External object files for target EngiFarm
 EngiFarm_EXTERNAL_OBJECTS =
 
-bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/main.cpp.o
-bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.o
-bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/Player.cpp.o
-bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/World.cpp.o
 bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/Cell/Barn.cpp.o
 bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/Cell/Cell.cpp.o
 bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/Cell/Coop.cpp.o
@@ -562,6 +558,8 @@ bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/FarmAnimal/MeatProducer.cpp.o
 bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/FarmAnimal/MilkProducer.cpp.o
 bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/FarmAnimal/Ostrich.cpp.o
 bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/FarmAnimal/Sheep.cpp.o
+bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/LivingThing.cpp.o
+bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/Player.cpp.o
 bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/Product/BeefChickenOmelette.cpp.o
 bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/Product/BeefMuttonSate.cpp.o
 bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/Product/ChickenEgg.cpp.o
@@ -573,6 +571,8 @@ bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/Product/Product.cpp.o
 bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/Product/SheepMeat.cpp.o
 bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/Product/SideProduct.cpp.o
 bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/Product/SuperSecretSpecialProduct.cpp.o
+bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/World.cpp.o
+bin/EngiFarm: CMakeFiles/EngiFarm.dir/src/main.cpp.o
 bin/EngiFarm: CMakeFiles/EngiFarm.dir/build.make
 bin/EngiFarm: CMakeFiles/EngiFarm.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/sda1/Documents/University/OOP/EngiFarm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable bin/EngiFarm"

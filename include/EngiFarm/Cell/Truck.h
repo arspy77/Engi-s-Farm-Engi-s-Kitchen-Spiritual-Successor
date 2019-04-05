@@ -3,6 +3,8 @@
 
 #include "Facility.h"
 
+/** Truck merupakan kelas turunan dari Facility yang dapat digunakan untuk
+ *  menjual seluruh barang di inventori */
 class Truck : public Facility {
     public:
         /** Return kategori dari objek ini */

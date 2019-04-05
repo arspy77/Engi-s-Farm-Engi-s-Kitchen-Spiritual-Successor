@@ -3,6 +3,7 @@
 
 #include "FarmProduct.h"
 
+/** HorseMilk adalah kelas turunan dari FarmProduct yang dihasilkan dengan interact dengan Horse */
 class HorseMilk : public FarmProduct {
     public:
         /** getPrice mengembalikan harga yang didefinisikan */  

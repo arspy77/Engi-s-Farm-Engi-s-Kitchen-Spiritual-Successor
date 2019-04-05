@@ -1,10 +1,12 @@
 #ifndef MILK_PRODUCER_H
 #define MILK_PRODUCER_H
 
-#include "../Point.h"
-#include "../Cell/Cell.h"
+#include "Point.h"
+#include "Cell.h"
 #include "FarmAnimal.h"
 
+/* MilkProducer adalah kelas abstrak turunan dari FarmAnimal yang tinggal di GrassLand dan
+ *dapat menghasilkan Product berupa Milk jika di Interact */
 class MilkProducer : public FarmAnimal {
     public :
         /** Constructor maxTimeToGetHungry dengan nilai H */
@@ -13,8 +15,10 @@ class MilkProducer : public FarmAnimal {
         /** Penerusan overloading (virtual) destruktor */
         virtual ~MilkProducer() = 0;
         
+        /** Mengembalikan nilai dari canProduce */
         bool getProduce();
-    
+
+        /** Mengembalikan false karena MilkProducer tidak bisa di kill */
         bool getKillable();
 
     protected :
@@ -26,7 +30,6 @@ class MilkProducer : public FarmAnimal {
         /** Mengubah nilai canProduce */
         void eat();
 
-        // Sekarang Cell pake reference,gk virtual
         /** Mengecek apakah bisa pindah (tidak out of bound, bertipe Grassland, tidak ada hewan lain) */
         bool canMoveTo(Cell& toWhere) const;
 };

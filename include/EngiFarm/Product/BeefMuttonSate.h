@@ -1,15 +1,16 @@
 #ifndef BEEF_MUTTON_SATE_H
 #define BEEF_MUTTON_SATE_H
 
-#include "../LinkedList.h"
+#include "LinkedList.h"
 #include "SideProduct.h"
 
+/** BeefMuttonSate adalah kelas turunan dari SideProduct yang dihasilkan dengan mix CowMeat dan SheepMeat */
 class BeefMuttonSate : public SideProduct {
     public:
         /** Constructor untuk inisialisasi recipe */
         BeefMuttonSate();
 
-        /** Dtor */ //Awalnya ga ada
+        /** Dtor */
         ~BeefMuttonSate();
 
         /** getPrice mengembalikan harga yang didefinisikan */  

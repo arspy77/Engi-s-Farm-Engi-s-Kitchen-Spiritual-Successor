@@ -1,5 +1,5 @@
 #include "Sheep.h"
-#include "../Product/SheepMeat.h"
+#include "SheepMeat.h"
 
 /** Constructor */
 Sheep::Sheep(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)

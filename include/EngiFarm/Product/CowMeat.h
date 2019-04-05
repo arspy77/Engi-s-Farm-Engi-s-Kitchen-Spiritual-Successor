@@ -3,6 +3,7 @@
 
 #include "FarmProduct.h"
 
+/** CowMeat adalah kelas turunan dari FarmProduct yang dihasilkan dengan kill Cow */
 class CowMeat : public FarmProduct {
     public:
         /** getPrice mengembalikan harga yang didefinisikan */  

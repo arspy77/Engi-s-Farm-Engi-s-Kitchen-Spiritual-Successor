@@ -1,5 +1,5 @@
 #include "Horse.h"
-#include "../Product/HorseMilk.h"
+#include "HorseMilk.h"
 
 /** Constructor */
 Horse::Horse(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)

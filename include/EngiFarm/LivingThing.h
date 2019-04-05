@@ -5,7 +5,7 @@
 #include "Cell/Cell.h"
 #include "Direction.h"
 
-
+/* LivingThing adalah kelas abstrak yang merepresentasikan makhluk hidup berupa Player dan FarmAnimal*/
 class LivingThing {
     public:
         /** Constructor LivingThing */

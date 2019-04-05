@@ -3,6 +3,7 @@
 
 #include "Facility.h"
 
+/** Mixer merupakan kelas turunan dari Facility yang digunakan untuk membuat SideProduct */
 class Mixer : public Facility {
     public:
         /** Return kategori dari objek ini */

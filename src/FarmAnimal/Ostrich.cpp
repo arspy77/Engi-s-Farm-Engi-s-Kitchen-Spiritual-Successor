@@ -1,5 +1,5 @@
 #include "Ostrich.h"
-#include "../Product/OstrichEgg.h"
+#include "OstrichEgg.h"
 
 /** Constructor */
 Ostrich::Ostrich(Point position, Cell***& worldMap, int nRowCell, int nCollumnCell)

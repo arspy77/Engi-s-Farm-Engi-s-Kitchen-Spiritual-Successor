@@ -3,6 +3,7 @@
 
 #include "FarmProduct.h"
 
+/** SheepMeat adalah kelas turunan dari FarmProduct yang dihasilkan dengan kill Sheep */
 class SheepMeat : public FarmProduct {
     public:
         /** getPrice mengembalikan harga yang didefinisikan */  

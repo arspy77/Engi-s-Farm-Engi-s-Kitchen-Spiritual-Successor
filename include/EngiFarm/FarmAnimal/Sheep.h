@@ -1,11 +1,12 @@
 #ifndef SHEEP_H
 #define SHEEP_H
 
-#include "../Point.h"
-#include "../Cell/Cell.h"
+#include "Point.h"
+#include "Cell.h"
 #include "MeatProducer.h"
 #include <string>
 
+/** Sheep merupakan kelas turunan dari MeatProducer yang menghasilkan SheepMeat saat diinteract */
 class Sheep: public MeatProducer { 
     public:
         /** Constructor */
@@ -17,7 +18,7 @@ class Sheep: public MeatProducer {
         /** Mengembalikan suara dari Sheep */
         std::string makeNoise() const;
 
-        //Awalnya gaada
+        /** Mengembalikan karakter yang merepresentasikan Sheep saat Hungry dan tidak Hungry */
         char render();
 
     private:
