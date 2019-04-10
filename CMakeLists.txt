@@ -39,7 +39,7 @@ add_executable(EngiFarm ${sources} src/main.cpp)
 
 # testing ##############################################################
 
-set(CMAKE_CXX_CPPCHECK "cppcheck")
+# set(CMAKE_CXX_CPPCHECK "cppcheck")
 
 enable_testing()
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
