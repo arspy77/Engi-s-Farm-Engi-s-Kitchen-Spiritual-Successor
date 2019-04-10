@@ -1,0 +1,21 @@
+==10550== Memcheck, a memory error detector
+==10550== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==10550== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==10550== Command: bin/EngiFarm
+==10550== 
+==10550== 
+==10550== HEAP SUMMARY:
+==10550==     in use at exit: 72,736 bytes in 2 blocks
+==10550==   total heap usage: 10,956 allocs, 10,954 frees, 292,757 bytes allocated
+==10550== 
+==10550== LEAK SUMMARY:
+==10550==    definitely lost: 0 bytes in 0 blocks
+==10550==    indirectly lost: 0 bytes in 0 blocks
+==10550==      possibly lost: 0 bytes in 0 blocks
+==10550==    still reachable: 72,736 bytes in 2 blocks
+==10550==         suppressed: 0 bytes in 0 blocks
+==10550== Reachable blocks (those to which a pointer was found) are not shown.
+==10550== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==10550== 
+==10550== For counts of detected and suppressed errors, rerun with: -v
+==10550== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

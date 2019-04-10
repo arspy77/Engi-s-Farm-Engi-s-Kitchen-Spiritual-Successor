@@ -1,0 +1,211 @@
+Running main() from /home/bimoadityar/Program/googletest/googletest/src/gtest_main.cc
+[==========] Running 65 tests from 25 test suites.
+[----------] Global test environment set-up.
+[----------] 4 tests from GrassLandTest
+[ RUN      ] GrassLandTest.getCategory
+[       OK ] GrassLandTest.getCategory (0 ms)
+[ RUN      ] GrassLandTest.getIsOcupied_setIsOcupied
+[       OK ] GrassLandTest.getIsOcupied_setIsOcupied (0 ms)
+[ RUN      ] GrassLandTest.isFacility
+[       OK ] GrassLandTest.isFacility (0 ms)
+[ RUN      ] GrassLandTest.isGrassExist_growGrass_removeGrass
+[       OK ] GrassLandTest.isGrassExist_growGrass_removeGrass (0 ms)
+[----------] 4 tests from GrassLandTest (0 ms total)
+
+[----------] 4 tests from CoopTest
+[ RUN      ] CoopTest.getCategory
+[       OK ] CoopTest.getCategory (0 ms)
+[ RUN      ] CoopTest.getIsOcupied_setIsOcupied
+[       OK ] CoopTest.getIsOcupied_setIsOcupied (0 ms)
+[ RUN      ] CoopTest.isFacility
+[       OK ] CoopTest.isFacility (0 ms)
+[ RUN      ] CoopTest.isGrassExist_growGrass_removeGrass
+[       OK ] CoopTest.isGrassExist_growGrass_removeGrass (0 ms)
+[----------] 4 tests from CoopTest (1 ms total)
+
+[----------] 4 tests from BarnTest
+[ RUN      ] BarnTest.getCategory
+[       OK ] BarnTest.getCategory (0 ms)
+[ RUN      ] BarnTest.getIsOcupied_setIsOcupied
+[       OK ] BarnTest.getIsOcupied_setIsOcupied (0 ms)
+[ RUN      ] BarnTest.isFacility
+[       OK ] BarnTest.isFacility (0 ms)
+[ RUN      ] BarnTest.isGrassExist_growGrass_removeGrass
+[       OK ] BarnTest.isGrassExist_growGrass_removeGrass (0 ms)
+[----------] 4 tests from BarnTest (0 ms total)
+
+[----------] 3 tests from WellTest
+[ RUN      ] WellTest.getCategory
+[       OK ] WellTest.getCategory (0 ms)
+[ RUN      ] WellTest.getIsOcupied_setIsOcupied
+[       OK ] WellTest.getIsOcupied_setIsOcupied (0 ms)
+[ RUN      ] WellTest.isFacility
+[       OK ] WellTest.isFacility (0 ms)
+[----------] 3 tests from WellTest (0 ms total)
+
+[----------] 3 tests from MixerTest
+[ RUN      ] MixerTest.getCategory
+[       OK ] MixerTest.getCategory (0 ms)
+[ RUN      ] MixerTest.getIsOcupied_setIsOcupied
+[       OK ] MixerTest.getIsOcupied_setIsOcupied (0 ms)
+[ RUN      ] MixerTest.isFacility
+[       OK ] MixerTest.isFacility (0 ms)
+[----------] 3 tests from MixerTest (0 ms total)
+
+[----------] 3 tests from TruckTest
+[ RUN      ] TruckTest.getCategory
+[       OK ] TruckTest.getCategory (0 ms)
+[ RUN      ] TruckTest.getIsOcupied_setIsOcupied
+[       OK ] TruckTest.getIsOcupied_setIsOcupied (0 ms)
+[ RUN      ] TruckTest.isFacility
+[       OK ] TruckTest.isFacility (0 ms)
+[----------] 3 tests from TruckTest (0 ms total)
+
+[----------] 1 test from ChickenTest
+[ RUN      ] ChickenTest.Constructor
+[       OK ] ChickenTest.Constructor (0 ms)
+[----------] 1 test from ChickenTest (0 ms total)
+
+[----------] 1 test from CowTest
+[ RUN      ] CowTest.Constructor
+[       OK ] CowTest.Constructor (0 ms)
+[----------] 1 test from CowTest (0 ms total)
+
+[----------] 1 test from DuckTest
+[ RUN      ] DuckTest.Constructor
+[       OK ] DuckTest.Constructor (0 ms)
+[----------] 1 test from DuckTest (0 ms total)
+
+[----------] 1 test from HorseTest
+[ RUN      ] HorseTest.Constructor
+[       OK ] HorseTest.Constructor (1 ms)
+[----------] 1 test from HorseTest (1 ms total)
+
+[----------] 1 test from OstrichTest
+[ RUN      ] OstrichTest.Constructor
+[       OK ] OstrichTest.Constructor (0 ms)
+[----------] 1 test from OstrichTest (0 ms total)
+
+[----------] 1 test from SheepTest
+[ RUN      ] SheepTest.Constructor
+[       OK ] SheepTest.Constructor (0 ms)
+[----------] 1 test from SheepTest (0 ms total)
+
+[----------] 2 tests from FarmAnimalTest
+[ RUN      ] FarmAnimalTest.HungerTest
+[       OK ] FarmAnimalTest.HungerTest (0 ms)
+[ RUN      ] FarmAnimalTest.MovementTest
+[       OK ] FarmAnimalTest.MovementTest (0 ms)
+[----------] 2 tests from FarmAnimalTest (0 ms total)
+
+[----------] 6 tests from LinkedListTest
+[ RUN      ] LinkedListTest.EmptyConstructor
+[       OK ] LinkedListTest.EmptyConstructor (0 ms)
+[ RUN      ] LinkedListTest.ListConstructor
+[       OK ] LinkedListTest.ListConstructor (0 ms)
+[ RUN      ] LinkedListTest.CopyConstructor
+[       OK ] LinkedListTest.CopyConstructor (0 ms)
+[ RUN      ] LinkedListTest.OperatorEq
+[       OK ] LinkedListTest.OperatorEq (0 ms)
+[ RUN      ] LinkedListTest.AddRemove
+[       OK ] LinkedListTest.AddRemove (1 ms)
+[ RUN      ] LinkedListTest.Find
+[       OK ] LinkedListTest.Find (0 ms)
+[----------] 6 tests from LinkedListTest (1 ms total)
+
+[----------] 8 tests from PlayerTest
+[ RUN      ] PlayerTest.Constructor
+[       OK ] PlayerTest.Constructor (0 ms)
+[ RUN      ] PlayerTest.Talk
+[       OK ] PlayerTest.Talk (0 ms)
+[ RUN      ] PlayerTest.Interacts
+[       OK ] PlayerTest.Interacts (0 ms)
+[ RUN      ] PlayerTest.Kill
+[       OK ] PlayerTest.Kill (0 ms)
+[ RUN      ] PlayerTest.Grow
+[       OK ] PlayerTest.Grow (0 ms)
+[ RUN      ] PlayerTest.Render
+[       OK ] PlayerTest.Render (0 ms)
+[ RUN      ] PlayerTest.TakeWater
+[       OK ] PlayerTest.TakeWater (1 ms)
+[ RUN      ] PlayerTest.sellAll
+[       OK ] PlayerTest.sellAll (0 ms)
+[----------] 8 tests from PlayerTest (1 ms total)
+
+[----------] 1 test from PointTest
+[ RUN      ] PointTest.ChangeComponent
+[       OK ] PointTest.ChangeComponent (0 ms)
+[----------] 1 test from PointTest (0 ms total)
+
+[----------] 2 tests from ChickenEggTest
+[ RUN      ] ChickenEggTest.GetPrice
+[       OK ] ChickenEggTest.GetPrice (0 ms)
+[ RUN      ] ChickenEggTest.GetCategory
+[       OK ] ChickenEggTest.GetCategory (0 ms)
+[----------] 2 tests from ChickenEggTest (0 ms total)
+
+[----------] 2 tests from CowMeatTest
+[ RUN      ] CowMeatTest.GetPrice
+[       OK ] CowMeatTest.GetPrice (0 ms)
+[ RUN      ] CowMeatTest.GetCategory
+[       OK ] CowMeatTest.GetCategory (0 ms)
+[----------] 2 tests from CowMeatTest (0 ms total)
+
+[----------] 2 tests from DuckMeatTest
+[ RUN      ] DuckMeatTest.GetPrice
+[       OK ] DuckMeatTest.GetPrice (0 ms)
+[ RUN      ] DuckMeatTest.GetCategory
+[       OK ] DuckMeatTest.GetCategory (0 ms)
+[----------] 2 tests from DuckMeatTest (0 ms total)
+
+[----------] 2 tests from HorseMilkTest
+[ RUN      ] HorseMilkTest.GetPrice
+[       OK ] HorseMilkTest.GetPrice (0 ms)
+[ RUN      ] HorseMilkTest.GetCategory
+[       OK ] HorseMilkTest.GetCategory (0 ms)
+[----------] 2 tests from HorseMilkTest (0 ms total)
+
+[----------] 2 tests from SheepMeatTest
+[ RUN      ] SheepMeatTest.GetPrice
+[       OK ] SheepMeatTest.GetPrice (0 ms)
+[ RUN      ] SheepMeatTest.GetCategory
+[       OK ] SheepMeatTest.GetCategory (0 ms)
+[----------] 2 tests from SheepMeatTest (0 ms total)
+
+[----------] 2 tests from OstrichEggTest
+[ RUN      ] OstrichEggTest.GetPrice
+[       OK ] OstrichEggTest.GetPrice (0 ms)
+[ RUN      ] OstrichEggTest.GetCategory
+[       OK ] OstrichEggTest.GetCategory (0 ms)
+[----------] 2 tests from OstrichEggTest (0 ms total)
+
+[----------] 3 tests from BeefChickenOmeletteTest
+[ RUN      ] BeefChickenOmeletteTest.GetPrice
+[       OK ] BeefChickenOmeletteTest.GetPrice (0 ms)
+[ RUN      ] BeefChickenOmeletteTest.GetCategory
+[       OK ] BeefChickenOmeletteTest.GetCategory (0 ms)
+[ RUN      ] BeefChickenOmeletteTest.GetRecipe
+[       OK ] BeefChickenOmeletteTest.GetRecipe (0 ms)
+[----------] 3 tests from BeefChickenOmeletteTest (0 ms total)
+
+[----------] 3 tests from BeefMuttonSateTest
+[ RUN      ] BeefMuttonSateTest.GetPrice
+[       OK ] BeefMuttonSateTest.GetPrice (0 ms)
+[ RUN      ] BeefMuttonSateTest.GetCategory
+[       OK ] BeefMuttonSateTest.GetCategory (0 ms)
+[ RUN      ] BeefMuttonSateTest.GetRecipe
+[       OK ] BeefMuttonSateTest.GetRecipe (0 ms)
+[----------] 3 tests from BeefMuttonSateTest (0 ms total)
+
+[----------] 3 tests from SuperSecretSpecialProductTest
+[ RUN      ] SuperSecretSpecialProductTest.GetPrice
+[       OK ] SuperSecretSpecialProductTest.GetPrice (0 ms)
+[ RUN      ] SuperSecretSpecialProductTest.GetCategory
+[       OK ] SuperSecretSpecialProductTest.GetCategory (0 ms)
+[ RUN      ] SuperSecretSpecialProductTest.GetRecipe
+[       OK ] SuperSecretSpecialProductTest.GetRecipe (0 ms)
+[----------] 3 tests from SuperSecretSpecialProductTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 65 tests from 25 test suites ran. (5 ms total)
+[  PASSED  ] 65 tests.
